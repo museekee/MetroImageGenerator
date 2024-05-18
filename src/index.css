@@ -13,6 +13,11 @@
   font-weight: bold;
   src: url('./assets/fonts/namsanEB.ttf') format("truetype");
 }
+@font-face {
+  font-family: "namsanc";
+  font-weight: bold;
+  src: url('./assets/fonts/namsancEB.ttf') format("truetype");
+}
 
 body {
   margin: 0;

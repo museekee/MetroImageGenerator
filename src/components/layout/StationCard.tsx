@@ -3,12 +3,15 @@ import styled from 'styled-components'
 import lineColors_ from './../../data/lineColors.json'
 import stationCodes_ from './../../data/sortedStationCodes.json'
 import stations from './../../data/combinedStations.json'
+import { useNavigate } from 'react-router-dom'
 
 const lineColors: Record<string, string> = lineColors_
 //@ts-ignore
 const stationCodes: {[x: string]: [string[], string, string[]][]} = stationCodes_
 
 const StationCard = ({ station }: { station: ICombinedStation }) => {
+  const navigate = useNavigate()
+
   const colors = station.lines.map(v => lineColors[v])
   const Card = styled.div`
     width: 2000px;
@@ -54,6 +57,7 @@ const StationCard = ({ station }: { station: ICombinedStation }) => {
     }
     & h1 {
       font-size: 300px;
+      font-family: ${station.name_ko.length < 7 ? 'korail' : 'korailc'};
     }
     & > div {
       display: flex;
@@ -61,7 +65,7 @@ const StationCard = ({ station }: { station: ICombinedStation }) => {
       align-items: center;
     }
     & h4 {
-      font-size: 100px
+      font-size: 100px;
     }
   `
   const NearStations = styled.div`
@@ -90,23 +94,28 @@ const StationCard = ({ station }: { station: ICombinedStation }) => {
           display: flex;
           align-items: center;
           gap: 25px;
+          &.lnk {
+            cursor: pointer;
+          }
 
-        & > span {
-          font-size: 100px;
-          font-family: 'namsan';
-          font-weight: bold;
-        }
+          & > span {
+            font-size: 100px;
+            font-family: 'namsan';
+            font-weight: bold;
+          }
        }
       }
     }
   `
-  const BlackStation = styled.div`
+  const BlankStation = styled.div`
     height: 200px;
   `
   function nearStations(before: boolean) {
     return station.codes.map((v, i) => {
       const line = station.lines[i]
-      const nowStationCode = stationCodes[line].filter(c => c[1] === v)[0]
+      const nowStationCode = stationCodes[line].find(c => c[1] === v)
+      if (!nowStationCode)
+        return <BlankStation /> 
       const bsc = nowStationCode[0] // beforeStationCodes
       const asc = nowStationCode[2] // afterStationCodes
       return (
@@ -116,15 +125,20 @@ const StationCard = ({ station }: { station: ICombinedStation }) => {
               {
                 try {
                   const stationCode = nowStationCode[before ? 0 : 2][idx]
+                  const name_ko = stations.find(v => v.codes.includes(stationCode))!!.name_ko
                   return (
-                    <div>
+                    <div className='lnk' onClick={() => navigate(`/station/${name_ko}`)}>
                       <StationCircle line={line} stationCode={stationCode} />
-                      <span>{stations.filter(v => v.codes.includes(stationCode))[0].name_ko}</span>
+                      {/* 일부러 !!씀... 오류내서 Black채우게 */}
+                      <span style={{
+                        fontFamily: name_ko.length < 7 ? 'namsan' : 'namsanc',
+                        fontSize: name_ko.length < 8 ? 100 : 90
+                      }}>{name_ko}</span>
                     </div>
                   )
                 }
                 catch (e) {
-                  return <BlackStation /> 
+                  return <BlankStation /> 
                 }
               }
             )

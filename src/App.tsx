@@ -9,8 +9,8 @@ function App() {
     <div className="App">
 			<BrowserRouter>
 				<Routes>
-					<Route path="/station/*" element={<Station />}></Route>
-					<Route path="/route/*/*" element={<PRoute />}></Route>
+					<Route path="/station/:name_ko" element={<Station />}></Route>
+					<Route path="/route/start/end" element={<PRoute />}></Route>
 					{/* 상단에 위치하는 라우트들의 규칙을 모두 확인, 일치하는 라우트가 없는경우 처리 */}
 					{/* <Route path="*" element={<NotFound />}></Route> */}
 				</Routes>
