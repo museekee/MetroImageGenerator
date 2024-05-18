@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "korail";
+  font-weight: normal;
+  src: url('./assets/fonts/korail.ttf') format("truetype");
+}
+@font-face {
+  font-family: "korailc";
+  font-weight: normal;
+  src: url('./assets/fonts/korailc.ttf') format("truetype");
+}
+@font-face {
+  font-family: "namsan";
+  font-weight: bold;
+  src: url('./assets/fonts/namsanEB.ttf') format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: 'korail';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

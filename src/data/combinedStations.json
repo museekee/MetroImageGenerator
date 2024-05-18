@@ -1,0 +1,9331 @@
+[
+  {
+    "name_ko": "석계",
+    "name_en": "Seokgye",
+    "name_jp": "ソッケ",
+    "name_cn": "石溪",
+    "position": [2754, 904],
+    "type": "normal_transfer",
+    "label_direction": "tl",
+    "lines": [
+      "1호선",
+      "6호선"
+    ],
+    "codes": [
+      "120",
+      "644"
+    ]
+  },
+  {
+    "name_ko": "서울역",
+    "name_en": "Seoul Station",
+    "name_jp": "ソウル",
+    "name_cn": "首尔",
+    "position": [1921, 1711],
+    "type": "h4_transfer",
+    "label_direction": "r",
+    "lines": [
+      "1호선",
+      "4호선",
+      "경의선",
+      "공항철도"
+    ],
+    "codes": [
+      "133",
+      "426",
+      "P313",
+      "A01"
+    ]
+  },
+  {
+    "name_ko": "영등포",
+    "name_en": "Yeongdeungpo",
+    "name_jp": "ヨンドゥンポ",
+    "name_cn": "永登浦",
+    "position": [1395.5, 2469],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "139"
+    ]
+  },
+  {
+    "name_ko": "온양온천",
+    "name_en": "Onyang oncheon",
+    "name_jp": "オニャンオンチョン",
+    "name_cn": "温阳温泉",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P176"
+    ]
+  },
+  {
+    "name_ko": "두정",
+    "name_en": "Dujeong",
+    "name_jp": "トゥジョン",
+    "name_cn": "斗井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P168"
+    ]
+  },
+  {
+    "name_ko": "진위",
+    "name_en": "Jinwi",
+    "name_jp": "チヌィ",
+    "name_cn": "振威",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P161"
+    ]
+  },
+  {
+    "name_ko": "대방",
+    "name_en": "Daebang",
+    "name_jp": "テバン",
+    "name_cn": "大方",
+    "position": [1667, 2387],
+    "type": "normal_transfer",
+    "label_direction": "br",
+    "lines": [
+      "1호선",
+      "신림선"
+    ],
+    "codes": [
+      "137",
+      "S402"
+    ]
+  },
+  {
+    "name_ko": "덕계",
+    "name_en": "Deokgye",
+    "name_jp": "トッケ",
+    "name_cn": "德溪",
+    "position": [3212, 166],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "106"
+    ]
+  },
+  {
+    "name_ko": "주안",
+    "name_en": "Juan",
+    "name_jp": "チュアン",
+    "name_cn": "朱安",
+    "position": [350, 2776],
+    "type": "normal_transfer",
+    "label_direction": "r",
+    "lines": [
+      "1호선",
+      "인천2호선"
+    ],
+    "codes": [
+      "156",
+      "I218"
+    ]
+  },
+  {
+    "name_ko": "서동탄",
+    "name_en": "Seodongtan",
+    "name_jp": "ソドンタン",
+    "name_cn": "西东滩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P157-1"
+    ]
+  },
+  {
+    "name_ko": "오산",
+    "name_en": "Osan",
+    "name_jp": "オサン",
+    "name_cn": "乌山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P160"
+    ]
+  },
+  {
+    "name_ko": "세류",
+    "name_en": "Seryu",
+    "name_jp": "セリュ",
+    "name_cn": "细柳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P156"
+    ]
+  },
+  {
+    "name_ko": "병점",
+    "name_en": "Byeongjeom",
+    "name_jp": "ピョンチョム",
+    "name_cn": "饼店",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P157"
+    ]
+  },
+  {
+    "name_ko": "오산대",
+    "name_en": "Osan College",
+    "name_jp": "オサンデ",
+    "name_cn": "乌山大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P159"
+    ]
+  },
+  {
+    "name_ko": "광명",
+    "name_en": "Gwangmyeong",
+    "name_jp": "クァンミョン",
+    "name_cn": "光明",
+    "position": [1128.5, 2860.5],
+    "label_direction": "l",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P144-1"
+    ]
+  },
+  {
+    "name_ko": "탕정",
+    "name_en": "Tangjeong",
+    "name_jp": "タンジョン",
+    "name_cn": "汤井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P173"
+    ]
+  },
+  {
+    "name_ko": "신도림",
+    "name_en": "Sindorim",
+    "name_jp": "シンドリム",
+    "name_cn": "新道林",
+    "position": [1301, 2549],
+    "type": "v2_transfer",
+    "label_direction": "r",
+    "gap": [10, 0],
+    "lines": [
+      "1호선",
+      "2호선"
+    ],
+    "codes": [
+      "140",
+      "234"
+    ]
+  },
+  {
+    "name_ko": "연천",
+    "name_en": "Yeoncheon",
+    "name_jp": "ヨンチョン",
+    "name_cn": "涟川",
+    "position": [3762, 101],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "100-3"
+    ]
+  },
+  {
+    "name_ko": "동암",
+    "name_en": "Dongam",
+    "name_jp": "トンアム",
+    "name_cn": "铜岩",
+    "position": [350, 2652],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "154"
+    ]
+  },
+  {
+    "name_ko": "금정",
+    "name_en": "Geumjeong",
+    "name_jp": "クムジョン",
+    "name_cn": "衿井",
+    "position": [1493.5, 3227],
+    "type": "normal_transfer",
+    "label_direction": "tr",
+    "lines": [
+      "1호선",
+      "4호선"
+    ],
+    "codes": [
+      "P149",
+      "443"
+    ]
+  },
+  {
+    "name_ko": "청산",
+    "name_en": "Cheongsan",
+    "name_jp": "チョンサン",
+    "name_cn": "青山",
+    "position": [3633, 101],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "100-1"
+    ]
+  },
+  {
+    "name_ko": "가능",
+    "name_en": "Ganeung",
+    "name_jp": "カヌン",
+    "name_cn": "佳陵",
+    "position": [3117, 261],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "109"
+    ]
+  },
+  {
+    "name_ko": "도봉",
+    "name_en": "Dobong",
+    "name_jp": "トボン",
+    "name_cn": "道峰",
+    "position": [2834, 544],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "114"
+    ]
+  },
+  {
+    "name_ko": "안양",
+    "name_en": "Anyang",
+    "name_jp": "アニヤン",
+    "name_cn": "安养",
+    "position": [1365, 3097.5],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P147"
+    ]
+  },
+  {
+    "name_ko": "개봉",
+    "name_en": "Gaebong",
+    "name_jp": "ケボン",
+    "name_cn": "开峰",
+    "position": [1096, 2561],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "143"
+    ]
+  },
+  {
+    "name_ko": "덕정",
+    "name_en": "Deokjeong",
+    "name_jp": "トクチョン",
+    "name_cn": "德亭",
+    "position": [3244, 134],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "105"
+    ]
+  },
+  {
+    "name_ko": "전곡",
+    "name_en": "Jeongok",
+    "name_jp": "チョンゴク",
+    "name_cn": "全谷",
+    "position": [3698, 101],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "100-2"
+    ]
+  },
+  {
+    "name_ko": "소요산",
+    "name_en": "Soyosan",
+    "name_jp": "ソヨサン",
+    "name_cn": "逍遥山",
+    "position": [3567, 101],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "100"
+    ]
+  },
+  {
+    "map_name": "동두천\n중앙",
+    "name_ko": "동두천중앙",
+    "name_en": "Dongducheon  jungang",
+    "name_jp": "トンドゥチョン・チュンアン",
+    "name_cn": "东豆川中央",
+    "position": [3371, 101],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "103"
+    ]
+  },
+  {
+    "name_ko": "보산",
+    "name_en": "Bosan",
+    "name_jp": "ポサン",
+    "name_cn": "保山",
+    "position": [3436.5, 101],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "102"
+    ]
+  },
+  {
+    "name_ko": "간석",
+    "name_en": "Ganseok",
+    "name_jp": "カンソク",
+    "name_cn": "间石",
+    "position": [350, 2700],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "155"
+    ]
+  },
+  {
+    "name_ko": "소사",
+    "name_en": "Sosa",
+    "name_jp": "ソサ",
+    "name_cn": "素砂",
+    "position": [857.5, 2561],
+    "type": "normal_transfer",
+    "label_direction": "bl",
+    "lines": [
+      "1호선",
+      "서해선"
+    ],
+    "codes": [
+      "147",
+      "S16"
+    ]
+  },
+  {
+    "name_ko": "인천",
+    "name_en": "Incheon",
+    "name_jp": "インチョン",
+    "name_cn": "仁川",
+    "position": [350, 3089],
+    "type": "normal_transfer",
+    "label_direction": "r",
+    "lines": [
+      "1호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "161",
+      "K272"
+    ]
+  },
+  {
+    "name_ko": "송내",
+    "name_en": "Songnae",
+    "name_jp": "ソンネ",
+    "name_cn": "松内",
+    "position": [581, 2561],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "150"
+    ]
+  },
+  {
+    "name_ko": "화서",
+    "name_en": "Hwaseo",
+    "name_jp": "ファソ",
+    "name_cn": "华西",
+    "position": [1796.5, 3529],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P154"
+    ]
+  },
+  {
+    "name_ko": "군포",
+    "name_en": "Gunpo",
+    "name_jp": "クンポ",
+    "name_cn": "军浦",
+    "position": [1591.5, 3324],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P150"
+    ]
+  },
+  {
+    "name_ko": "회기",
+    "name_en": "Hoegi",
+    "name_jp": "フェギ",
+    "name_cn": "回基",
+    "position": [2769, 1090],
+    "type": "45_3_transfer",
+    "label_direction": "br",
+    "lines": [
+      "1호선",
+      "경의선",
+      "경춘선"
+    ],
+    "codes": [
+      "123",
+      "K118",
+      "P118"
+    ]
+  },
+  {
+    "name_ko": "청량리",
+    "name_en": "Cheongnyangni",
+    "name_jp": "チョンニャンニ",
+    "name_cn": "清凉里",
+    "position": [2692, 1181],
+    "type": "45_4_transfer",
+    "label_direction": "br",
+    "lines": [
+      "1호선",
+      "경의선",
+      "경춘선",
+      "수인분당선"
+    ],
+    "codes": [
+      "124",
+      "K117",
+      "P117",
+      "K209"
+    ]
+  },
+  {
+    "name_ko": "지행",
+    "name_en": "Jihaeng",
+    "name_jp": "チヘン",
+    "name_cn": "纸杏",
+    "position": [3306, 101],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "104"
+    ]
+  },
+  {
+    "name_ko": "명학",
+    "name_en": "Myeonghak",
+    "name_jp": "ミョンハク",
+    "name_cn": "鸣鹤",
+    "position": [1425.5, 3158],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P148"
+    ]
+  },
+  {
+    "name_ko": "제기동",
+    "name_en": "Jegi-dong",
+    "name_jp": "チェギドン",
+    "name_cn": "祭基洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "125"
+    ]
+  },
+  {
+    "name_ko": "신설동",
+    "name_en": "Sinseol-dong",
+    "name_jp": "シンソルトン",
+    "name_cn": "新设洞",
+    "position": [2464, 1157],
+    "type": "v3_transfer",
+    "label_direction": "tr",
+    "lines": [
+      "1호선",
+      "2호선",
+      "우이신설경전철"
+    ],
+    "codes": [
+      "126",
+      "211-4",
+      "953"
+    ]
+  },
+  {
+    "name_ko": "독산",
+    "name_en": "Doksan",
+    "name_jp": "トッサン",
+    "name_cn": "秃山",
+    "position": [1212, 2784],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P143"
+    ]
+  },
+  {
+    "name_ko": "양주",
+    "name_en": "Yangju",
+    "name_jp": "ヤンジュ",
+    "name_cn": "杨州",
+    "position": [3181, 197],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "107"
+    ]
+  },
+  {
+    "name_ko": "녹양",
+    "name_en": "Nogyang",
+    "name_jp": "ノギャン",
+    "name_cn": "绿杨",
+    "position": [3149, 229],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "108"
+    ]
+  },
+  {
+    "name_ko": "동묘앞",
+    "name_en": "Dongmyo",
+    "name_jp": "トンミョアプ",
+    "name_cn": "东庙",
+    "position": [2328, 1157],
+    "type": "normal_transfer",
+    "label_direction": "tl",
+    "lines": [
+      "1호선",
+      "6호선"
+    ],
+    "codes": [
+      "127",
+      "636"
+    ]
+  },
+  {
+    "name_ko": "남영",
+    "name_en": "Namyeong",
+    "name_jp": "ナミョン",
+    "name_cn": "南营",
+    "position": [1905, 1887.5],
+    "label_direction": "tl",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "134"
+    ]
+  },
+  {
+    "name_ko": "의정부",
+    "name_en": "Uijeongbu",
+    "name_jp": "ウィジョンブ",
+    "name_cn": "议政府",
+    "position": [3045, 333],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "110"
+    ]
+  },
+  {
+    "name_ko": "회룡",
+    "name_en": "Hoeryong",
+    "name_jp": "フェリョン",
+    "name_cn": "回龙",
+    "position": [2987.5, 390.5],
+    "type": "normal_transfer",
+    "label_direction": "r",
+    "lines": [
+      "1호선",
+      "의정부경전철"
+    ],
+    "codes": [
+      "111",
+      "U111"
+    ]
+  },
+  {
+    "name_ko": "구로",
+    "name_en": "Guro",
+    "name_jp": "クロ",
+    "name_cn": "九老",
+    "position": [1212, 2561],
+    "type": "normal_transfer",
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "141"
+    ]
+  },
+  {
+    "name_ko": "평택",
+    "name_en": "Pyeongtaek",
+    "name_jp": "ピョンテク",
+    "name_cn": "平泽",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P165"
+    ]
+  },
+  {
+    "name_ko": "성환",
+    "name_en": "Seonghwan",
+    "name_jp": "ソンファン",
+    "name_cn": "成欢",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P166"
+    ]
+  },
+  {
+    "name_ko": "창동",
+    "name_en": "Chang-dong",
+    "name_jp": "チャンドン",
+    "name_cn": "仓洞",
+    "position": [2754, 641],
+    "type": "normal_transfer",
+    "label_direction": "tl",
+    "lines": [
+      "1호선",
+      "4호선"
+    ],
+    "codes": [
+      "116",
+      "412"
+    ]
+  },
+  {
+    "name_ko": "망월사",
+    "name_en": "Mangwolsa",
+    "name_jp": "マンウォルサ",
+    "name_cn": "望月寺",
+    "position": [2936, 442],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "112"
+    ]
+  },
+  {
+    "name_ko": "도봉산",
+    "name_en": "Dobongsan",
+    "name_jp": "トボンサン",
+    "name_cn": "道峰山",
+    "position": [2886, 492],
+    "type": "normal_transfer",
+    "label_direction": "tl",
+    "lines": [
+      "1호선",
+      "7호선"
+    ],
+    "codes": [
+      "113",
+      "710"
+    ]
+  },
+  {
+    "name_ko": "온수",
+    "name_en": "Onsu",
+    "name_jp": "オンス",
+    "name_cn": "温水",
+    "position": [971, 2561],
+    "type": "normal_transfer",
+    "label_direction": "tr",
+    "lines": [
+      "1호선",
+      "7호선"
+    ],
+    "codes": [
+      "145",
+      "750"
+    ]
+  },
+  {
+    "name_ko": "신창",
+    "name_en": "Sinchang",
+    "name_jp": "シンチャン",
+    "name_cn": "新昌",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P177"
+    ]
+  },
+  {
+    "name_ko": "동대문",
+    "name_en": "Dongdaemun",
+    "name_jp": "トンデムン",
+    "name_cn": "东大门",
+    "position": [2140, 1157],
+    "type": "normal_transfer",
+    "label_direction": "tl",
+    "lines": [
+      "1호선",
+      "4호선"
+    ],
+    "codes": [
+      "128",
+      "421"
+    ]
+  },
+  {
+    "name_ko": "신이문",
+    "name_en": "Sinimun",
+    "name_jp": "シニムン",
+    "name_cn": "新里门",
+    "position": [2754, 959],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "121"
+    ]
+  },
+  {
+    "name_ko": "종로5가",
+    "name_en": "Jongno 5(o)-ga",
+    "name_jp": "チョンノオガ",
+    "name_cn": "钟路五街",
+    "position": [1988, 1157],
+    "label_direction": "t",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "129"
+    ]
+  },
+  {
+    "map_name": "가산\n디지털단지",
+    "map_name_align": "left",
+    "name_ko": "가산디지털단지",
+    "name_en": "Gasan Digital Complex",
+    "name_jp": "カサン・デジタルダンジ",
+    "name_cn": "加山数码园区",
+    "position": [1212, 2666],
+    "type": "normal_transfer",
+    "label_direction": "br",
+    "lines": [
+      "1호선",
+      "7호선"
+    ],
+    "codes": [
+      "P142",
+      "746"
+    ]
+  },
+  {
+    "name_ko": "금천구청",
+    "name_en": "Geumcheon-Gu Office",
+    "name_jp": "クムチョングチョン",
+    "name_cn": "衿川区厅",
+    "position": [1212, 2860],
+    "type": "normal_transfer",
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P144"
+    ]
+  },
+  {
+    "name_ko": "석수",
+    "name_en": "Seoksu",
+    "name_jp": "ソッス",
+    "name_cn": "石水",
+    "position": [1245, 2977.5],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P145"
+    ]
+  },
+  {
+    "name_ko": "성균관대",
+    "name_en": "Sungkyunkwan  Univ.",
+    "name_jp": "ソンギュングァンデ",
+    "name_cn": "成均馆大学",
+    "position": [1745, 3477.5],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P153"
+    ]
+  },
+  {
+    "name_ko": "수원",
+    "name_en": "Suwon",
+    "name_jp": "スウォン",
+    "name_cn": "水原",
+    "position": [1848, 3586],
+    "type": "normal_transfer",
+    "label_direction": "tr",
+    "lines": [
+      "1호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "P155",
+      "K245"
+    ]
+  },
+  {
+    "name_ko": "평택지제",
+    "name_en": "PyeongtaekJije",
+    "name_jp": "ピョンテクチジェ",
+    "name_cn": "平泽芝制",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P164"
+    ]
+  },
+  {
+    "name_ko": "종로3가",
+    "name_en": "Jongno 3(sam)-ga",
+    "name_jp": "チョンノサムガ",
+    "name_cn": "钟路三街",
+    "position": [1833, 1166.5],
+    "type": "v2_transfer",
+    "label_direction": "tl",
+    "lines": [
+      "1호선",
+      "3호선",
+      "5호선"
+    ],
+    "codes": [
+      "130",
+      "329",
+      "534"
+    ]
+  },
+  {
+    "name_ko": "부개",
+    "name_en": "Bugae",
+    "name_jp": "プゲ",
+    "name_cn": "富开",
+    "position": [489, 2561],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "151"
+    ]
+  },
+  {
+    "name_ko": "오류동",
+    "name_en": "Oryu-dong",
+    "name_jp": "オリュドン",
+    "name_cn": "梧柳洞",
+    "position": [1042, 2561],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "144"
+    ]
+  },
+  {
+    "name_ko": "직산",
+    "name_en": "Jiksan",
+    "name_jp": "チッサン",
+    "name_cn": "稷山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P167"
+    ]
+  },
+  {
+    "name_ko": "관악",
+    "name_en": "Gwanak",
+    "name_jp": "クァナク",
+    "name_cn": "冠岳",
+    "position": [1306, 3038.5],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P146"
+    ]
+  },
+  {
+    "name_ko": "천안",
+    "name_en": "Cheonan",
+    "name_jp": "チョナン",
+    "name_cn": "天安",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P169"
+    ]
+  },
+  {
+    "name_ko": "세마",
+    "name_en": "Sema",
+    "name_jp": "セマ",
+    "name_cn": "洗马",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P158"
+    ]
+  },
+  {
+    "name_ko": "구일",
+    "name_en": "Guil",
+    "name_jp": "クイル",
+    "name_cn": "九一",
+    "position": [1153, 2561],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "142"
+    ]
+  },
+  {
+    "name_ko": "서정리",
+    "name_en": "Seojeong-ri",
+    "name_jp": "ソジョンニ",
+    "name_cn": "西井里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P163"
+    ]
+  },
+  {
+    "name_ko": "의왕",
+    "name_en": "Uiwang",
+    "name_jp": "ウィワン",
+    "name_cn": "儀王",
+    "position": [1694, 3426.5],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P152"
+    ]
+  },
+  {
+    "name_ko": "녹천",
+    "name_en": "Nokcheon",
+    "name_jp": "ノクチョン",
+    "name_cn": "鹿川",
+    "position": [2754, 699],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "117"
+    ]
+  },
+  {
+    "name_ko": "도화",
+    "name_en": "Dohwa",
+    "name_jp": "トファ",
+    "name_cn": "道禾",
+    "position": [350, 2867],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "157"
+    ]
+  },
+  {
+    "name_ko": "중동",
+    "name_en": "Jung-dong",
+    "name_jp": "チュンドン",
+    "name_cn": "中洞",
+    "position": [669, 2561],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "149"
+    ]
+  },
+  {
+    "name_ko": "봉명",
+    "name_en": "Bongmyeong",
+    "name_jp": "ポンミョン",
+    "name_cn": "凤鸣",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P170"
+    ]
+  },
+  {
+    "name_ko": "아산",
+    "name_en": "Asan",
+    "name_jp": "アサン",
+    "name_cn": "牙山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P172"
+    ]
+  },
+  {
+    "name_ko": "방학",
+    "name_en": "Banghak",
+    "name_jp": "パンハク",
+    "name_cn": "放鹤",
+    "position": [2795, 583],
+    "label_direction": "br",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "115"
+    ]
+  },
+  {
+    "name_ko": "종각",
+    "name_en": "Jonggak",
+    "name_jp": "チョンガク",
+    "name_cn": "钟阁",
+    "position": [1642, 1242],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "131"
+    ]
+  },
+  {
+    "name_ko": "시청",
+    "name_en": "City Hall",
+    "name_jp": "シチョン",
+    "name_cn": "市厅",
+    "position": [1642, 1350.5],
+    "type": "normal_transfer",
+    "label_direction": "tr",
+    "gap": [0, -20],
+    "lines": [
+      "1호선",
+      "2호선"
+    ],
+    "codes": [
+      "132",
+      "201"
+    ]
+  },
+  {
+    "name_ko": "용산",
+    "name_en": "Yongsan",
+    "name_jp": "ヨンサン",
+    "name_cn": "龙山",
+    "position": [1799, 2081],
+    "type": "normal_transfer",
+    "label_direction": "br",
+    "lines": [
+      "1호선",
+      "경의선"
+    ],
+    "codes": [
+      "135",
+      "K110"
+    ]
+  },
+  {
+    "name_ko": "노량진",
+    "name_en": "Noryangjin",
+    "name_jp": "ノリャンジン",
+    "name_cn": "鹭梁津",
+    "position": [1799, 2271.5],
+    "type": "normal_transfer",
+    "label_direction": "br",
+    "lines": [
+      "1호선",
+      "9호선"
+    ],
+    "codes": [
+      "136",
+      "917"
+    ]
+  },
+  {
+    "name_ko": "도원",
+    "name_en": "Dowon",
+    "name_jp": "トウォン",
+    "name_cn": "桃源",
+    "position": [350, 2965],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "159"
+    ]
+  },
+  {
+    "name_ko": "동인천",
+    "name_en": "Dongincheon",
+    "name_jp": "トンインチョン",
+    "name_cn": "东仁川",
+    "position": [350, 3014],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "160"
+    ]
+  },
+  {
+    "name_ko": "외대앞",
+    "name_en": "Hankuk Univ. of Foreign Studies",
+    "name_jp": "ウェデアプ",
+    "name_cn": "韩国外国语大学",
+    "position": [2754, 1019],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "122"
+    ]
+  },
+  {
+    "name_ko": "광운대",
+    "name_en": "Kwangwoon Univ.",
+    "name_jp": "光云大",
+    "name_cn": "光云大",
+    "position": [2754, 817],
+    "type": "normal_transfer",
+    "label_direction": "l",
+    "lines": [
+      "1호선",
+      "경춘선"
+    ],
+    "codes": [
+      "119",
+      "P116"
+    ]
+  },
+  {
+    "name_ko": "제물포",
+    "name_en": "Jemulpo",
+    "name_jp": "チェムルポ",
+    "name_cn": "济物浦",
+    "position": [350, 2916],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "158"
+    ]
+  },
+  {
+    "name_ko": "월계",
+    "name_en": "Wolgye",
+    "name_jp": "ウォルゲ",
+    "name_cn": "月溪",
+    "position": [2754, 756],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "118"
+    ]
+  },
+  {
+    "name_ko": "신길",
+    "name_en": "Singil",
+    "name_jp": "シンギル",
+    "name_cn": "新吉",
+    "position": [1495, 2377],
+    "type": "v2_transfer",
+    "label_direction": "b",
+    "lines": [
+      "1호선",
+      "5호선"
+    ],
+    "codes": [
+      "138",
+      "525"
+    ]
+  },
+  {
+    "name_ko": "백운",
+    "name_en": "Baegun",
+    "name_jp": "ペグン",
+    "name_cn": "白云",
+    "position": [350, 2603],
+    "label_direction": "r",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "153"
+    ]
+  },
+  {
+    "name_ko": "부평",
+    "name_en": "Bupyeong",
+    "name_jp": "プピョン",
+    "name_cn": "富平",
+    "position": [407, 2561],
+    "type": "normal_transfer",
+    "label_direction": "t",
+    "lines": [
+      "1호선",
+      "인천1호선"
+    ],
+    "codes": [
+      "152",
+      "I120"
+    ]
+  },
+  {
+    "name_ko": "부천",
+    "name_en": "Bucheon",
+    "name_jp": "プチョン",
+    "name_cn": "富川",
+    "position": [759, 2561],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "148"
+    ]
+  },
+  {
+    "name_ko": "역곡",
+    "name_en": "Yeokgok",
+    "name_jp": "ヨッコク",
+    "name_cn": "驿谷",
+    "position": [913, 2561],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "146"
+    ]
+  },
+  {
+    "name_ko": "배방",
+    "name_en": "Baebang",
+    "name_jp": "ペバン",
+    "name_cn": "排芳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P174"
+    ]
+  },
+  {
+    "name_ko": "당정",
+    "name_en": "Dangjeong",
+    "name_jp": "タンジョン",
+    "name_cn": "堂井",
+    "position": [1643, 3375.5],
+    "label_direction": "tr",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P151"
+    ]
+  },
+  {
+    "name_ko": "동두천",
+    "name_en": "Dongducheon",
+    "name_jp": "トンドゥチョン",
+    "name_cn": "东豆川",
+    "position": [3502, 101],
+    "label_direction": "b",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "101"
+    ]
+  },
+  {
+    "name_ko": "쌍용",
+    "name_en": "Ssangyong",
+    "name_jp": "サンヨン",
+    "name_cn": "双龙",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P171"
+    ]
+  },
+  {
+    "name_ko": "송탄",
+    "name_en": "Songtan",
+    "name_jp": "ソンタン",
+    "name_cn": "松炭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "1호선"
+    ],
+    "codes": [
+      "P162"
+    ]
+  },
+  {
+    "name_ko": "대림",
+    "name_en": "Daerim",
+    "name_jp": "テリム",
+    "name_cn": "大林(九老区厅)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "7호선"
+    ],
+    "codes": [
+      "233",
+      "744"
+    ]
+  },
+  {
+    "name_ko": "신촌",
+    "name_en": "Sinchon",
+    "name_jp": "シンチョン(新村)",
+    "name_cn": "新村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "경의선"
+    ],
+    "codes": [
+      "240",
+      "P312"
+    ]
+  },
+  {
+    "name_ko": "이대",
+    "name_en": "Ewha Womans Univ.",
+    "name_jp": "イデ",
+    "name_cn": "梨花女子大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "241"
+    ]
+  },
+  {
+    "name_ko": "까치산",
+    "name_en": "Kkachisan",
+    "name_jp": "カチサン",
+    "name_cn": "喜鹊山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "5호선"
+    ],
+    "codes": [
+      "234-4",
+      "518"
+    ]
+  },
+  {
+    "name_ko": "충정로",
+    "name_en": "Chungjeongno",
+    "name_jp": "チュンジョンノ",
+    "name_cn": "忠正路(京畿大学)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "5호선"
+    ],
+    "codes": [
+      "243",
+      "531"
+    ]
+  },
+  {
+    "name_ko": "동대문역사문화공원",
+    "name_en": "Dongdaemun History  Culture Park",
+    "name_jp": "トンデムンヨクサムンファゴンウォン(DDP)",
+    "name_cn": "东大门历史文化公园(DDP)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "4호선",
+      "5호선"
+    ],
+    "codes": [
+      "205",
+      "422",
+      "536"
+    ]
+  },
+  {
+    "name_ko": "문래",
+    "name_en": "Mullae",
+    "name_jp": "ムンレ",
+    "name_cn": "文來",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "235"
+    ]
+  },
+  {
+    "name_ko": "신당",
+    "name_en": "Sindang",
+    "name_jp": "シンダン",
+    "name_cn": "新堂",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "6호선"
+    ],
+    "codes": [
+      "206",
+      "635"
+    ]
+  },
+  {
+    "name_ko": "상왕십리",
+    "name_en": "Sangwangsimni",
+    "name_jp": "サンワンシムニ",
+    "name_cn": "上往十里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "207"
+    ]
+  },
+  {
+    "name_ko": "한양대",
+    "name_en": "Hanyang Univ.",
+    "name_jp": "ハニャンデ",
+    "name_cn": "汉阳大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "209"
+    ]
+  },
+  {
+    "name_ko": "강변",
+    "name_en": "Gangbyeon",
+    "name_jp": "カンビョン",
+    "name_cn": "江边(东首尔客运站)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "214"
+    ]
+  },
+  {
+    "name_ko": "잠실나루",
+    "name_en": "Jamsillaru",
+    "name_jp": "チャムシルナル",
+    "name_cn": "蚕室渡口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "215"
+    ]
+  },
+  {
+    "name_ko": "봉천",
+    "name_en": "Bongcheon",
+    "name_jp": "ポンチョン",
+    "name_cn": "奉天",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "229"
+    ]
+  },
+  {
+    "name_ko": "을지로3가",
+    "name_en": "Euljiro 3(sam)-ga",
+    "name_jp": "ウルチロサムガ",
+    "name_cn": "乙支路三街",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "3호선"
+    ],
+    "codes": [
+      "203",
+      "330"
+    ]
+  },
+  {
+    "name_ko": "성수",
+    "name_en": "Seongsu",
+    "name_jp": "ソンス",
+    "name_cn": "圣水",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "211"
+    ]
+  },
+  {
+    "name_ko": "잠실",
+    "name_en": "Jamsil",
+    "name_jp": "チャムシル",
+    "name_cn": "蚕室(松坡区厅)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "8호선"
+    ],
+    "codes": [
+      "216",
+      "814"
+    ]
+  },
+  {
+    "name_ko": "선릉",
+    "name_en": "Seolleung",
+    "name_jp": "ソンルン",
+    "name_cn": "宣陵",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "220",
+      "K215"
+    ]
+  },
+  {
+    "name_ko": "아현",
+    "name_en": "Ahyeon",
+    "name_jp": "アヒョン",
+    "name_cn": "阿岘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "242"
+    ]
+  },
+  {
+    "name_ko": "잠실새내",
+    "name_en": "Jamsilsaenae",
+    "name_jp": "チャムシルセネ",
+    "name_cn": "蚕室新川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "217"
+    ]
+  },
+  {
+    "name_ko": "역삼",
+    "name_en": "Yeoksam",
+    "name_jp": "ヨッサム",
+    "name_cn": "驿三",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "221"
+    ]
+  },
+  {
+    "name_ko": "용두",
+    "name_en": "Yongdu",
+    "name_jp": "ヨンドゥ",
+    "name_cn": "龙头(东大门区厅)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "211-3"
+    ]
+  },
+  {
+    "name_ko": "강남",
+    "name_en": "Gangnam",
+    "name_jp": "カンナム",
+    "name_cn": "江南",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "신분당선"
+    ],
+    "codes": [
+      "222",
+      "D7"
+    ]
+  },
+  {
+    "name_ko": "교대",
+    "name_en": "Seoul Nat`l Univ. of Education",
+    "name_jp": "キョデ",
+    "name_cn": "首尔教育大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "3호선"
+    ],
+    "codes": [
+      "223",
+      "340"
+    ]
+  },
+  {
+    "name_ko": "서초",
+    "name_en": "Seocho",
+    "name_jp": "ソチョ",
+    "name_cn": "瑞草",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "224"
+    ]
+  },
+  {
+    "name_ko": "방배",
+    "name_en": "Bangbae",
+    "name_jp": "パンベ",
+    "name_cn": "方背",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "225"
+    ]
+  },
+  {
+    "name_ko": "건대입구",
+    "name_en": "Konkuk Univ.",
+    "name_jp": "コンデイック",
+    "name_cn": "建国大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "7호선"
+    ],
+    "codes": [
+      "212",
+      "727"
+    ]
+  },
+  {
+    "name_ko": "신림",
+    "name_en": "Sillim",
+    "name_jp": "シンリム",
+    "name_cn": "新林",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "신림선"
+    ],
+    "codes": [
+      "230",
+      "S408"
+    ]
+  },
+  {
+    "name_ko": "낙성대",
+    "name_en": "Nakseongdae",
+    "name_jp": "ナクソンデ",
+    "name_cn": "落星垈",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "227"
+    ]
+  },
+  {
+    "name_ko": "서울대입구",
+    "name_en": "Seoul Nat`l Univ.",
+    "name_jp": "ソウルデイック",
+    "name_cn": "首尔大学(冠岳区厅)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "228"
+    ]
+  },
+  {
+    "name_ko": "삼성",
+    "name_en": "Samseong",
+    "name_jp": "サムソン(三成)",
+    "name_cn": "三成(会展中心)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "219"
+    ]
+  },
+  {
+    "name_ko": "구의",
+    "name_en": "Guui",
+    "name_jp": "クイ",
+    "name_cn": "九宜",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "213"
+    ]
+  },
+  {
+    "name_ko": "왕십리",
+    "name_en": "Wangsimni",
+    "name_jp": "ワンシムニ",
+    "name_cn": "往十里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "5호선",
+      "경의선",
+      "수인분당선"
+    ],
+    "codes": [
+      "208",
+      "540",
+      "K116",
+      "K210"
+    ]
+  },
+  {
+    "name_ko": "신대방",
+    "name_en": "Sindaebang",
+    "name_jp": "シンデバン",
+    "name_cn": "新大方",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "231"
+    ]
+  },
+  {
+    "name_ko": "당산",
+    "name_en": "Dangsan",
+    "name_jp": "タンサン",
+    "name_cn": "堂山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "9호선"
+    ],
+    "codes": [
+      "237",
+      "913"
+    ]
+  },
+  {
+    "name_ko": "신정네거리",
+    "name_en": "Sinjeongnegeori",
+    "name_jp": "シンジョンネゴリ",
+    "name_cn": "新亭十字路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "234-3"
+    ]
+  },
+  {
+    "name_ko": "영등포구청",
+    "name_en": "Yeongdeungpo-gu Office",
+    "name_jp": "ヨンドゥンポグチョン",
+    "name_cn": "永登浦区厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "5호선"
+    ],
+    "codes": [
+      "236",
+      "523"
+    ]
+  },
+  {
+    "name_ko": "종합운동장",
+    "name_en": "Sports Complex",
+    "name_jp": "チョンハブンドンジャン",
+    "name_cn": "综合运动场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "9호선"
+    ],
+    "codes": [
+      "218",
+      "930"
+    ]
+  },
+  {
+    "name_ko": "양천구청",
+    "name_en": "Yangcheon-gu Office",
+    "name_jp": "ヤンチョングチョン",
+    "name_cn": "阳川区厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "234-2"
+    ]
+  },
+  {
+    "name_ko": "을지로4가",
+    "name_en": "Euljiro 4(sa)-ga",
+    "name_jp": "ウルチロサガ",
+    "name_cn": "乙支路四街",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "5호선"
+    ],
+    "codes": [
+      "204",
+      "535"
+    ]
+  },
+  {
+    "name_ko": "뚝섬",
+    "name_en": "Ttukseom",
+    "name_jp": "トゥッソム",
+    "name_cn": "纛岛",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "210"
+    ]
+  },
+  {
+    "name_ko": "용답",
+    "name_en": "Yongdap",
+    "name_jp": "ヨンダプ",
+    "name_cn": "龙踏",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "211-1"
+    ]
+  },
+  {
+    "name_ko": "도림천",
+    "name_en": "Dorimcheon",
+    "name_jp": "トリムチョン",
+    "name_cn": "道林川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "234-1"
+    ]
+  },
+  {
+    "name_ko": "신답",
+    "name_en": "Sindap",
+    "name_jp": "シンダプ",
+    "name_cn": "新踏",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "211-2"
+    ]
+  },
+  {
+    "name_ko": "합정",
+    "name_en": "Hapjeong",
+    "name_jp": "ハプチョン",
+    "name_cn": "合井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "6호선"
+    ],
+    "codes": [
+      "238",
+      "622"
+    ]
+  },
+  {
+    "name_ko": "구로디지털단지",
+    "name_en": "Guro Digital Complex",
+    "name_jp": "クロ・デジタルダンジ",
+    "name_cn": "九老数码园区",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "232"
+    ]
+  },
+  {
+    "name_ko": "을지로입구",
+    "name_en": "Euljiro 1(il)-ga",
+    "name_jp": "ウルチロイック",
+    "name_cn": "乙支路入口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선"
+    ],
+    "codes": [
+      "202"
+    ]
+  },
+  {
+    "name_ko": "사당",
+    "name_en": "Sadang",
+    "name_jp": "サダン",
+    "name_cn": "舍堂",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "4호선"
+    ],
+    "codes": [
+      "226",
+      "433"
+    ]
+  },
+  {
+    "name_ko": "홍대입구",
+    "name_en": "Hongik Univ.",
+    "name_jp": "ホンデイック",
+    "name_cn": "弘益大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "2호선",
+      "경의선",
+      "공항철도"
+    ],
+    "codes": [
+      "239",
+      "K314",
+      "A03"
+    ]
+  },
+  {
+    "name_ko": "안국",
+    "name_en": "Anguk",
+    "name_jp": "アングク",
+    "name_cn": "安国",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "328"
+    ]
+  },
+  {
+    "name_ko": "대곡",
+    "name_en": "Daegok",
+    "name_jp": "大谷",
+    "name_cn": "大谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "경의선",
+      "서해선"
+    ],
+    "codes": [
+      "314",
+      "K322",
+      "S11"
+    ]
+  },
+  {
+    "name_ko": "남부터미널",
+    "name_en": "Nambu Bus Terminal",
+    "name_jp": "ナンブターミナル",
+    "name_cn": "南部客运站",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "341"
+    ]
+  },
+  {
+    "name_ko": "삼송",
+    "name_en": "Samsong",
+    "name_jp": "三松",
+    "name_cn": "三松",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "318"
+    ]
+  },
+  {
+    "name_ko": "지축",
+    "name_en": "Jichuk",
+    "name_jp": "チチュク",
+    "name_cn": "纸杻",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "319"
+    ]
+  },
+  {
+    "name_ko": "구파발",
+    "name_en": "Gupabal",
+    "name_jp": "クパバル",
+    "name_cn": "旧把拨",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "320"
+    ]
+  },
+  {
+    "name_ko": "연신내",
+    "name_en": "Yeonsinnae",
+    "name_jp": "ヨンシンネ",
+    "name_cn": "延新川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "6호선"
+    ],
+    "codes": [
+      "321",
+      "614"
+    ]
+  },
+  {
+    "name_ko": "불광",
+    "name_en": "Bulgwang",
+    "name_jp": "プルグァン",
+    "name_cn": "佛光",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "6호선"
+    ],
+    "codes": [
+      "322",
+      "612"
+    ]
+  },
+  {
+    "name_ko": "녹번",
+    "name_en": "Nokbeon",
+    "name_jp": "ノッポン",
+    "name_cn": "碌磻",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "323"
+    ]
+  },
+  {
+    "name_ko": "홍제",
+    "name_en": "Hongje",
+    "name_jp": "ホンジェ",
+    "name_cn": "弘济",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "324"
+    ]
+  },
+  {
+    "name_ko": "무악재",
+    "name_en": "Muakjae",
+    "name_jp": "ムアクチェ",
+    "name_cn": "毋岳岭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "325"
+    ]
+  },
+  {
+    "name_ko": "독립문",
+    "name_en": "Dongnimmun",
+    "name_jp": "トンニンムン",
+    "name_cn": "独立门",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "326"
+    ]
+  },
+  {
+    "name_ko": "경복궁",
+    "name_en": "Gyeongbokgung",
+    "name_jp": "キョンボックン",
+    "name_cn": "景福宫(政府首尔厅舍)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "327"
+    ]
+  },
+  {
+    "name_ko": "일원",
+    "name_en": "Irwon",
+    "name_jp": "イルォン",
+    "name_cn": "逸院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "348"
+    ]
+  },
+  {
+    "name_ko": "금호",
+    "name_en": "Geumho",
+    "name_jp": "クムホ",
+    "name_cn": "金湖",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "334"
+    ]
+  },
+  {
+    "name_ko": "옥수",
+    "name_en": "Oksu",
+    "name_jp": "オクス",
+    "name_cn": "玉水",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "경의선"
+    ],
+    "codes": [
+      "335",
+      "K114"
+    ]
+  },
+  {
+    "name_ko": "수서",
+    "name_en": "Suseo",
+    "name_jp": "スソ",
+    "name_cn": "水西",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "GTX-A",
+      "수인분당선"
+    ],
+    "codes": [
+      "349",
+      "X108",
+      "K221"
+    ]
+  },
+  {
+    "name_ko": "마두",
+    "name_en": "Madu",
+    "name_jp": "馬頭",
+    "name_cn": "馬頭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "312"
+    ]
+  },
+  {
+    "name_ko": "원흥",
+    "name_en": "Wonheung",
+    "name_jp": "ウォンフン",
+    "name_cn": "元興",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "317"
+    ]
+  },
+  {
+    "name_ko": "잠원",
+    "name_en": "Jamwon",
+    "name_jp": "チャムォン",
+    "name_cn": "蚕院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "338"
+    ]
+  },
+  {
+    "name_ko": "대청",
+    "name_en": "Daecheong",
+    "name_jp": "テチョン",
+    "name_cn": "大厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "347"
+    ]
+  },
+  {
+    "name_ko": "가락시장",
+    "name_en": "Garak Market",
+    "name_jp": "カラク・シジャン",
+    "name_cn": "可乐市场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "8호선"
+    ],
+    "codes": [
+      "350",
+      "817"
+    ]
+  },
+  {
+    "name_ko": "양재",
+    "name_en": "Yangjae",
+    "name_jp": "ヤンジェ",
+    "name_cn": "良才(瑞草区厅)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "신분당선"
+    ],
+    "codes": [
+      "342",
+      "D8"
+    ]
+  },
+  {
+    "name_ko": "압구정",
+    "name_en": "Apgujeong",
+    "name_jp": "アックジョン",
+    "name_cn": "狎鸥亭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "336"
+    ]
+  },
+  {
+    "name_ko": "백석",
+    "name_en": "Baekseok",
+    "name_jp": "白石",
+    "name_cn": "白石",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "313"
+    ]
+  },
+  {
+    "name_ko": "학여울",
+    "name_en": "Hangnyeoul",
+    "name_jp": "ハンニョウル",
+    "name_cn": "鹤滩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "346"
+    ]
+  },
+  {
+    "name_ko": "원당",
+    "name_en": "Wondang",
+    "name_jp": "元堂",
+    "name_cn": "元堂",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "316"
+    ]
+  },
+  {
+    "name_ko": "오금",
+    "name_en": "Ogeum",
+    "name_jp": "オグム",
+    "name_cn": "梧琴",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "5호선"
+    ],
+    "codes": [
+      "352",
+      "P552"
+    ]
+  },
+  {
+    "name_ko": "매봉",
+    "name_en": "Maebong",
+    "name_jp": "メボン",
+    "name_cn": "梅峰",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "343"
+    ]
+  },
+  {
+    "name_ko": "도곡",
+    "name_en": "Dogok",
+    "name_jp": "トゴク",
+    "name_cn": "道谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "344",
+      "K217"
+    ]
+  },
+  {
+    "name_ko": "대화",
+    "name_en": "Daehwa",
+    "name_jp": "大化",
+    "name_cn": "大化",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "309"
+    ]
+  },
+  {
+    "name_ko": "약수",
+    "name_en": "Yaksu",
+    "name_jp": "ヤクス",
+    "name_cn": "药水",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "6호선"
+    ],
+    "codes": [
+      "333",
+      "633"
+    ]
+  },
+  {
+    "name_ko": "동대입구",
+    "name_en": "Dongguk Univ.",
+    "name_jp": "トンデイック",
+    "name_cn": "东国大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "332"
+    ]
+  },
+  {
+    "name_ko": "주엽",
+    "name_en": "Juyeop",
+    "name_jp": "注葉",
+    "name_cn": "注葉",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "310"
+    ]
+  },
+  {
+    "name_ko": "고속터미널",
+    "name_en": "Express Bus Terminal",
+    "name_jp": "コソクターミナル",
+    "name_cn": "高速巴士客运站",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "7호선",
+      "9호선"
+    ],
+    "codes": [
+      "339",
+      "734",
+      "923"
+    ]
+  },
+  {
+    "name_ko": "대치",
+    "name_en": "Daechi",
+    "name_jp": "テチ",
+    "name_cn": "大峙",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "345"
+    ]
+  },
+  {
+    "name_ko": "충무로",
+    "name_en": "Chungmuro",
+    "name_jp": "チュンムロ",
+    "name_cn": "忠武路",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "4호선"
+    ],
+    "codes": [
+      "331",
+      "423"
+    ]
+  },
+  {
+    "name_ko": "화정",
+    "name_en": "Hwajeong",
+    "name_jp": "花井",
+    "name_cn": "花井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "315"
+    ]
+  },
+  {
+    "name_ko": "신사",
+    "name_en": "Sinsa",
+    "name_jp": "シンサ",
+    "name_cn": "新沙",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선",
+      "신분당선"
+    ],
+    "codes": [
+      "337",
+      "D4"
+    ]
+  },
+  {
+    "name_ko": "경찰병원",
+    "name_en": "National Police Hospital",
+    "name_jp": "キョンチャル・ピョンウォン",
+    "name_cn": "警察医院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "351"
+    ]
+  },
+  {
+    "name_ko": "정발산",
+    "name_en": "Jeongbalsan",
+    "name_jp": "鼎鉢山",
+    "name_cn": "鼎鉢山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "3호선"
+    ],
+    "codes": [
+      "311"
+    ]
+  },
+  {
+    "name_ko": "평촌",
+    "name_en": "Pyeongchon",
+    "name_jp": "ピョンチョン",
+    "name_cn": "坪村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "441"
+    ]
+  },
+  {
+    "name_ko": "한성대입구",
+    "name_en": "Hansung Univ.",
+    "name_jp": "ハンソンデイック",
+    "name_cn": "汉城大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "419"
+    ]
+  },
+  {
+    "name_ko": "명동",
+    "name_en": "Myeong-dong",
+    "name_jp": "ミョンドン",
+    "name_cn": "明洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "424"
+    ]
+  },
+  {
+    "name_ko": "회현",
+    "name_en": "Hoehyeon",
+    "name_jp": "フェヒョン",
+    "name_cn": "会贤(南大门市场)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "425"
+    ]
+  },
+  {
+    "name_ko": "수유",
+    "name_en": "Suyu",
+    "name_jp": "スユ",
+    "name_cn": "水逾(江北区厅)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "414"
+    ]
+  },
+  {
+    "name_ko": "한대앞",
+    "name_en": "Hanyang Univ. at Ansan",
+    "name_jp": "ハンデアプ",
+    "name_cn": "汉阳大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "449",
+      "K251"
+    ]
+  },
+  {
+    "name_ko": "정부과천청사",
+    "name_en": "Government Complex Gwacheon",
+    "name_jp": "チョンブ・クァチョンチョンサ",
+    "name_cn": "政府果川厅舍",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "439"
+    ]
+  },
+  {
+    "name_ko": "고잔",
+    "name_en": "Gojan",
+    "name_jp": "コジャン",
+    "name_cn": "古栈",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "451",
+      "K253"
+    ]
+  },
+  {
+    "name_ko": "노원",
+    "name_en": "Nowon",
+    "name_jp": "ノウォン",
+    "name_cn": "芦原",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "7호선"
+    ],
+    "codes": [
+      "411",
+      "713"
+    ]
+  },
+  {
+    "name_ko": "동작",
+    "name_en": "Dongjak",
+    "name_jp": "トンジャク",
+    "name_cn": "铜雀(显忠院)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "9호선"
+    ],
+    "codes": [
+      "431",
+      "920"
+    ]
+  },
+  {
+    "name_ko": "선바위",
+    "name_en": "Seonbawi",
+    "name_jp": "ソンバウィ",
+    "name_cn": "立岩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "435"
+    ]
+  },
+  {
+    "name_ko": "총신대입구(이수)",
+    "name_en": "Chongshin Univ.",
+    "name_jp": "チョンシンデイック",
+    "name_cn": "总神大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "7호선"
+    ],
+    "codes": [
+      "432",
+      "736"
+    ]
+  },
+  {
+    "name_ko": "미아",
+    "name_en": "Mia",
+    "name_jp": "ミア",
+    "name_cn": "弥阿(首尔网络大学)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "415"
+    ]
+  },
+  {
+    "name_ko": "숙대입구",
+    "name_en": "Sookmyung Women`s Univ.",
+    "name_jp": "スクテイック",
+    "name_cn": "淑明女子大学(葛月)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "427"
+    ]
+  },
+  {
+    "name_ko": "혜화",
+    "name_en": "Hyehwa",
+    "name_jp": "ヘファ",
+    "name_cn": "惠化",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "420"
+    ]
+  },
+  {
+    "name_ko": "대야미",
+    "name_en": "Daeyami",
+    "name_jp": "テヤミ",
+    "name_cn": "大夜味",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "446"
+    ]
+  },
+  {
+    "name_ko": "남태령",
+    "name_en": "Namtaeryeong",
+    "name_jp": "ナムテリョン",
+    "name_cn": "南泰岭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "434"
+    ]
+  },
+  {
+    "name_ko": "초지",
+    "name_en": "Choji",
+    "name_jp": "チョジ",
+    "name_cn": "草芝",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "서해선",
+      "수인분당선"
+    ],
+    "codes": [
+      "452",
+      "S26",
+      "K254"
+    ]
+  },
+  {
+    "name_ko": "반월",
+    "name_en": "Banwol",
+    "name_jp": "パヌォル",
+    "name_cn": "半月",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "447"
+    ]
+  },
+  {
+    "name_ko": "상록수",
+    "name_en": "Sangnoksu",
+    "name_jp": "サンロッス",
+    "name_cn": "常绿树",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "448"
+    ]
+  },
+  {
+    "name_ko": "경마공원",
+    "name_en": "Seoul Racecourse Park",
+    "name_jp": "キョンマゴンウォン",
+    "name_cn": "赛马公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "436"
+    ]
+  },
+  {
+    "name_ko": "대공원",
+    "name_en": "Seoul Grand Park",
+    "name_jp": "テゴンウォン",
+    "name_cn": "首尔大公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "437"
+    ]
+  },
+  {
+    "name_ko": "인덕원",
+    "name_en": "Indeogwon",
+    "name_jp": "インドグォン",
+    "name_cn": "仁德院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "440"
+    ]
+  },
+  {
+    "name_ko": "미아사거리",
+    "name_en": "Miasageori",
+    "name_jp": "ミアサゴリ",
+    "name_cn": "弥阿十字路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "416"
+    ]
+  },
+  {
+    "name_ko": "삼각지",
+    "name_en": "Samgakji",
+    "name_jp": "サムガクチ",
+    "name_cn": "三角地",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "6호선"
+    ],
+    "codes": [
+      "428",
+      "628"
+    ]
+  },
+  {
+    "name_ko": "신용산",
+    "name_en": "Sinyongsan",
+    "name_jp": "シニョンサン",
+    "name_cn": "新龙山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "429"
+    ]
+  },
+  {
+    "name_ko": "안산",
+    "name_en": "Ansan",
+    "name_jp": "アンサン",
+    "name_cn": "安山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "453",
+      "K255"
+    ]
+  },
+  {
+    "name_ko": "진접",
+    "name_en": "Jinjeop",
+    "name_jp": "チンジョプ",
+    "name_cn": "榛接",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "405"
+    ]
+  },
+  {
+    "name_ko": "오남",
+    "name_en": "Onam",
+    "name_jp": "オナム",
+    "name_cn": "梧 南",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "406"
+    ]
+  },
+  {
+    "name_ko": "별내별가람",
+    "name_en": "Byeollae Byeolgaram",
+    "name_jp": "ピョルネビョルガラム",
+    "name_cn": "別內星江",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "408"
+    ]
+  },
+  {
+    "name_ko": "당고개",
+    "name_en": "Danggogae",
+    "name_jp": "タンゴゲ",
+    "name_cn": "堂岭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "409"
+    ]
+  },
+  {
+    "name_ko": "상계",
+    "name_en": "Sanggye",
+    "name_jp": "サンゲ",
+    "name_cn": "上溪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "410"
+    ]
+  },
+  {
+    "name_ko": "쌍문",
+    "name_en": "Ssangmun",
+    "name_jp": "サンムン",
+    "name_cn": "双门",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "413"
+    ]
+  },
+  {
+    "name_ko": "길음",
+    "name_en": "Gireum",
+    "name_jp": "キルム",
+    "name_cn": "吉音",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "417"
+    ]
+  },
+  {
+    "name_ko": "성신여대입구",
+    "name_en": "Sungshin Women`s Univ.",
+    "name_jp": "ソンシンヨデイック",
+    "name_cn": "诚信女子大学(敦岩)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "우이신설경전철"
+    ],
+    "codes": [
+      "418",
+      "951"
+    ]
+  },
+  {
+    "name_ko": "신길온천",
+    "name_en": "Neunggil",
+    "name_jp": "シンギル・オンチョン",
+    "name_cn": "新吉温泉",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "454",
+      "K256"
+    ]
+  },
+  {
+    "name_ko": "이촌",
+    "name_en": "Ichon",
+    "name_jp": "イチョン",
+    "name_cn": "二村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "경의선"
+    ],
+    "codes": [
+      "430",
+      "K111"
+    ]
+  },
+  {
+    "name_ko": "과천",
+    "name_en": "Gwacheon",
+    "name_jp": "クァチョン",
+    "name_cn": "果川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "438"
+    ]
+  },
+  {
+    "name_ko": "산본",
+    "name_en": "Sanbon",
+    "name_jp": "サンボン",
+    "name_cn": "山本",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "444"
+    ]
+  },
+  {
+    "name_ko": "중앙",
+    "name_en": "Jungang",
+    "name_jp": "チュンアン",
+    "name_cn": "中央",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "450",
+      "K252"
+    ]
+  },
+  {
+    "name_ko": "정왕",
+    "name_en": "Jeongwang",
+    "name_jp": "チョンワン",
+    "name_cn": "正往",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "455",
+      "K257"
+    ]
+  },
+  {
+    "name_ko": "오이도",
+    "name_en": "Oido",
+    "name_jp": "オイド",
+    "name_cn": "乌耳岛",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "456",
+      "K258"
+    ]
+  },
+  {
+    "name_ko": "수리산",
+    "name_en": "Surisan",
+    "name_jp": "スリサン",
+    "name_cn": "修理山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "445"
+    ]
+  },
+  {
+    "name_ko": "범계",
+    "name_en": "Beomgye",
+    "name_jp": "ポムゲ",
+    "name_cn": "凡溪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "4호선"
+    ],
+    "codes": [
+      "442"
+    ]
+  },
+  {
+    "name_ko": "답십리",
+    "name_en": "Dapsimni",
+    "name_jp": "タプシムニ",
+    "name_cn": "踏十里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "542"
+    ]
+  },
+  {
+    "name_ko": "하남풍산",
+    "name_en": "Hanam Pungsan",
+    "name_jp": "ハナンプンサン",
+    "name_cn": "河南丰山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "556"
+    ]
+  },
+  {
+    "name_ko": "하남검단산",
+    "name_en": "Hanam Geomdansan",
+    "name_jp": "ハナムゴムダンサン",
+    "name_cn": "河南黔丹山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "558"
+    ]
+  },
+  {
+    "name_ko": "하남시청",
+    "name_en": "Hanam City Hall",
+    "name_jp": "ハナムシチョン",
+    "name_cn": "河南市厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "557"
+    ]
+  },
+  {
+    "name_ko": "마천",
+    "name_en": "Macheon",
+    "name_jp": "マチョン",
+    "name_cn": "马川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "P555"
+    ]
+  },
+  {
+    "name_ko": "거여",
+    "name_en": "Geoyeo",
+    "name_jp": "コヨ",
+    "name_cn": "巨余",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "P554"
+    ]
+  },
+  {
+    "name_ko": "개롱",
+    "name_en": "Gaerong",
+    "name_jp": "ケロン",
+    "name_cn": "开笼",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "P553"
+    ]
+  },
+  {
+    "name_ko": "방이",
+    "name_en": "Bangi",
+    "name_jp": "パンイ",
+    "name_cn": "芳荑",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "P551"
+    ]
+  },
+  {
+    "name_ko": "올림픽공원",
+    "name_en": "Olympic Park",
+    "name_jp": "オリンピックゴンウォン",
+    "name_cn": "奥林匹克公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선",
+      "9호선"
+    ],
+    "codes": [
+      "P550",
+      "936"
+    ]
+  },
+  {
+    "name_ko": "둔촌동",
+    "name_en": "Dunchon-dong",
+    "name_jp": "トゥンチョンドン",
+    "name_cn": "遁村洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "P549"
+    ]
+  },
+  {
+    "name_ko": "고덕",
+    "name_en": "Godeok",
+    "name_jp": "コドク",
+    "name_cn": "高德",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "552"
+    ]
+  },
+  {
+    "name_ko": "명일",
+    "name_en": "Myeongil",
+    "name_jp": "ミョンイル",
+    "name_cn": "明逸",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "551"
+    ]
+  },
+  {
+    "name_ko": "굽은다리",
+    "name_en": "Gubeundari",
+    "name_jp": "クブンダリ",
+    "name_cn": "曲桥",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "550"
+    ]
+  },
+  {
+    "name_ko": "길동",
+    "name_en": "Gil-dong",
+    "name_jp": "キルトン",
+    "name_cn": "吉洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "549"
+    ]
+  },
+  {
+    "name_ko": "강동",
+    "name_en": "Gangdong",
+    "name_jp": "カンドン",
+    "name_cn": "江东",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "548"
+    ]
+  },
+  {
+    "name_ko": "천호",
+    "name_en": "Cheonho",
+    "name_jp": "チョンホ",
+    "name_cn": "千戶",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선",
+      "8호선"
+    ],
+    "codes": [
+      "547",
+      "811"
+    ]
+  },
+  {
+    "name_ko": "광나루",
+    "name_en": "Gwangnaru",
+    "name_jp": "クァンナル",
+    "name_cn": "广渡口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "546"
+    ]
+  },
+  {
+    "name_ko": "군자",
+    "name_en": "Gunja",
+    "name_jp": "クンジャ",
+    "name_cn": "君子",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선",
+      "7호선"
+    ],
+    "codes": [
+      "544",
+      "725"
+    ]
+  },
+  {
+    "name_ko": "장한평",
+    "name_en": "Janghanpyeong",
+    "name_jp": "チャンハンピョン",
+    "name_cn": "长汉坪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "543"
+    ]
+  },
+  {
+    "name_ko": "마장",
+    "name_en": "Majang",
+    "name_jp": "マジャン",
+    "name_cn": "马场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "541"
+    ]
+  },
+  {
+    "name_ko": "강일",
+    "name_en": "Gangil",
+    "name_jp": "カンイル",
+    "name_cn": "江一",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "554"
+    ]
+  },
+  {
+    "name_ko": "아차산",
+    "name_en": "Achasan",
+    "name_jp": "アチャサン",
+    "name_cn": "峨嵯山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "545"
+    ]
+  },
+  {
+    "name_ko": "행당",
+    "name_en": "Haengdang",
+    "name_jp": "ヘンダン",
+    "name_cn": "杏堂",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "539"
+    ]
+  },
+  {
+    "name_ko": "신금호",
+    "name_en": "Singeumho",
+    "name_jp": "シングムホ",
+    "name_cn": "新金湖",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "538"
+    ]
+  },
+  {
+    "name_ko": "청구",
+    "name_en": "Cheonggu",
+    "name_jp": "チョング",
+    "name_cn": "青丘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선",
+      "6호선"
+    ],
+    "codes": [
+      "537",
+      "634"
+    ]
+  },
+  {
+    "name_ko": "오목교",
+    "name_en": "Omokgyo",
+    "name_jp": "オモッキョ",
+    "name_cn": "梧木桥",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "521"
+    ]
+  },
+  {
+    "name_ko": "목동",
+    "name_en": "Mok-dong",
+    "name_jp": "モクトン",
+    "name_cn": "木洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "520"
+    ]
+  },
+  {
+    "name_ko": "송정",
+    "name_en": "Songjeong",
+    "name_jp": "ソンジョン",
+    "name_cn": "松亭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "513"
+    ]
+  },
+  {
+    "name_ko": "미사",
+    "name_en": "Misa",
+    "name_jp": "ミサ",
+    "name_cn": "渼沙",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "555"
+    ]
+  },
+  {
+    "name_ko": "광화문",
+    "name_en": "Gwanghwamun",
+    "name_jp": "クァンファムン",
+    "name_cn": "光化门",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "533"
+    ]
+  },
+  {
+    "name_ko": "서대문",
+    "name_en": "Seodaemun",
+    "name_jp": "ソデムン",
+    "name_cn": "西大门",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "532"
+    ]
+  },
+  {
+    "name_ko": "공덕",
+    "name_en": "Gongdeok",
+    "name_jp": "コンドク",
+    "name_cn": "孔德",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선",
+      "6호선",
+      "경의선",
+      "공항철도"
+    ],
+    "codes": [
+      "529",
+      "626",
+      "K312",
+      "A02"
+    ]
+  },
+  {
+    "name_ko": "마포",
+    "name_en": "Mapo",
+    "name_jp": "マポ",
+    "name_cn": "麻浦",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "528"
+    ]
+  },
+  {
+    "name_ko": "여의나루",
+    "name_en": "Yeouinaru",
+    "name_jp": "ヨイナル",
+    "name_cn": "汝矣渡口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "527"
+    ]
+  },
+  {
+    "name_ko": "영등포시장",
+    "name_en": "Yeongdeungpo Market",
+    "name_jp": "ヨンドゥンポシジャン",
+    "name_cn": "永登浦市场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "524"
+    ]
+  },
+  {
+    "name_ko": "개화산",
+    "name_en": "Gaehwasan",
+    "name_jp": "ケファサン",
+    "name_cn": "开花山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "511"
+    ]
+  },
+  {
+    "name_ko": "여의도",
+    "name_en": "Yeouido",
+    "name_jp": "ヨイド",
+    "name_cn": "汝矣岛",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선",
+      "9호선"
+    ],
+    "codes": [
+      "526",
+      "915"
+    ]
+  },
+  {
+    "name_ko": "양평",
+    "name_en": "Yangpyeong",
+    "name_jp": "ヤンピョン",
+    "name_cn": "杨坪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선",
+      "경의선"
+    ],
+    "codes": [
+      "522",
+      "K135"
+    ]
+  },
+  {
+    "name_ko": "신정",
+    "name_en": "Sinjeong",
+    "name_jp": "シンジョン",
+    "name_cn": "新亭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "519"
+    ]
+  },
+  {
+    "name_ko": "화곡",
+    "name_en": "Hwagok",
+    "name_jp": "ファゴク",
+    "name_cn": "禾谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "517"
+    ]
+  },
+  {
+    "name_ko": "김포공항",
+    "name_en": "Gimpo Intl. Airport",
+    "name_jp": "キンポゴンハン",
+    "name_cn": "金浦机场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선",
+      "9호선",
+      "공항철도",
+      "김포도시철도",
+      "서해선"
+    ],
+    "codes": [
+      "512",
+      "902",
+      "A05",
+      "699",
+      "S13"
+    ]
+  },
+  {
+    "name_ko": "우장산",
+    "name_en": "Ujangsan",
+    "name_jp": "ウジャンサン",
+    "name_cn": "雨装山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "516"
+    ]
+  },
+  {
+    "name_ko": "발산",
+    "name_en": "Balsan",
+    "name_jp": "パルサン",
+    "name_cn": "钵山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "515"
+    ]
+  },
+  {
+    "name_ko": "상일동",
+    "name_en": "Sangil-dong",
+    "name_jp": "サンイルトン",
+    "name_cn": "上一洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "553"
+    ]
+  },
+  {
+    "name_ko": "애오개",
+    "name_en": "Aeogae",
+    "name_jp": "エオゲ",
+    "name_cn": "儿岭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "530"
+    ]
+  },
+  {
+    "name_ko": "마곡",
+    "name_en": "Magok",
+    "name_jp": "マゴク",
+    "name_cn": "麻谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "514"
+    ]
+  },
+  {
+    "name_ko": "방화",
+    "name_en": "Banghwa",
+    "name_jp": "パンファ",
+    "name_cn": "傍花",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "5호선"
+    ],
+    "codes": [
+      "510"
+    ]
+  },
+  {
+    "name_ko": "신내",
+    "name_en": "Sinnae",
+    "name_jp": "シンネ",
+    "name_cn": "新內",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선",
+      "경춘선"
+    ],
+    "codes": [
+      "648",
+      "P122"
+    ]
+  },
+  {
+    "name_ko": "새절",
+    "name_en": "Saejeol",
+    "name_jp": "セジョル",
+    "name_cn": "赛折",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "616"
+    ]
+  },
+  {
+    "name_ko": "증산",
+    "name_en": "Jeungsan",
+    "name_jp": "チュンサン",
+    "name_cn": "缯山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "617"
+    ]
+  },
+  {
+    "name_ko": "구산",
+    "name_en": "Gusan",
+    "name_jp": "クサン",
+    "name_cn": "龟山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "615"
+    ]
+  },
+  {
+    "name_ko": "봉화산",
+    "name_en": "Bonghwasan",
+    "name_jp": "ポンファサン",
+    "name_cn": "烽火山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "647"
+    ]
+  },
+  {
+    "name_ko": "태릉입구",
+    "name_en": "Taereung",
+    "name_jp": "テルンイック",
+    "name_cn": "泰陵",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선",
+      "7호선"
+    ],
+    "codes": [
+      "645",
+      "717"
+    ]
+  },
+  {
+    "name_ko": "한강진",
+    "name_en": "Hangangjin",
+    "name_jp": "ハンガンジン",
+    "name_cn": "汉江镇",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "631"
+    ]
+  },
+  {
+    "name_ko": "디지털미디어시티",
+    "name_en": "Digital Media City",
+    "name_jp": "デジタルメディアシティ",
+    "name_cn": "数码媒体城",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선",
+      "경의선",
+      "공항철도"
+    ],
+    "codes": [
+      "618",
+      "K316",
+      "A04"
+    ]
+  },
+  {
+    "name_ko": "돌곶이",
+    "name_en": "Dolgoji",
+    "name_jp": "トルゴジ",
+    "name_cn": "石串",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "643"
+    ]
+  },
+  {
+    "name_ko": "상월곡",
+    "name_en": "Sangwolgok",
+    "name_jp": "サンウォルゴク",
+    "name_cn": "上月谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "642"
+    ]
+  },
+  {
+    "name_ko": "월곡",
+    "name_en": "Wolgok",
+    "name_jp": "ウォルゴク",
+    "name_cn": "月谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "641"
+    ]
+  },
+  {
+    "name_ko": "고려대",
+    "name_en": "Korea Univ.",
+    "name_jp": "コリョデ",
+    "name_cn": "高丽大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "640"
+    ]
+  },
+  {
+    "name_ko": "안암",
+    "name_en": "Anam",
+    "name_jp": "アナム",
+    "name_cn": "安岩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "639"
+    ]
+  },
+  {
+    "name_ko": "보문",
+    "name_en": "Bomun",
+    "name_jp": "ポムン",
+    "name_cn": "普门",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선",
+      "우이신설경전철"
+    ],
+    "codes": [
+      "638",
+      "952"
+    ]
+  },
+  {
+    "name_ko": "창신",
+    "name_en": "Changsin",
+    "name_jp": "チャンシン",
+    "name_cn": "昌信",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "637"
+    ]
+  },
+  {
+    "name_ko": "버티고개",
+    "name_en": "Beotigogae",
+    "name_jp": "ポティゴゲ",
+    "name_cn": "波堤岭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "632"
+    ]
+  },
+  {
+    "name_ko": "이태원",
+    "name_en": "Itaewon",
+    "name_jp": "イテウォン",
+    "name_cn": "梨泰院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "630"
+    ]
+  },
+  {
+    "name_ko": "녹사평",
+    "name_en": "Noksapyeong",
+    "name_jp": "ノッサピョン",
+    "name_cn": "绿莎坪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "629"
+    ]
+  },
+  {
+    "name_ko": "효창공원앞",
+    "name_en": "Hyochang park",
+    "name_jp": "ヒョチャンゴンウォンアプ",
+    "name_cn": "孝昌公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선",
+      "경의선"
+    ],
+    "codes": [
+      "627",
+      "K326"
+    ]
+  },
+  {
+    "name_ko": "대흥",
+    "name_en": "Daeheung",
+    "name_jp": "テフン",
+    "name_cn": "大兴",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "625"
+    ]
+  },
+  {
+    "name_ko": "광흥창",
+    "name_en": "Gwangheungchang",
+    "name_jp": "クァンフンチャン",
+    "name_cn": "广兴仓",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "624"
+    ]
+  },
+  {
+    "name_ko": "상수",
+    "name_en": "Sangsu",
+    "name_jp": "サンス",
+    "name_cn": "上水",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "623"
+    ]
+  },
+  {
+    "name_ko": "망원",
+    "name_en": "Mangwon",
+    "name_jp": "マンウォン",
+    "name_cn": "望远",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "621"
+    ]
+  },
+  {
+    "name_ko": "마포구청",
+    "name_en": "Mapo-gu Office",
+    "name_jp": "マポグチョン",
+    "name_cn": "麻浦区厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "620"
+    ]
+  },
+  {
+    "name_ko": "화랑대",
+    "name_en": "Hwarangdae",
+    "name_jp": "ファランデ",
+    "name_cn": "花郞台",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "646"
+    ]
+  },
+  {
+    "name_ko": "월드컵경기장",
+    "name_en": "World Cup Stadium",
+    "name_jp": "ワールドカップ・キョンギジャン",
+    "name_cn": "世界杯体育场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "619"
+    ]
+  },
+  {
+    "name_ko": "응암",
+    "name_en": "Eungam",
+    "name_jp": "ウンアム",
+    "name_cn": "鹰岩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "610"
+    ]
+  },
+  {
+    "name_ko": "역촌",
+    "name_en": "Yeokchon",
+    "name_jp": "ヨクチョン",
+    "name_cn": "驿村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "611"
+    ]
+  },
+  {
+    "name_ko": "독바위",
+    "name_en": "Dokbawi",
+    "name_jp": "トッパウィ",
+    "name_cn": "瓮岩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "6호선"
+    ],
+    "codes": [
+      "613"
+    ]
+  },
+  {
+    "name_ko": "장승배기",
+    "name_en": "Jangseungbaegi",
+    "name_jp": "チャンスンベギ",
+    "name_cn": "长丞拜基",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "740"
+    ]
+  },
+  {
+    "name_ko": "신대방삼거리",
+    "name_en": "Sindaebang  samgeori",
+    "name_jp": "シンデバンサムゴリ",
+    "name_cn": "新大方丁字路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "741"
+    ]
+  },
+  {
+    "name_ko": "보라매",
+    "name_en": "Boramae",
+    "name_jp": "ポラメ",
+    "name_cn": "波拉美",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선",
+      "신림선"
+    ],
+    "codes": [
+      "742",
+      "S404"
+    ]
+  },
+  {
+    "name_ko": "상동",
+    "name_en": "Sang-dong",
+    "name_jp": "サンドン",
+    "name_cn": "上洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "756"
+    ]
+  },
+  {
+    "name_ko": "신풍",
+    "name_en": "Sinpung",
+    "name_jp": "シンプン",
+    "name_cn": "新丰",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "743"
+    ]
+  },
+  {
+    "name_ko": "남구로",
+    "name_en": "Namguro",
+    "name_jp": "ナムグロ",
+    "name_cn": "南九老",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "745"
+    ]
+  },
+  {
+    "name_ko": "천왕",
+    "name_en": "Cheonwang",
+    "name_jp": "チョヌァン",
+    "name_cn": "天旺",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "749"
+    ]
+  },
+  {
+    "name_ko": "광명사거리",
+    "name_en": "Gwangmyeongsageori",
+    "name_jp": "クァンミョンサゴリ",
+    "name_cn": "光明十字路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "748"
+    ]
+  },
+  {
+    "name_ko": "석남",
+    "name_en": "Seongnam",
+    "name_jp": "石南",
+    "name_cn": "石南",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선",
+      "인천2호선"
+    ],
+    "codes": [
+      "761",
+      "I213"
+    ]
+  },
+  {
+    "name_ko": "어린이대공원",
+    "name_en": "Children`s  Grand Park",
+    "name_jp": "オリニ・テゴンウォン",
+    "name_cn": "儿童大公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "726"
+    ]
+  },
+  {
+    "name_ko": "청담",
+    "name_en": "Cheongdam",
+    "name_jp": "チョンダム",
+    "name_cn": "清潭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "729"
+    ]
+  },
+  {
+    "name_ko": "강남구청",
+    "name_en": "Gangnam-gu Office",
+    "name_jp": "カンナムグチョン",
+    "name_cn": "江南区厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "730",
+      "K213"
+    ]
+  },
+  {
+    "name_ko": "하계",
+    "name_en": "Hagye",
+    "name_jp": "ハゲ",
+    "name_cn": "下溪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "715"
+    ]
+  },
+  {
+    "name_ko": "공릉",
+    "name_en": "Gongneung",
+    "name_jp": "コンヌン",
+    "name_cn": "孔陵",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "716"
+    ]
+  },
+  {
+    "name_ko": "산곡",
+    "name_en": "Sangok",
+    "name_jp": "サンゴク",
+    "name_cn": "山谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "760"
+    ]
+  },
+  {
+    "name_ko": "신중동",
+    "name_en": "Sinjung-dong",
+    "name_jp": "シンジュンドン",
+    "name_cn": "新中洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "754"
+    ]
+  },
+  {
+    "name_ko": "용마산",
+    "name_en": "Yongmasan",
+    "name_jp": "ヨンマサン",
+    "name_cn": "龙马山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "723"
+    ]
+  },
+  {
+    "name_ko": "자양",
+    "name_en": "Jayang",
+    "name_jp": "チャヤン",
+    "name_cn": "紫阳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "728"
+    ]
+  },
+  {
+    "name_ko": "부평구청",
+    "name_en": "Bupyeong-gu Office",
+    "name_jp": "プピョングチョン",
+    "name_cn": "富平区厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선",
+      "인천1호선"
+    ],
+    "codes": [
+      "759",
+      "I118"
+    ]
+  },
+  {
+    "name_ko": "부천시청",
+    "name_en": "Bucheon City Hall",
+    "name_jp": "プチョンシチョン",
+    "name_cn": "富川市厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "755"
+    ]
+  },
+  {
+    "name_ko": "장암",
+    "name_en": "Jangam",
+    "name_jp": "チャンアム",
+    "name_cn": "长岩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "709"
+    ]
+  },
+  {
+    "name_ko": "춘의",
+    "name_en": "Chunui",
+    "name_jp": "チュニ",
+    "name_cn": "春衣",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "753"
+    ]
+  },
+  {
+    "name_ko": "부천종합운동장",
+    "name_en": "Bucheon Stadium",
+    "name_jp": "プチョンジョンハブンドンジャン",
+    "name_cn": "富川综合运动场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선",
+      "서해선"
+    ],
+    "codes": [
+      "752",
+      "S15"
+    ]
+  },
+  {
+    "name_ko": "까치울",
+    "name_en": "Kkachiul",
+    "name_jp": "カチウル",
+    "name_cn": "喜鹊屋",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "751"
+    ]
+  },
+  {
+    "name_ko": "철산",
+    "name_en": "Cheolsan",
+    "name_jp": "チョルサン",
+    "name_cn": "铁山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "747"
+    ]
+  },
+  {
+    "name_ko": "중계",
+    "name_en": "Junggye",
+    "name_jp": "チュンゲ",
+    "name_cn": "中溪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "714"
+    ]
+  },
+  {
+    "name_ko": "논현",
+    "name_en": "Nonhyeon",
+    "name_jp": "ノンヒョン",
+    "name_cn": "论岘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선",
+      "신분당선"
+    ],
+    "codes": [
+      "732",
+      "D5"
+    ]
+  },
+  {
+    "name_ko": "내방",
+    "name_en": "Naebang",
+    "name_jp": "ネバン",
+    "name_cn": "內方",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "735"
+    ]
+  },
+  {
+    "name_ko": "굴포천",
+    "name_en": "Gulpocheon",
+    "name_jp": "クルポチョン",
+    "name_cn": "掘浦川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "758"
+    ]
+  },
+  {
+    "name_ko": "삼산체육관",
+    "name_en": "Samsan Gymnasium",
+    "name_jp": "サムサン・チェユックァン",
+    "name_cn": "三山体育馆",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "757"
+    ]
+  },
+  {
+    "name_ko": "학동",
+    "name_en": "Hak-dong",
+    "name_jp": "ハクトン",
+    "name_cn": "鹤洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "731"
+    ]
+  },
+  {
+    "name_ko": "먹골",
+    "name_en": "Meokgol",
+    "name_jp": "モッコル",
+    "name_cn": "墨谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "718"
+    ]
+  },
+  {
+    "name_ko": "중화",
+    "name_en": "Junghwa",
+    "name_jp": "チュンファ",
+    "name_cn": "中和",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "719"
+    ]
+  },
+  {
+    "name_ko": "상봉",
+    "name_en": "Sangbong",
+    "name_jp": "サンボン",
+    "name_cn": "上凤(市外巴士客运站)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선",
+      "경의선",
+      "경춘선"
+    ],
+    "codes": [
+      "720",
+      "K120",
+      "P120"
+    ]
+  },
+  {
+    "name_ko": "반포",
+    "name_en": "Banpo",
+    "name_jp": "パンポ",
+    "name_cn": "盘浦",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "733"
+    ]
+  },
+  {
+    "name_ko": "사가정",
+    "name_en": "Sagajeong",
+    "name_jp": "サガジョン",
+    "name_cn": "四佳亭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "722"
+    ]
+  },
+  {
+    "name_ko": "수락산",
+    "name_en": "Suraksan",
+    "name_jp": "スラッサン",
+    "name_cn": "水落山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "711"
+    ]
+  },
+  {
+    "name_ko": "마들",
+    "name_en": "Madeul",
+    "name_jp": "マドゥル",
+    "name_cn": "马得",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "712"
+    ]
+  },
+  {
+    "name_ko": "면목",
+    "name_en": "Myeonmok",
+    "name_jp": "ミョンモク",
+    "name_cn": "面牧",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "721"
+    ]
+  },
+  {
+    "name_ko": "중곡",
+    "name_en": "Junggok",
+    "name_jp": "チュンゴク",
+    "name_cn": "中谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "724"
+    ]
+  },
+  {
+    "name_ko": "남성",
+    "name_en": "Namseong",
+    "name_jp": "ナムソン",
+    "name_cn": "南城",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "737"
+    ]
+  },
+  {
+    "name_ko": "숭실대입구",
+    "name_en": "Soongsil Univ.",
+    "name_jp": "スンシルデイック",
+    "name_cn": "崇实大学(赛毗岭)",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "738"
+    ]
+  },
+  {
+    "name_ko": "상도",
+    "name_en": "Sangdo",
+    "name_jp": "サンド",
+    "name_cn": "上道",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "7호선"
+    ],
+    "codes": [
+      "739"
+    ]
+  },
+  {
+    "name_ko": "산성",
+    "name_en": "Sanseong",
+    "name_jp": "サンソン",
+    "name_cn": "山城",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "822"
+    ]
+  },
+  {
+    "name_ko": "남한산성입구",
+    "name_en": "Namhansanseong",
+    "name_jp": "ナムハンサンソンイック",
+    "name_cn": "南汉山城",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "823"
+    ]
+  },
+  {
+    "name_ko": "단대오거리",
+    "name_en": "Dandaeogeori",
+    "name_jp": "タンデオゴリ",
+    "name_cn": "丹垈五岔路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "824"
+    ]
+  },
+  {
+    "name_ko": "석촌",
+    "name_en": "Seokchon",
+    "name_jp": "ソクチョン",
+    "name_cn": "石村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선",
+      "9호선"
+    ],
+    "codes": [
+      "815",
+      "933"
+    ]
+  },
+  {
+    "name_ko": "송파",
+    "name_en": "Songpa",
+    "name_jp": "ソンパ",
+    "name_cn": "松坡",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "816"
+    ]
+  },
+  {
+    "name_ko": "문정",
+    "name_en": "Munjeong",
+    "name_jp": "ムンジョン",
+    "name_cn": "文井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "818"
+    ]
+  },
+  {
+    "name_ko": "남위례",
+    "name_en": "Namwirye",
+    "name_jp": "ナムィレ",
+    "name_cn": "南慰礼",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "821"
+    ]
+  },
+  {
+    "name_ko": "모란",
+    "name_en": "Moran",
+    "name_jp": "モラン",
+    "name_cn": "牡丹",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "827",
+      "K225"
+    ]
+  },
+  {
+    "name_ko": "수진",
+    "name_en": "Sujin",
+    "name_jp": "スジン",
+    "name_cn": "寿进",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "826"
+    ]
+  },
+  {
+    "name_ko": "신흥",
+    "name_en": "Sinheung",
+    "name_jp": "シンフン",
+    "name_cn": "新兴",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "825"
+    ]
+  },
+  {
+    "name_ko": "장지",
+    "name_en": "Jangji",
+    "name_jp": "チャンジ",
+    "name_cn": "长旨",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "819"
+    ]
+  },
+  {
+    "name_ko": "복정",
+    "name_en": "Bokjeong",
+    "name_jp": "ポクチョン",
+    "name_cn": "福井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "820",
+      "K222"
+    ]
+  },
+  {
+    "name_ko": "암사",
+    "name_en": "Amsa",
+    "name_jp": "アムサ",
+    "name_cn": "岩寺",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "810"
+    ]
+  },
+  {
+    "name_ko": "강동구청",
+    "name_en": "Gangdong-gu Office",
+    "name_jp": "カンドングチョン",
+    "name_cn": "江东区厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "812"
+    ]
+  },
+  {
+    "name_ko": "몽촌토성",
+    "name_en": "Mongchontoseong",
+    "name_jp": "モンチョントソン",
+    "name_cn": "梦村土城",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "8호선"
+    ],
+    "codes": [
+      "813"
+    ]
+  },
+  {
+    "name_ko": "한성백제",
+    "name_en": "Hanseong Baekje",
+    "name_jp": "ハンソンベクチェ",
+    "name_cn": "汉城百济",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "935"
+    ]
+  },
+  {
+    "name_ko": "송파나루",
+    "name_en": "Songpanaru",
+    "name_jp": "ソンパナル",
+    "name_cn": "松坡渡口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "934"
+    ]
+  },
+  {
+    "name_ko": "석촌고분",
+    "name_en": "Seokchon Gobun",
+    "name_jp": "ソクチョンコブン",
+    "name_cn": "石村古坟",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "932"
+    ]
+  },
+  {
+    "name_ko": "증미",
+    "name_en": "Jeungmi",
+    "name_jp": "チュンミ",
+    "name_cn": "曾米",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "908"
+    ]
+  },
+  {
+    "name_ko": "봉은사",
+    "name_en": "Bongeunsa",
+    "name_jp": "ポンウンサ",
+    "name_cn": "奉恩寺",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "929"
+    ]
+  },
+  {
+    "name_ko": "삼성중앙",
+    "name_en": "Samseong Jungang",
+    "name_jp": "サムソン・チュンアン",
+    "name_cn": "三成中央",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "928"
+    ]
+  },
+  {
+    "name_ko": "선정릉",
+    "name_en": "Seonjeongneung",
+    "name_jp": "ソンジョンヌン",
+    "name_cn": "宣靖陵",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선",
+      "수인분당선"
+    ],
+    "codes": [
+      "927",
+      "K214"
+    ]
+  },
+  {
+    "name_ko": "언주",
+    "name_en": "Eonju",
+    "name_jp": "オンジュ",
+    "name_cn": "彦州",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "926"
+    ]
+  },
+  {
+    "name_ko": "신논현",
+    "name_en": "Sinnonhyeon",
+    "name_jp": "シンノンヒョン",
+    "name_cn": "新论岘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선",
+      "신분당선"
+    ],
+    "codes": [
+      "925",
+      "D6"
+    ]
+  },
+  {
+    "name_ko": "사평",
+    "name_en": "Sapyeong",
+    "name_jp": "サピョン",
+    "name_cn": "砂平",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "924"
+    ]
+  },
+  {
+    "name_ko": "공항시장",
+    "name_en": "Airport Market",
+    "name_jp": "コンハンシジャン",
+    "name_cn": "空港市场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "903"
+    ]
+  },
+  {
+    "name_ko": "신방화",
+    "name_en": "Sinbanghwa",
+    "name_jp": "シンバンファ",
+    "name_cn": "新傍花",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "904"
+    ]
+  },
+  {
+    "name_ko": "신반포",
+    "name_en": "Sinbanpo",
+    "name_jp": "シンバンポ",
+    "name_cn": "新盘浦",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "922"
+    ]
+  },
+  {
+    "name_ko": "구반포",
+    "name_en": "Gubanpo",
+    "name_jp": "クバンポ",
+    "name_cn": "旧盘浦",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "921"
+    ]
+  },
+  {
+    "name_ko": "흑석",
+    "name_en": "Heukseok",
+    "name_jp": "フッソク",
+    "name_cn": "黑石",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "919"
+    ]
+  },
+  {
+    "name_ko": "노들",
+    "name_en": "Nodeul",
+    "name_jp": "ノドゥル",
+    "name_cn": "鹭得",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "918"
+    ]
+  },
+  {
+    "name_ko": "국회의사당",
+    "name_en": "National Assembly",
+    "name_jp": "ククェウィサダン",
+    "name_cn": "国会议事堂",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "914"
+    ]
+  },
+  {
+    "name_ko": "마곡나루",
+    "name_en": "Magongnaru",
+    "name_jp": "マゴンナル",
+    "name_cn": "麻谷渡口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선",
+      "공항철도"
+    ],
+    "codes": [
+      "905",
+      "A042"
+    ]
+  },
+  {
+    "name_ko": "양천향교",
+    "name_en": "Yangcheon Hyanggyo",
+    "name_jp": "ヤンチョンヒャンギョ",
+    "name_cn": "阳川乡校",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "906"
+    ]
+  },
+  {
+    "name_ko": "가양",
+    "name_en": "Gayang",
+    "name_jp": "カヤン",
+    "name_cn": "加阳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "907"
+    ]
+  },
+  {
+    "name_ko": "개화",
+    "name_en": "Gaehwa",
+    "name_jp": "ケファ",
+    "name_cn": "開化",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "901"
+    ]
+  },
+  {
+    "name_ko": "등촌",
+    "name_en": "Deungchon",
+    "name_jp": "トゥンチョン",
+    "name_cn": "登村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "909"
+    ]
+  },
+  {
+    "name_ko": "염창",
+    "name_en": "Yeomchang",
+    "name_jp": "ヨムチャン",
+    "name_cn": "盐仓",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "910"
+    ]
+  },
+  {
+    "name_ko": "신목동",
+    "name_en": "Sinmokdong",
+    "name_jp": "シンモクトン",
+    "name_cn": "新木洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "911"
+    ]
+  },
+  {
+    "name_ko": "선유도",
+    "name_en": "Seonyudo",
+    "name_jp": "ソニュド",
+    "name_cn": "仙游岛",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "912"
+    ]
+  },
+  {
+    "name_ko": "샛강",
+    "name_en": "Saetgang",
+    "name_jp": "セッカン",
+    "name_cn": "赛江",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선",
+      "신림선"
+    ],
+    "codes": [
+      "916",
+      "S401"
+    ]
+  },
+  {
+    "name_ko": "삼전",
+    "name_en": "Samjeon",
+    "name_jp": "サムジョン",
+    "name_cn": "三田",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "931"
+    ]
+  },
+  {
+    "name_ko": "중앙보훈병원",
+    "name_en": "VHS Medical Center",
+    "name_jp": "チュンアンボフンビョンウォン",
+    "name_cn": "中央报勋医院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "938"
+    ]
+  },
+  {
+    "name_ko": "둔촌오륜",
+    "name_en": "Dunchon Oryun",
+    "name_jp": "トゥンチョノリュン",
+    "name_cn": "遁村五轮",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "9호선"
+    ],
+    "codes": [
+      "937"
+    ]
+  },
+  {
+    "name_ko": "성남",
+    "name_en": "Seongnam",
+    "name_jp": "ソンナム",
+    "name_cn": "城南",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "GTX-A",
+      "경강선"
+    ],
+    "codes": [
+      "X109",
+      "K410"
+    ]
+  },
+  {
+    "name_ko": "동탄",
+    "name_en": "Dongtan",
+    "name_jp": "",
+    "name_cn": "東灘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "GTX-A"
+    ],
+    "codes": [
+      "X111"
+    ]
+  },
+  {
+    "name_ko": "경기광주",
+    "name_en": "GyeonggiGwangju",
+    "name_jp": "",
+    "name_cn": "京畿廣州",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K413"
+    ]
+  },
+  {
+    "name_ko": "곤지암",
+    "name_en": "Gonjiam",
+    "name_jp": "",
+    "name_cn": "昆池岩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K415"
+    ]
+  },
+  {
+    "name_ko": "이매",
+    "name_en": "Imae",
+    "name_jp": "",
+    "name_cn": "二梅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선",
+      "수인분당선"
+    ],
+    "codes": [
+      "K411",
+      "K227"
+    ]
+  },
+  {
+    "name_ko": "이천",
+    "name_en": "Icheon",
+    "name_jp": "",
+    "name_cn": "利川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K417"
+    ]
+  },
+  {
+    "name_ko": "여주",
+    "name_en": "Yeoju",
+    "name_jp": "",
+    "name_cn": "驪州",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K420"
+    ]
+  },
+  {
+    "name_ko": "판교",
+    "name_en": "Pangyo",
+    "name_jp": "",
+    "name_cn": "板橋",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선",
+      "신분당선"
+    ],
+    "codes": [
+      "K409",
+      "D11"
+    ]
+  },
+  {
+    "name_ko": "세종대왕릉",
+    "name_en": "Sejongdaewangneung",
+    "name_jp": "",
+    "name_cn": "世宗大王陵",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K419"
+    ]
+  },
+  {
+    "name_ko": "신둔도예촌",
+    "name_en": "Sindundoyechon",
+    "name_jp": "",
+    "name_cn": "新屯陶藝村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K416"
+    ]
+  },
+  {
+    "name_ko": "삼동",
+    "name_en": "Samdong",
+    "name_jp": "",
+    "name_cn": "三洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K412"
+    ]
+  },
+  {
+    "name_ko": "부발",
+    "name_en": "Bubal",
+    "name_jp": "",
+    "name_cn": "夫鉢",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K418"
+    ]
+  },
+  {
+    "name_ko": "초월",
+    "name_en": "Chowol",
+    "name_jp": "",
+    "name_cn": "草月",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경강선"
+    ],
+    "codes": [
+      "K414"
+    ]
+  },
+  {
+    "name_ko": "신원",
+    "name_en": "Sinwon",
+    "name_jp": "シヌォン",
+    "name_cn": "新院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K131"
+    ]
+  },
+  {
+    "name_ko": "서빙고",
+    "name_en": "Seobinggo",
+    "name_jp": "ソビンゴ",
+    "name_cn": "西冰库",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K112"
+    ]
+  },
+  {
+    "name_ko": "곡산",
+    "name_en": "Goksan",
+    "name_jp": "コッサン",
+    "name_cn": "谷山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선",
+      "서해선"
+    ],
+    "codes": [
+      "K323",
+      "S10"
+    ]
+  },
+  {
+    "name_ko": "강매",
+    "name_en": "Gangmae",
+    "name_jp": "カンメ",
+    "name_cn": "江梅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K319"
+    ]
+  },
+  {
+    "name_ko": "가좌",
+    "name_en": "Gajwa",
+    "name_jp": "カジュア",
+    "name_cn": "加佐",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K315"
+    ]
+  },
+  {
+    "name_ko": "서강대",
+    "name_en": "Sogang Univ.",
+    "name_jp": "ソガンデ",
+    "name_cn": "西江大",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K313"
+    ]
+  },
+  {
+    "name_ko": "망우",
+    "name_en": "Mangu",
+    "name_jp": "マンウ",
+    "name_cn": "忘忧",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선",
+      "경춘선"
+    ],
+    "codes": [
+      "K121",
+      "P121"
+    ]
+  },
+  {
+    "name_ko": "구리",
+    "name_en": "Guri",
+    "name_jp": "クリ",
+    "name_cn": "九里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K123"
+    ]
+  },
+  {
+    "name_ko": "원덕",
+    "name_en": "Wondeok",
+    "name_jp": "ウォンドク",
+    "name_cn": "元德",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K136"
+    ]
+  },
+  {
+    "name_ko": "양원",
+    "name_en": "Yangwon",
+    "name_jp": "ヤンウォン",
+    "name_cn": "养源",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K122"
+    ]
+  },
+  {
+    "name_ko": "금릉",
+    "name_en": "Geum  neung",
+    "name_jp": "クムヌン",
+    "name_cn": "金陵",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K330"
+    ]
+  },
+  {
+    "name_ko": "한남",
+    "name_en": "Hannam",
+    "name_jp": "ハンナム",
+    "name_cn": "汉南",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K113"
+    ]
+  },
+  {
+    "name_ko": "능곡",
+    "name_en": "Neunggok",
+    "name_jp": "ヌンゴク",
+    "name_cn": "陵谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선",
+      "서해선"
+    ],
+    "codes": [
+      "K321",
+      "S12"
+    ]
+  },
+  {
+    "name_ko": "양수",
+    "name_en": "Yangsu",
+    "name_jp": "ヤンス",
+    "name_cn": "兩水",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K130"
+    ]
+  },
+  {
+    "name_ko": "운정",
+    "name_en": "Unjeong",
+    "name_jp": "ウンジョン",
+    "name_cn": "云井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K329"
+    ]
+  },
+  {
+    "name_ko": "문산",
+    "name_en": "Munsan",
+    "name_jp": "ムンサン",
+    "name_cn": "汶山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K335"
+    ]
+  },
+  {
+    "name_ko": "금촌",
+    "name_en": "Geumchon",
+    "name_jp": "クムチョン",
+    "name_cn": "金村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K331"
+    ]
+  },
+  {
+    "name_ko": "오빈",
+    "name_en": "Obin",
+    "name_jp": "オビン",
+    "name_cn": "梧滨",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K134"
+    ]
+  },
+  {
+    "name_ko": "국수",
+    "name_en": "Guksu",
+    "name_jp": "クッス",
+    "name_cn": "菊秀",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K132"
+    ]
+  },
+  {
+    "name_ko": "운길산",
+    "name_en": "Ungilsan",
+    "name_jp": "ウンギルサン",
+    "name_cn": "云吉山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K129"
+    ]
+  },
+  {
+    "name_ko": "덕소",
+    "name_en": "Deokso",
+    "name_jp": "トッソ",
+    "name_cn": "德沼",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K126"
+    ]
+  },
+  {
+    "name_ko": "중랑",
+    "name_en": "Jungnang",
+    "name_jp": "チュンナン",
+    "name_cn": "中浪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선",
+      "경춘선"
+    ],
+    "codes": [
+      "K119",
+      "P119"
+    ]
+  },
+  {
+    "name_ko": "양정",
+    "name_en": "Yangjeong",
+    "name_jp": "ヤンジョン",
+    "name_cn": "养正",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K125"
+    ]
+  },
+  {
+    "name_ko": "도농",
+    "name_en": "Donong",
+    "name_jp": "トノン",
+    "name_cn": "陶农",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K124"
+    ]
+  },
+  {
+    "name_ko": "임진강",
+    "name_en": "Imjingang",
+    "name_jp": "イムジンガン",
+    "name_cn": "臨津江",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K337"
+    ]
+  },
+  {
+    "name_ko": "도심",
+    "name_en": "Dosim",
+    "name_jp": "トシム",
+    "name_cn": "陶深",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K127"
+    ]
+  },
+  {
+    "name_ko": "수색",
+    "name_en": "Susaek",
+    "name_jp": "スセク",
+    "name_cn": "水色",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K317"
+    ]
+  },
+  {
+    "name_ko": "야당",
+    "name_en": "Yadang",
+    "name_jp": "ヤダン",
+    "name_cn": "野塘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K328"
+    ]
+  },
+  {
+    "name_ko": "한국항공대",
+    "name_en": "Korea Aerospace Univ.",
+    "name_jp": "ハングクハンゴンデ",
+    "name_cn": "韩国航空大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K318"
+    ]
+  },
+  {
+    "name_ko": "팔당",
+    "name_en": "Paldang",
+    "name_jp": "パルタン",
+    "name_cn": "八堂",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K128"
+    ]
+  },
+  {
+    "name_ko": "용문",
+    "name_en": "Yongmun",
+    "name_jp": "ヨンムン",
+    "name_cn": "龙门",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K137"
+    ]
+  },
+  {
+    "name_ko": "아신",
+    "name_en": "Asin",
+    "name_jp": "アシン",
+    "name_cn": "我新",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K133"
+    ]
+  },
+  {
+    "name_ko": "탄현",
+    "name_en": "Tanhyeon",
+    "name_jp": "タンヒョン",
+    "name_cn": "炭岘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K327"
+    ]
+  },
+  {
+    "name_ko": "풍산",
+    "name_en": "Pungsan",
+    "name_jp": "プンサン",
+    "name_cn": "枫山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선",
+      "서해선"
+    ],
+    "codes": [
+      "K325",
+      "S08"
+    ]
+  },
+  {
+    "name_ko": "응봉",
+    "name_en": "Eungbong",
+    "name_jp": "ウンボン",
+    "name_cn": "鹰峰",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K115"
+    ]
+  },
+  {
+    "name_ko": "백마",
+    "name_en": "Baengma",
+    "name_jp": "ペンマ",
+    "name_cn": "白马",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선",
+      "서해선"
+    ],
+    "codes": [
+      "K324",
+      "S09"
+    ]
+  },
+  {
+    "name_ko": "운천",
+    "name_en": "Uncheon",
+    "name_jp": "ウンチョン",
+    "name_cn": "云泉",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K336"
+    ]
+  },
+  {
+    "name_ko": "파주",
+    "name_en": "Paju",
+    "name_jp": "パジュ",
+    "name_cn": "坡州",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K334"
+    ]
+  },
+  {
+    "name_ko": "월롱",
+    "name_en": "Wollong",
+    "name_jp": "ウォルロン",
+    "name_cn": "月笼",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K333"
+    ]
+  },
+  {
+    "name_ko": "일산",
+    "name_en": "Ilsan",
+    "name_jp": "イルサン",
+    "name_cn": "一山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선",
+      "서해선"
+    ],
+    "codes": [
+      "K326",
+      "S07"
+    ]
+  },
+  {
+    "name_ko": "행신",
+    "name_en": "Haengsin",
+    "name_jp": "ヘンシン",
+    "name_cn": "幸信",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K320"
+    ]
+  },
+  {
+    "name_ko": "지평",
+    "name_en": "Jipyeong",
+    "name_jp": "チピョン",
+    "name_cn": "砥平",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경의선"
+    ],
+    "codes": [
+      "K138"
+    ]
+  },
+  {
+    "name_ko": "갈매",
+    "name_en": "Galmae",
+    "name_jp": "カルメ",
+    "name_cn": "葛梅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P123"
+    ]
+  },
+  {
+    "name_ko": "춘천",
+    "name_en": "Chuncheon",
+    "name_jp": "チュンチョン",
+    "name_cn": "春川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P140"
+    ]
+  },
+  {
+    "name_ko": "가평",
+    "name_en": "Gapyeong",
+    "name_jp": "カピョン",
+    "name_cn": "加平",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P134"
+    ]
+  },
+  {
+    "name_ko": "마석",
+    "name_en": "Maseok",
+    "name_jp": "マソク",
+    "name_cn": "磨石",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P130"
+    ]
+  },
+  {
+    "name_ko": "백양리",
+    "name_en": "Baegyang-ri",
+    "name_jp": "ペギャンニ",
+    "name_cn": "白楊里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P136"
+    ]
+  },
+  {
+    "name_ko": "상천",
+    "name_en": "Sangcheon",
+    "name_jp": "サンチョン",
+    "name_cn": "上泉",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P133"
+    ]
+  },
+  {
+    "name_ko": "청평",
+    "name_en": "Cheongpyeong",
+    "name_jp": "チョンピョン",
+    "name_cn": "淸平",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P132"
+    ]
+  },
+  {
+    "name_ko": "천마산",
+    "name_en": "Cheonmasan",
+    "name_jp": "チョンマサン",
+    "name_cn": "天摩山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P129"
+    ]
+  },
+  {
+    "name_ko": "퇴계원",
+    "name_en": "Toegyewon",
+    "name_jp": "トェゲウォン",
+    "name_cn": "退溪院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P125"
+    ]
+  },
+  {
+    "name_ko": "굴봉산",
+    "name_en": "Gulbongsan",
+    "name_jp": "クルボンサン",
+    "name_cn": "屈峰山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P135"
+    ]
+  },
+  {
+    "name_ko": "금곡",
+    "name_en": "Geumgok",
+    "name_jp": "クムゴク",
+    "name_cn": "金谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P127"
+    ]
+  },
+  {
+    "name_ko": "김유정",
+    "name_en": "Gimyujeong",
+    "name_jp": "キミュジョン",
+    "name_cn": "金裕貞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P138"
+    ]
+  },
+  {
+    "name_ko": "대성리",
+    "name_en": "Daeseong-ri",
+    "name_jp": "テソンニ",
+    "name_cn": "大成里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P131"
+    ]
+  },
+  {
+    "name_ko": "남춘천",
+    "name_en": "Namchuncheon",
+    "name_jp": "ナムチュンチョン",
+    "name_cn": "南春川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P139"
+    ]
+  },
+  {
+    "name_ko": "강촌",
+    "name_en": "Gangchon",
+    "name_jp": "カンチョン",
+    "name_cn": "江村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P137"
+    ]
+  },
+  {
+    "name_ko": "별내",
+    "name_en": "Byeollae",
+    "name_jp": "ピョルネ",
+    "name_cn": "別內",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P124"
+    ]
+  },
+  {
+    "name_ko": "사릉",
+    "name_en": "Sareung",
+    "name_jp": "サルン",
+    "name_cn": "思陵",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P126"
+    ]
+  },
+  {
+    "name_ko": "평내호평",
+    "name_en": "Pyeongnae  Hopyeong",
+    "name_jp": "ピョンネホピョン",
+    "name_cn": "坪內好坪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "경춘선"
+    ],
+    "codes": [
+      "P128"
+    ]
+  },
+  {
+    "name_ko": "계양",
+    "name_en": "Gyeyang",
+    "name_jp": "ケヤン",
+    "name_cn": "桂阳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "공항철도",
+      "인천1호선"
+    ],
+    "codes": [
+      "A06",
+      "I110"
+    ]
+  },
+  {
+    "name_ko": "공항화물청사",
+    "name_en": "Incheon Intl. Airport Cargo Terminal",
+    "name_jp": "コンハンファムルチョンサ",
+    "name_cn": "机场货物厅舍",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "공항철도"
+    ],
+    "codes": [
+      "A09"
+    ]
+  },
+  {
+    "name_ko": "운서",
+    "name_en": "Unseo",
+    "name_jp": "ウンソ",
+    "name_cn": "云西",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "공항철도"
+    ],
+    "codes": [
+      "A08"
+    ]
+  },
+  {
+    "name_ko": "청라국제도시",
+    "name_en": "Cheongna Int’l City Station",
+    "name_jp": "チョンナグクチェドシ",
+    "name_cn": "靑羅國際城驛",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "공항철도"
+    ],
+    "codes": [
+      "A071"
+    ]
+  },
+  {
+    "name_ko": "인천공항1터미널",
+    "name_en": "Incheon Int’l Airport Terminal 1",
+    "name_jp": "仁川国際空港 1ターミナル",
+    "name_cn": "仁川国际机场 1号航站楼",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "공항철도"
+    ],
+    "codes": [
+      "A10"
+    ]
+  },
+  {
+    "name_ko": "검암",
+    "name_en": "Geomam",
+    "name_jp": "コマム",
+    "name_cn": "黔岩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "공항철도",
+      "인천2호선"
+    ],
+    "codes": [
+      "A07",
+      "I207"
+    ]
+  },
+  {
+    "name_ko": "인천공항2터미널",
+    "name_en": "Incheon Int’l Airport Terminal 2",
+    "name_jp": "仁川国際空港 ２ターミナル",
+    "name_cn": "仁川国际机场 2号航站楼",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "공항철도"
+    ],
+    "codes": [
+      "A11"
+    ]
+  },
+  {
+    "name_ko": "영종",
+    "name_en": "Yeongjong",
+    "name_jp": "ヨンジョン",
+    "name_cn": "永宗",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "공항철도"
+    ],
+    "codes": [
+      "A072"
+    ]
+  },
+  {
+    "name_ko": "장기",
+    "name_en": "Janggi",
+    "name_jp": "チャンギ",
+    "name_cn": "场基",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "693"
+    ]
+  },
+  {
+    "name_ko": "사우",
+    "name_en": "Sau",
+    "name_jp": "サウ",
+    "name_cn": "沙隅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "696"
+    ]
+  },
+  {
+    "name_ko": "걸포북변",
+    "name_en": "Geolpo Bukbyeon",
+    "name_jp": "コルポブクビョン",
+    "name_cn": "杰浦北边",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "695"
+    ]
+  },
+  {
+    "name_ko": "운양",
+    "name_en": "Unyang",
+    "name_jp": "ウニャン",
+    "name_cn": "云阳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "694"
+    ]
+  },
+  {
+    "name_ko": "마산",
+    "name_en": "Masan",
+    "name_jp": "マサン",
+    "name_cn": "麻山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "692"
+    ]
+  },
+  {
+    "name_ko": "구래",
+    "name_en": "Gurae",
+    "name_jp": "クレ",
+    "name_cn": "九來",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "691"
+    ]
+  },
+  {
+    "name_ko": "양촌",
+    "name_en": "Yangchon",
+    "name_jp": "ヤンチョン",
+    "name_cn": "阳村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "690"
+    ]
+  },
+  {
+    "name_ko": "고촌",
+    "name_en": "Gochon",
+    "name_jp": "コチョン",
+    "name_cn": "高村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "698"
+    ]
+  },
+  {
+    "name_ko": "풍무",
+    "name_en": "Pungmu",
+    "name_jp": "プンム",
+    "name_cn": "丰舞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "김포도시철도"
+    ],
+    "codes": [
+      "697"
+    ]
+  },
+  {
+    "name_ko": "신천",
+    "name_en": "Sincheon",
+    "name_jp": "シンチョン(新川)?",
+    "name_cn": "新川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S19"
+    ]
+  },
+  {
+    "name_ko": "신현",
+    "name_en": "Sinhyeon",
+    "name_jp": "シンヒョン",
+    "name_cn": "新?",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S20"
+    ]
+  },
+  {
+    "name_ko": "시흥시청",
+    "name_en": "Siheung City Hall",
+    "name_jp": "シフンシチョン",
+    "name_cn": "始?市?",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S22"
+    ]
+  },
+  {
+    "name_ko": "시흥능곡",
+    "name_en": "Siheung Neunggok",
+    "name_jp": "シフンヌンゴク",
+    "name_cn": "始?陵谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S23"
+    ]
+  },
+  {
+    "name_ko": "달미",
+    "name_en": "Dalmi",
+    "name_jp": "タルミ",
+    "name_cn": "?美",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S24"
+    ]
+  },
+  {
+    "name_ko": "선부",
+    "name_en": "Seonbu",
+    "name_jp": "ソンブ",
+    "name_cn": "仙府",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S25"
+    ]
+  },
+  {
+    "name_ko": "시우",
+    "name_en": "Siu",
+    "name_jp": "ウォンゴク",
+    "name_cn": "元谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S27"
+    ]
+  },
+  {
+    "name_ko": "원시",
+    "name_en": "Wonsi",
+    "name_jp": "ウォンシ",
+    "name_cn": "元?",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S28"
+    ]
+  },
+  {
+    "name_ko": "원종",
+    "name_en": "Wonjong",
+    "name_jp": "ウォンジョン",
+    "name_cn": "遠宗",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S14"
+    ]
+  },
+  {
+    "name_ko": "소새울",
+    "name_en": "Sosaeul",
+    "name_jp": "ソセウル",
+    "name_cn": "素砂屋",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S17"
+    ]
+  },
+  {
+    "name_ko": "시흥대야",
+    "name_en": "Siheung Daeya",
+    "name_jp": "シフンデヤ",
+    "name_cn": "始?大也",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "서해선"
+    ],
+    "codes": [
+      "S18"
+    ]
+  },
+  {
+    "name_ko": "숭의",
+    "name_en": "Sungui",
+    "name_jp": "スンイ",
+    "name_cn": "崇义",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K270"
+    ]
+  },
+  {
+    "name_ko": "인하대",
+    "name_en": "Inha Univ.",
+    "name_jp": "インハデ",
+    "name_cn": "仁荷大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K269"
+    ]
+  },
+  {
+    "name_ko": "남동인더스파크",
+    "name_en": "Namdong Induspark",
+    "name_jp": "ナムドン・インドスパーク",
+    "name_cn": "南洞产业园地",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K264"
+    ]
+  },
+  {
+    "name_ko": "야탑",
+    "name_en": "Yatap",
+    "name_jp": "ヤタプ",
+    "name_cn": "野塔",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K226"
+    ]
+  },
+  {
+    "name_ko": "신포",
+    "name_en": "Sinpo",
+    "name_jp": "シンポ",
+    "name_cn": "新浦",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K271"
+    ]
+  },
+  {
+    "name_ko": "송도",
+    "name_en": "Songdo",
+    "name_jp": "ソンド",
+    "name_cn": "松岛",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K267"
+    ]
+  },
+  {
+    "name_ko": "호구포",
+    "name_en": "Hogupo",
+    "name_jp": "ホグポ",
+    "name_cn": "虎口浦",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K263"
+    ]
+  },
+  {
+    "name_ko": "오목천",
+    "name_en": "Omokcheon",
+    "name_jp": "オモックチョン",
+    "name_cn": "梧木川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K247"
+    ]
+  },
+  {
+    "name_ko": "기흥",
+    "name_en": "Giheung",
+    "name_jp": "キフン",
+    "name_cn": "器兴",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선",
+      "용인경전철"
+    ],
+    "codes": [
+      "K237",
+      "Y110"
+    ]
+  },
+  {
+    "name_ko": "태평",
+    "name_en": "Taepyeong",
+    "name_jp": "テピョン",
+    "name_cn": "太平",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K224"
+    ]
+  },
+  {
+    "name_ko": "월곶",
+    "name_en": "Wolgot",
+    "name_jp": "ウォルゴッ",
+    "name_cn": "月串",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K260"
+    ]
+  },
+  {
+    "name_ko": "상갈",
+    "name_en": "Sanggal",
+    "name_jp": "サンガル",
+    "name_cn": "上葛",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K238"
+    ]
+  },
+  {
+    "name_ko": "수내",
+    "name_en": "Sunae",
+    "name_jp": "スネ",
+    "name_cn": "薮内",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K229"
+    ]
+  },
+  {
+    "name_ko": "죽전",
+    "name_en": "Jukjeon",
+    "name_jp": "チュクチョン",
+    "name_cn": "竹田",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K233"
+    ]
+  },
+  {
+    "name_ko": "오리",
+    "name_en": "Ori",
+    "name_jp": "オリ",
+    "name_cn": "梧里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K232"
+    ]
+  },
+  {
+    "name_ko": "한티",
+    "name_en": "Hanti",
+    "name_jp": "ハンティ",
+    "name_cn": "汉堤",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K216"
+    ]
+  },
+  {
+    "name_ko": "연수",
+    "name_en": "Yeonsu",
+    "name_jp": "ヨンス",
+    "name_cn": "延寿",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K266"
+    ]
+  },
+  {
+    "name_ko": "원인재",
+    "name_en": "Woninjae",
+    "name_jp": "ウォニンジェ",
+    "name_cn": "源仁斋",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선",
+      "인천1호선"
+    ],
+    "codes": [
+      "K265",
+      "I130"
+    ]
+  },
+  {
+    "name_ko": "인천논현",
+    "name_en": "Incheon Nonhyeon",
+    "name_jp": "インチョンノンヒョン",
+    "name_cn": "仁川论岘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K262"
+    ]
+  },
+  {
+    "name_ko": "야목",
+    "name_en": "Yamok",
+    "name_jp": "ヤモク",
+    "name_cn": "野牧",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K249"
+    ]
+  },
+  {
+    "name_ko": "구성",
+    "name_en": "Guseong",
+    "name_jp": "クソン",
+    "name_cn": "驹城",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K235"
+    ]
+  },
+  {
+    "name_ko": "미금",
+    "name_en": "Migeum",
+    "name_jp": "ミグム",
+    "name_cn": "美金",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선",
+      "신분당선"
+    ],
+    "codes": [
+      "K231",
+      "D13"
+    ]
+  },
+  {
+    "name_ko": "소래포구",
+    "name_en": "Soraepogu",
+    "name_jp": "ソレポグ",
+    "name_cn": "苏莱浦口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K261"
+    ]
+  },
+  {
+    "name_ko": "달월",
+    "name_en": "Dalwol",
+    "name_jp": "タロル",
+    "name_cn": "達月",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K259"
+    ]
+  },
+  {
+    "name_ko": "어천",
+    "name_en": "Eocheon",
+    "name_jp": "オチョン",
+    "name_cn": "漁川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K248"
+    ]
+  },
+  {
+    "name_ko": "고색",
+    "name_en": "Gosaek",
+    "name_jp": "ゴセク",
+    "name_cn": "古索",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K246"
+    ]
+  },
+  {
+    "name_ko": "매교",
+    "name_en": "Maegyo",
+    "name_jp": "メギョ",
+    "name_cn": "梅桥",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K244"
+    ]
+  },
+  {
+    "name_ko": "수원시청",
+    "name_en": "Suwon City Hall",
+    "name_jp": "スウォンシチョン",
+    "name_cn": "水原市厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K243"
+    ]
+  },
+  {
+    "name_ko": "매탄권선",
+    "name_en": "MaetanGwonseon",
+    "name_jp": "メタン",
+    "name_cn": "梅滩",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K242"
+    ]
+  },
+  {
+    "name_ko": "망포",
+    "name_en": "Mangpo",
+    "name_jp": "マンポ",
+    "name_cn": "网浦",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K241"
+    ]
+  },
+  {
+    "name_ko": "청명",
+    "name_en": "Cheongmyeong",
+    "name_jp": "チョンミョン",
+    "name_cn": "清明",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K239"
+    ]
+  },
+  {
+    "name_ko": "신갈",
+    "name_en": "Singal",
+    "name_jp": "シンガル",
+    "name_cn": "新葛",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K236"
+    ]
+  },
+  {
+    "name_ko": "보정",
+    "name_en": "Bojeong",
+    "name_jp": "ポジョン",
+    "name_cn": "宝亭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K234"
+    ]
+  },
+  {
+    "name_ko": "정자",
+    "name_en": "Jeongja",
+    "name_jp": "チョンジャ",
+    "name_cn": "亭子",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선",
+      "신분당선"
+    ],
+    "codes": [
+      "K230",
+      "D12"
+    ]
+  },
+  {
+    "name_ko": "서현",
+    "name_en": "Seohyeon",
+    "name_jp": "ソヒョン",
+    "name_cn": "书岘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K228"
+    ]
+  },
+  {
+    "name_ko": "가천대",
+    "name_en": "Gachon Univ.",
+    "name_jp": "カチョンデ",
+    "name_cn": "嘉泉大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K223"
+    ]
+  },
+  {
+    "name_ko": "압구정로데오",
+    "name_en": "Apgujeong rodeo",
+    "name_jp": "アックジョンロデオ",
+    "name_cn": "狎鸥亭罗德奥",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K212"
+    ]
+  },
+  {
+    "name_ko": "대모산입구",
+    "name_en": "Daemosan",
+    "name_jp": "テモサンイック",
+    "name_cn": "大母山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K220"
+    ]
+  },
+  {
+    "name_ko": "서울숲",
+    "name_en": "Seoul-forest",
+    "name_jp": "ソウルスプ",
+    "name_cn": "首尔林",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K211"
+    ]
+  },
+  {
+    "name_ko": "영통",
+    "name_en": "Yeongtong",
+    "name_jp": "ヨントン",
+    "name_cn": "灵通",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K240"
+    ]
+  },
+  {
+    "name_ko": "개포동",
+    "name_en": "Gaepo-dong",
+    "name_jp": "ケポドン",
+    "name_cn": "开浦洞",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K219"
+    ]
+  },
+  {
+    "name_ko": "사리",
+    "name_en": "Sari",
+    "name_jp": "サリ",
+    "name_cn": "四里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K250"
+    ]
+  },
+  {
+    "name_ko": "구룡",
+    "name_en": "Guryong",
+    "name_jp": "クリョン",
+    "name_cn": "九龙",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "수인분당선"
+    ],
+    "codes": [
+      "K218"
+    ]
+  },
+  {
+    "name_ko": "당곡",
+    "name_en": "Danggok",
+    "name_jp": "タンゴク",
+    "name_cn": "堂谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신림선"
+    ],
+    "codes": [
+      "S407"
+    ]
+  },
+  {
+    "name_ko": "관악산",
+    "name_en": "Gwanaksan",
+    "name_jp": "クァナクサン",
+    "name_cn": "冠岳山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신림선"
+    ],
+    "codes": [
+      "S411"
+    ]
+  },
+  {
+    "name_ko": "서울대벤처타운",
+    "name_en": "Seoul National Univ. Venture Town",
+    "name_jp": "ソウルデベンチャータウン",
+    "name_cn": "首尔大学创投城",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신림선"
+    ],
+    "codes": [
+      "S410"
+    ]
+  },
+  {
+    "name_ko": "서원",
+    "name_en": "Sutgogae",
+    "name_jp": "スッコゲ",
+    "name_cn": "炭岭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신림선"
+    ],
+    "codes": [
+      "S409"
+    ]
+  },
+  {
+    "name_ko": "보라매병원",
+    "name_en": "Boramae MedicalCenter",
+    "name_jp": "ポラメビョンウォン",
+    "name_cn": "波拉美医院",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신림선"
+    ],
+    "codes": [
+      "S406"
+    ]
+  },
+  {
+    "name_ko": "보라매공원",
+    "name_en": "Boramae Park",
+    "name_jp": "ポラメゴンウォン",
+    "name_cn": "波拉美公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신림선"
+    ],
+    "codes": [
+      "S405"
+    ]
+  },
+  {
+    "name_ko": "서울지방병무청",
+    "name_en": "Seoul Regional Office of Military Manpower",
+    "name_jp": "ソウルジバンビョンムチョン",
+    "name_cn": "首尔地方兵务厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신림선"
+    ],
+    "codes": [
+      "S403"
+    ]
+  },
+  {
+    "name_ko": "수지구청",
+    "name_en": "Suji-gu office",
+    "name_jp": "スヅグチョン",
+    "name_cn": "水枝區廳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신분당선"
+    ],
+    "codes": [
+      "D15"
+    ]
+  },
+  {
+    "name_ko": "양재시민의숲",
+    "name_en": "Yangjae Citizen's Forest",
+    "name_jp": "ヤンジェ・シミネスプ",
+    "name_cn": "良才市民之林",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신분당선"
+    ],
+    "codes": [
+      "D9"
+    ]
+  },
+  {
+    "name_ko": "청계산입구",
+    "name_en": "Cheonggyesan",
+    "name_jp": "チョンゲサンイック",
+    "name_cn": "淸溪山入口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신분당선"
+    ],
+    "codes": [
+      "D10"
+    ]
+  },
+  {
+    "name_ko": "동천",
+    "name_en": "Dongcheon",
+    "name_jp": "トンチョン",
+    "name_cn": "東川",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신분당선"
+    ],
+    "codes": [
+      "D14"
+    ]
+  },
+  {
+    "name_ko": "성복",
+    "name_en": "Seongbok",
+    "name_jp": "ソンボク",
+    "name_cn": "星福",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신분당선"
+    ],
+    "codes": [
+      "D16"
+    ]
+  },
+  {
+    "name_ko": "상현",
+    "name_en": "Sanghyeon",
+    "name_jp": "サンヒョン",
+    "name_cn": "上峴",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신분당선"
+    ],
+    "codes": [
+      "D17"
+    ]
+  },
+  {
+    "name_ko": "광교중앙",
+    "name_en": "GwanggyoJungang",
+    "name_jp": "クァンギョジュンアン",
+    "name_cn": "光敎中央",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신분당선"
+    ],
+    "codes": [
+      "D18"
+    ]
+  },
+  {
+    "name_ko": "광교",
+    "name_en": "Gwanggyo",
+    "name_jp": "クァンギョ",
+    "name_cn": "光敎",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "신분당선"
+    ],
+    "codes": [
+      "D19"
+    ]
+  },
+  {
+    "name_ko": "동백",
+    "name_en": "Dongbaek",
+    "name_jp": "トンベク",
+    "name_cn": "東栢",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y114"
+    ]
+  },
+  {
+    "name_ko": "전대.에버랜드",
+    "name_en": "Jeondae · Everland",
+    "name_jp": "チョンデ・エバーランド",
+    "name_cn": "前垈･愛寶樂園",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y126"
+    ]
+  },
+  {
+    "name_ko": "보평",
+    "name_en": "Bopyeong",
+    "name_jp": "ポピョン",
+    "name_cn": "洑坪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y123"
+    ]
+  },
+  {
+    "name_ko": "어정",
+    "name_en": "Eojeong",
+    "name_jp": "オジョン",
+    "name_cn": "御井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y113"
+    ]
+  },
+  {
+    "name_ko": "지석",
+    "name_en": "Jiseok",
+    "name_jp": "チソク",
+    "name_cn": "支石",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y112"
+    ]
+  },
+  {
+    "name_ko": "둔전",
+    "name_en": "Dunjeon",
+    "name_jp": "トゥンジョン",
+    "name_cn": "屯田",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y125"
+    ]
+  },
+  {
+    "name_ko": "고진",
+    "name_en": "Gojin",
+    "name_jp": "コジン",
+    "name_cn": "古陣",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y121"
+    ]
+  },
+  {
+    "name_ko": "용인중앙시장",
+    "name_en": "Yongin Jungang Market",
+    "name_jp": "ヨンインチュンアンシジャン",
+    "name_cn": "龙仁中央市场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y120"
+    ]
+  },
+  {
+    "name_ko": "김량장",
+    "name_en": "Gimnyangjang",
+    "name_jp": "キムニャンジャン",
+    "name_cn": "金良場",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y119"
+    ]
+  },
+  {
+    "name_ko": "명지대",
+    "name_en": "Myongji Univ.",
+    "name_jp": "ミョンジデ",
+    "name_cn": "明知大",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y118"
+    ]
+  },
+  {
+    "name_ko": "시청.용인대",
+    "name_en": "City Hall, Yongin Univ.",
+    "name_jp": "シチョン, ヨンインデ",
+    "name_cn": "市廳 龍仁大",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y117"
+    ]
+  },
+  {
+    "name_ko": "삼가",
+    "name_en": "Samga",
+    "name_jp": "サムガ",
+    "name_cn": "三街",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y116"
+    ]
+  },
+  {
+    "name_ko": "초당",
+    "name_en": "Chodang",
+    "name_jp": "チョダン",
+    "name_cn": "草堂",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y115"
+    ]
+  },
+  {
+    "name_ko": "강남대",
+    "name_en": "Kangnam Univ.",
+    "name_jp": "カンナムデ",
+    "name_cn": "江南大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "용인경전철"
+    ],
+    "codes": [
+      "Y111"
+    ]
+  },
+  {
+    "name_ko": "북한산우이",
+    "name_en": "Bukhansan Ui",
+    "name_jp": "プカンサンウイ",
+    "name_cn": "北漢山牛耳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "941"
+    ]
+  },
+  {
+    "name_ko": "4·19민주묘지",
+    "name_en": "April 19th National Cemetery",
+    "name_jp": "サ.イルグミンジュミョジ",
+    "name_cn": "四一九民主墓地",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "943"
+    ]
+  },
+  {
+    "name_ko": "가오리",
+    "name_en": "Gaori",
+    "name_jp": "カオリ",
+    "name_cn": "加五里",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "944"
+    ]
+  },
+  {
+    "name_ko": "화계",
+    "name_en": "Hwagye",
+    "name_jp": "ファゲ",
+    "name_cn": "華溪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "945"
+    ]
+  },
+  {
+    "name_ko": "삼양",
+    "name_en": "Samyang",
+    "name_jp": "サミャン",
+    "name_cn": "三陽",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "946"
+    ]
+  },
+  {
+    "name_ko": "삼양사거리",
+    "name_en": "Samyang Sageori",
+    "name_jp": "サミャンサゴリ",
+    "name_cn": "三阳十字路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "947"
+    ]
+  },
+  {
+    "name_ko": "솔샘",
+    "name_en": "Solsaem",
+    "name_jp": "ソルセム",
+    "name_cn": "松泉",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "948"
+    ]
+  },
+  {
+    "name_ko": "정릉",
+    "name_en": "Jeongneung",
+    "name_jp": "チョンヌン",
+    "name_cn": "貞陵",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "950"
+    ]
+  },
+  {
+    "name_ko": "북한산보국문",
+    "name_en": "Bukhansan Bogungmun",
+    "name_jp": "プカンサンボグンムン",
+    "name_cn": "北漢山輔國門",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "949"
+    ]
+  },
+  {
+    "name_ko": "솔밭공원",
+    "name_en": "Solbat Park",
+    "name_jp": "ソルバッコンウォン",
+    "name_cn": "松林公園",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "우이신설경전철"
+    ],
+    "codes": [
+      "942"
+    ]
+  },
+  {
+    "name_ko": "경기도청북부청사",
+    "name_en": "Gyeonggi Provincial Government Northern Office",
+    "name_jp": "キョンギドチョンプップチョンサ",
+    "name_cn": "京畿道廳北部廳舍",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U120"
+    ]
+  },
+  {
+    "name_ko": "발곡",
+    "name_en": "Balgok",
+    "name_jp": "バルゴク",
+    "name_cn": "鉢谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U110"
+    ]
+  },
+  {
+    "name_ko": "범골",
+    "name_en": "Beomgol",
+    "name_jp": "ポムゴル",
+    "name_cn": "虎谷",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U112"
+    ]
+  },
+  {
+    "name_ko": "경전철의정부",
+    "name_en": "Lrt Uijeongbu",
+    "name_jp": "キョンジョンチョルウィジョンブ",
+    "name_cn": "輕電鐵議政府",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U113"
+    ]
+  },
+  {
+    "name_ko": "의정부시청",
+    "name_en": "Uijeongbu City Hall",
+    "name_jp": "ウィジョンブシチョン",
+    "name_cn": "議政府市廳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U114"
+    ]
+  },
+  {
+    "name_ko": "의정부중앙",
+    "name_en": "Uijeongbu Jung-ang",
+    "name_jp": "ウィジョンブチュンアン",
+    "name_cn": "議政府中央",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U117"
+    ]
+  },
+  {
+    "name_ko": "동오",
+    "name_en": "Dong-o",
+    "name_jp": "トンオ",
+    "name_cn": "東梧",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U118"
+    ]
+  },
+  {
+    "name_ko": "새말",
+    "name_en": "sae-mal",
+    "name_jp": "セマル",
+    "name_cn": "赛马",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U119"
+    ]
+  },
+  {
+    "name_ko": "효자",
+    "name_en": "hyoja",
+    "name_jp": "ヒョジャ",
+    "name_cn": "孝子",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U121"
+    ]
+  },
+  {
+    "name_ko": "곤제",
+    "name_en": "gonjae",
+    "name_jp": "コンジェ",
+    "name_cn": "昆弟",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U122"
+    ]
+  },
+  {
+    "name_ko": "어룡",
+    "name_en": "eoryong",
+    "name_jp": "オリョン",
+    "name_cn": "魚龍",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U123"
+    ]
+  },
+  {
+    "name_ko": "송산",
+    "name_en": "Songsan",
+    "name_jp": "ソンサン",
+    "name_cn": "松山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U124"
+    ]
+  },
+  {
+    "name_ko": "탑석",
+    "name_en": "Tapseok",
+    "name_jp": "タプソク",
+    "name_cn": "塔石",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U125"
+    ]
+  },
+  {
+    "name_ko": "흥선",
+    "name_en": "Heungseon",
+    "name_jp": "ホンソン",
+    "name_cn": "興宣",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "의정부경전철"
+    ],
+    "codes": [
+      "U115"
+    ]
+  },
+  {
+    "name_ko": "왕길",
+    "name_en": "Wanggil",
+    "name_jp": "旺吉",
+    "name_cn": "旺吉",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I202"
+    ]
+  },
+  {
+    "name_ko": "운연",
+    "name_en": "Unyeon",
+    "name_jp": "雲宴",
+    "name_cn": "云宴",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I227"
+    ]
+  },
+  {
+    "name_ko": "모래내시장",
+    "name_en": "Moraenae Market",
+    "name_jp": "モレネ市場",
+    "name_cn": "沙丘市场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I223"
+    ]
+  },
+  {
+    "name_ko": "석천사거리",
+    "name_en": "Seokcheon Sageori",
+    "name_jp": "石泉サゴリ",
+    "name_cn": "石泉十字路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I222"
+    ]
+  },
+  {
+    "name_ko": "인천시청",
+    "name_en": "Inchon City Hall",
+    "name_jp": "仁川市庁",
+    "name_cn": "仁川市厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선",
+      "인천1호선"
+    ],
+    "codes": [
+      "I221",
+      "I124"
+    ]
+  },
+  {
+    "name_ko": "석바위시장",
+    "name_en": "Seokbawi Market",
+    "name_jp": "ソッバウィ市場",
+    "name_cn": "石岩市场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I220"
+    ]
+  },
+  {
+    "name_ko": "서부여성회관",
+    "name_en": "West Woman's Community Center",
+    "name_jp": "",
+    "name_cn": "",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I214"
+    ]
+  },
+  {
+    "name_ko": "가정",
+    "name_en": "Gajeong",
+    "name_jp": "佳亭",
+    "name_cn": "佳亭",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I211"
+    ]
+  },
+  {
+    "name_ko": "아시아드경기장",
+    "name_en": "Asiad Stadium",
+    "name_jp": "アジアード競技場",
+    "name_cn": "亚运会赛场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I209"
+    ]
+  },
+  {
+    "name_ko": "독정",
+    "name_en": "Dokjeong",
+    "name_jp": "",
+    "name_cn": "",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I206"
+    ]
+  },
+  {
+    "name_ko": "인천대공원",
+    "name_en": "Incheon Grand Park",
+    "name_jp": "仁川大公園",
+    "name_cn": "仁川大公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I226"
+    ]
+  },
+  {
+    "name_ko": "남동구청",
+    "name_en": "Namdong-gu Office",
+    "name_jp": "南洞区庁",
+    "name_cn": "南洞区厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I225"
+    ]
+  },
+  {
+    "name_ko": "시민공원",
+    "name_en": "Citizens Park",
+    "name_jp": "市民公園",
+    "name_cn": "市民公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I219"
+    ]
+  },
+  {
+    "name_ko": "주안국가산단",
+    "name_en": "Juan National Industrial Complex",
+    "name_jp": "朱安国家産団",
+    "name_cn": "朱安国家産团",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I217"
+    ]
+  },
+  {
+    "name_ko": "가재울",
+    "name_en": "Gajaeul",
+    "name_jp": "カジェウル",
+    "name_cn": "蝲蛄溪",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I216"
+    ]
+  },
+  {
+    "name_ko": "인천가좌",
+    "name_en": "Incheon Gajwa",
+    "name_jp": "",
+    "name_cn": "",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I215"
+    ]
+  },
+  {
+    "name_ko": "가정중앙시장",
+    "name_en": "Gajeong Jungang Market",
+    "name_jp": "佳亭中央市場",
+    "name_cn": "佳亭中央市场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I212"
+    ]
+  },
+  {
+    "name_ko": "검바위",
+    "name_en": "Geombawi",
+    "name_jp": "コムバウィ",
+    "name_cn": "黔石",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I208"
+    ]
+  },
+  {
+    "name_ko": "완정",
+    "name_en": "Wanjeong",
+    "name_jp": "完井",
+    "name_cn": "完井",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I205"
+    ]
+  },
+  {
+    "name_ko": "마전",
+    "name_en": "Majeon",
+    "name_jp": "麻田",
+    "name_cn": "麻田",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I204"
+    ]
+  },
+  {
+    "name_ko": "검단사거리",
+    "name_en": "Geomdan Sageori",
+    "name_jp": "黔丹サゴリ",
+    "name_cn": "黔丹十字路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I203"
+    ]
+  },
+  {
+    "name_ko": "검단오류",
+    "name_en": "Geomdan Oryu",
+    "name_jp": "黔丹梧柳",
+    "name_cn": "黔丹梧柳",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I201"
+    ]
+  },
+  {
+    "name_ko": "만수",
+    "name_en": "Mansu",
+    "name_jp": "萬寿",
+    "name_cn": "万寿",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I224"
+    ]
+  },
+  {
+    "name_ko": "서구청",
+    "name_en": "Seo-gu Office",
+    "name_jp": "西区庁",
+    "name_cn": "西区厅",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천2호선"
+    ],
+    "codes": [
+      "I210"
+    ]
+  },
+  {
+    "name_ko": "지식정보단지",
+    "name_en": "BIT Zone",
+    "name_jp": "チシク・チョンボダンジ",
+    "name_cn": "知识信息园区",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I135"
+    ]
+  },
+  {
+    "name_ko": "경인교대입구",
+    "name_en": "Gyeong-in Nat`l Univ. of Education",
+    "name_jp": "キョンインギョデイック",
+    "name_cn": "京仁教育大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I115"
+    ]
+  },
+  {
+    "name_ko": "귤현",
+    "name_en": "Gyulhyeon",
+    "name_jp": "キュルチョン",
+    "name_cn": "橘岘",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I111"
+    ]
+  },
+  {
+    "name_ko": "계산",
+    "name_en": "Gyesan",
+    "name_jp": "ケサン",
+    "name_cn": "桂山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I114"
+    ]
+  },
+  {
+    "name_ko": "동막",
+    "name_en": "Dongmak",
+    "name_jp": "トンマク",
+    "name_cn": "东幕",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I132"
+    ]
+  },
+  {
+    "name_ko": "송도달빛축제공원",
+    "name_en": "Songdo Moonlight Festival Park",
+    "name_jp": "ソンドダルピッチュクチェゴンウォン",
+    "name_cn": "松岛月光庆典公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I139"
+    ]
+  },
+  {
+    "name_ko": "테크노파크",
+    "name_en": "Technopark",
+    "name_jp": "テクノパーク",
+    "name_cn": "科技园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I134"
+    ]
+  },
+  {
+    "name_ko": "캠퍼스타운",
+    "name_en": "Campus Town",
+    "name_jp": "キャンパスタウン",
+    "name_cn": "大学城",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I133"
+    ]
+  },
+  {
+    "name_ko": "동춘",
+    "name_en": "Dongchun",
+    "name_jp": "トンチュン",
+    "name_cn": "东春",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I131"
+    ]
+  },
+  {
+    "name_ko": "신연수",
+    "name_en": "Sinyeonsu",
+    "name_jp": "シニョンス",
+    "name_cn": "新延寿",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I129"
+    ]
+  },
+  {
+    "name_ko": "선학",
+    "name_en": "Seonhak",
+    "name_jp": "ソンハク",
+    "name_cn": "仙鹤",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I128"
+    ]
+  },
+  {
+    "name_ko": "문학경기장",
+    "name_en": "Munhak Sports Complex",
+    "name_jp": "ムンハク・キョンギジャン",
+    "name_cn": "文鹤体育场",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I127"
+    ]
+  },
+  {
+    "name_ko": "인천터미널",
+    "name_en": "Incheon Bus Terminal",
+    "name_jp": "インチョンターミナル",
+    "name_cn": "仁川客运站",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I126"
+    ]
+  },
+  {
+    "name_ko": "예술회관",
+    "name_en": "Arts Center",
+    "name_jp": "イェスルフェグァン",
+    "name_cn": "艺术会馆",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I125"
+    ]
+  },
+  {
+    "name_ko": "간석오거리",
+    "name_en": "Ganseogogeori",
+    "name_jp": "カンソク・オゴリ",
+    "name_cn": "间石五岔路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I123"
+    ]
+  },
+  {
+    "name_ko": "임학",
+    "name_en": "Imhak",
+    "name_jp": "イムハク",
+    "name_cn": "林鹤",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I113"
+    ]
+  },
+  {
+    "name_ko": "박촌",
+    "name_en": "Bakchon",
+    "name_jp": "パクチョン",
+    "name_cn": "朴村",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I112"
+    ]
+  },
+  {
+    "name_ko": "부평삼거리",
+    "name_en": "Bupyeongsamgeori",
+    "name_jp": "プピョンサムゴリ",
+    "name_cn": "富平丁字路口",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I122"
+    ]
+  },
+  {
+    "name_ko": "동수",
+    "name_en": "Dongsu",
+    "name_jp": "トンス",
+    "name_cn": "东树",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I121"
+    ]
+  },
+  {
+    "name_ko": "부평시장",
+    "name_en": "Bupyeong Market",
+    "name_jp": "富平市場",
+    "name_cn": "富平市場",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I119"
+    ]
+  },
+  {
+    "name_ko": "갈산",
+    "name_en": "Galsan",
+    "name_jp": "カルサン",
+    "name_cn": "葛山",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I117"
+    ]
+  },
+  {
+    "name_ko": "작전",
+    "name_en": "Jakjeon",
+    "name_jp": "チャクチョン",
+    "name_cn": "鹊田",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I116"
+    ]
+  },
+  {
+    "name_ko": "국제업무지구",
+    "name_en": "Intl. Business District",
+    "name_jp": "ククチェオンムジグ",
+    "name_cn": "国际业务园区",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I138"
+    ]
+  },
+  {
+    "name_ko": "센트럴파크",
+    "name_en": "Central Park",
+    "name_jp": "セントラルパーク",
+    "name_cn": "中央公园",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I137"
+    ]
+  },
+  {
+    "name_ko": "인천대입구",
+    "name_en": "Incheon Nat'l Univ.",
+    "name_jp": "インチョンデイック",
+    "name_cn": "仁川大学",
+    "position": [],
+    "label_direction": "",
+    "lines": [
+      "인천1호선"
+    ],
+    "codes": [
+      "I136"
+    ]
+  }
+]
