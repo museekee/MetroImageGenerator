@@ -14,6 +14,7 @@ const StationCard = ({ station }: { station: ICombinedStation }) => {
 
   const colors = station.lines.map(v => lineColors[v])
   const Card = styled.div`
+    zoom: 0.25;
     width: 2000px;
     border-radius: 250px;
     border-style: solid;
