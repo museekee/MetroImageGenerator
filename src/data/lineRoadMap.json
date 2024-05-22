@@ -1,0 +1,32 @@
+{
+  "1호선": {
+    "size": [100, 50],
+    "count": [3, 17],
+    "map": [
+      {
+        "type": "lineCircle",
+        "pos": [1, 1]
+      },
+      {
+        "type": "road",
+        "group": 1,
+        "pos": [[1, 2], [1, 16]],
+        "direction": "v"
+      },
+      {
+        "type": "turnar",
+        "pos": [1, 17]
+      },
+      {
+        "type": "turnbl",
+        "pos": [2, 17]
+      },
+      {
+        "type": "road",
+        "group": 2,
+        "pos": [[2, 2], [2, 16]],
+        "direction": "rv"
+      }
+    ]
+  }
+}

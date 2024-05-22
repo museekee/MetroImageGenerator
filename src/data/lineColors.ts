@@ -1,4 +1,6 @@
-{
+import { Lines } from "./types"
+
+const lineColors: Record<Lines, string> = {
   "1호선": "#0052A4",
   "2호선": "#00A84D",
   "3호선": "#EF7C1C",
@@ -20,7 +22,9 @@
   "신림선": "#6789CA",
   "우이신설경전철": "#B7C450",
   "김포골드라인": "#AD8605",
-  "용잉에버라인": "#56AD2D",
+  "용인에버라인": "#56AD2D",
   "의정부경전철": "#FD8100",
   "GTX-A": "#9A6292"
 }
+
+export default lineColors

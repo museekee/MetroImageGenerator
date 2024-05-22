@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import lineColors_ from './../../data/lineColors.json'
+import lineColors from './../../data/lineColors'
 import stationCodes_ from './../../data/sortedStationCodes.json'
 import stations from './../../data/combinedStations.json'
 import { useNavigate } from 'react-router-dom'
+import { ICombinedStation, Lines } from '../../data/types'
 
-const lineColors: Record<string, string> = lineColors_
 //@ts-ignore
 const stationCodes: {[x: string]: [string[], string, string[]][]} = stationCodes_
 
@@ -184,7 +184,7 @@ const StationCard = ({ station }: { station: ICombinedStation }) => {
   )
 }
 
-const StationCircle = ({ line, stationCode }: {line: string, stationCode: string}) => {
+const StationCircle = ({ line, stationCode }: {line: Lines, stationCode: string}) => {
   const Circle = styled.div`
     display: flex;
     width: 200px;

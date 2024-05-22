@@ -1,8 +1,9 @@
 import React from 'react'
 import './../../assets/styles/page.css'
 import StationCard from '../layout/StationCard'
-import stations from './../../data/combinedStations.json'
+import stations from './../../data/combinedStations'
 import { useNavigate, useParams } from 'react-router-dom'
+import LineRoadMap from '../layout/LineRoadMap'
 
 const Station = () => {
   const { name_ko } = useParams()
@@ -15,6 +16,7 @@ const Station = () => {
   return (
     <main>
       <StationCard station={stations[stationIdx]} />
+      <LineRoadMap line='1호선' />
     </main>
   )
 }
