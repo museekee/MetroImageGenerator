@@ -1,6 +1,8 @@
 import lineRoadMap from "./lineRoadMap.json"
-import { ILineRoadMap, Lines } from "./types"
+import { ILineRoadMap, LineRoadMapStations, Lines } from "./types"
+import lineRoadMapStations from "./lineRoadMapStations.json"
 
 const typedLineRoadMap: Record<Lines, ILineRoadMap> = lineRoadMap as unknown as Record<Lines, ILineRoadMap>
+const typedLineRoadMapStations: LineRoadMapStations = lineRoadMapStations as unknown as LineRoadMapStations
 
-export default typedLineRoadMap
+export default {map: typedLineRoadMap, stations: typedLineRoadMapStations}

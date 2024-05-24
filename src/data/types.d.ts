@@ -23,9 +23,14 @@ export type LineRoad = {
     group: number
     pos: number[][]
     direction: RoadMapDirection
+} | {
+    type: 'branchr',
+    group: number
+    pos: number[]
 }
 interface ILineRoadMap {
     size: number[]
     count: number[]
     map: LineRoad[]
 }
+type LineRoadMapStations = Record<Lines, string[][]>
