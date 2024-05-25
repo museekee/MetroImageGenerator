@@ -3,15 +3,12 @@ import styled from 'styled-components'
 import lineColors from './../../data/lineColors'
 import stationCodes_ from './../../data/sortedStationCodes.json'
 import stations from './../../data/combinedStations.json'
-import { useNavigate } from 'react-router-dom'
 import { ICombinedStation, Lines } from '../../data/types'
 
 //@ts-ignore
 const stationCodes: {[x: string]: [string[], string, string[]][]} = stationCodes_
 
-const StationCard = ({ station }: { station: ICombinedStation }) => {
-  const navigate = useNavigate()
-
+const StationCard = ({ station, onClick }: { station: ICombinedStation, onClick?: (stationCode: string) => void }) => {
   const colors = station.lines.map(v => lineColors[v])
   const Card = styled.div`
     zoom: 0.25;
@@ -127,10 +124,11 @@ const StationCard = ({ station }: { station: ICombinedStation }) => {
                 try {
                   const stationCode = nowStationCode[before ? 0 : 2][idx]
                   const name_ko = stations.find(v => v.codes.includes(stationCode))!!.name_ko
+                  const code = stations.find(v => v.codes.includes(stationCode))!!.codes[0]
                   return (
-                    <div className='lnk' onClick={() => navigate(`/station/${name_ko}`)}>
+                    <div className='lnk' onClick={() => onClick?.(code)}>
                       <StationCircle line={line} stationCode={stationCode} />
-                      {/* 일부러 !!씀... 오류내서 Black채우게 */}
+                      {/* 일부러 !!씀... 오류내서 Blank채우게 */}
                       <span style={{
                         fontFamily: name_ko.length < 7 ? 'namsan' : 'namsanc',
                         fontSize: name_ko.length < 8 ? 100 : 90

@@ -29,6 +29,7 @@ export type LineRoad = {
     pos: number[]
 }
 interface ILineRoadMap {
+    icon: string
     size: number[]
     count: number[]
     map: LineRoad[]
