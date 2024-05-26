@@ -18,7 +18,7 @@ const Map = styled.div<{ count: number[], size: number[] }>`
   grid-template-rows:  ${props => `repeat(${props.count[1]}, ${props.size[1]}px)`};
   justify-items: center;
 `
-const LineCircle = styled.div<{ line: Lines }>`
+const LineCircle = styled.div<{ line: Lines, pos: number[] }>`
   display: flex;
   border-radius: 50%;
   height: 105%;
@@ -29,6 +29,8 @@ const LineCircle = styled.div<{ line: Lines }>`
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  grid-column: ${props => props.pos[0]};
+  grid-row: ${props => props.pos[1]};
 `
 type TOneBlock = {
   img: string,
@@ -175,7 +177,11 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
         nowLineRoadMap.map.map((item, idx) => {
           if (item.type === 'lineCircle') {
             return (
-              <LineCircle line={line}>{nowLineRoadMap.icon}</LineCircle>
+              <LineCircle
+                line={line}
+                pos={item.pos}>
+                {nowLineRoadMap.icon}
+              </LineCircle>
             )
           }
           else {

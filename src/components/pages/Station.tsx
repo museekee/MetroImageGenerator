@@ -20,7 +20,7 @@ const Station = () => {
   return (
     <main>
       <StationCard station={stations[stationIdx]} onClick={setCode} />
-      <LineRoadMap line='1호선' nowStation={stations[stationIdx]} onClick={setCode} />
+      <LineRoadMap line='2호선' nowStation={stations[stationIdx]} onClick={setCode} />
     </main>
   )
 }
