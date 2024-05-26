@@ -207,5 +207,103 @@
         "pos": [3, 1]
       }
     ]
+  },
+  "3호선": {
+    "icon": "3",
+    "size": [100, 50],
+    "count": [3, 13],
+    "map": [
+      {
+        "type": "lineCircle",
+        "pos": [1, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[1, 2], [1, 12]],
+        "direction": "v"
+      },
+      {
+        "type": "turnar",
+        "pos": [1, 13]
+      },
+      {
+        "type": "turnbl",
+        "pos": [2, 13]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[2, 2], [2, 12]],
+        "direction": "rv"
+      },
+      {
+        "type": "turnbr",
+        "pos": [2, 1]
+      },
+      {
+        "type": "turnal",
+        "pos": [3, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[3, 2], [2, 12]],
+        "direction": "v"
+      },
+      {
+        "type": "lineCircle",
+        "pos": [3, 13]
+      }
+    ]
+  },
+  "4호선": {
+    "icon": "4",
+    "size": [100, 50],
+    "count": [4, 14],
+    "map": [
+      {
+        "type": "lineCircle",
+        "pos": [1, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[1, 2], [1, 13]],
+        "direction": "v"
+      },
+      {
+        "type": "turnar",
+        "pos": [1, 14]
+      },
+      {
+        "type": "turnbl",
+        "pos": [2, 14]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[2, 2], [2, 13]],
+        "direction": "rv"
+      },
+      {
+        "type": "turnbr",
+        "pos": [2, 1]
+      },
+      {
+        "type": "turnal",
+        "pos": [3, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[3, 2], [2, 13]],
+        "direction": "v"
+      },
+      {
+        "type": "lineCircle",
+        "pos": [3, 14]
+      }
+    ]
   }
 }

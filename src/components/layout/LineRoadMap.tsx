@@ -175,6 +175,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
     <Map size={nowLineRoadMap.size} count={nowLineRoadMap.count} onSelect={() => false} onDragStart={() => false}>
       {
         nowLineRoadMap.map.map((item, idx) => {
+          console.log(item)
           if (item.type === 'lineCircle') {
             return (
               <LineCircle

@@ -370,7 +370,6 @@
     ]
   },
   {
-    "map_name": "동두천\n중앙",
     "name_ko": "동두천중앙",
     "name_en": "Dongducheon  jungang",
     "name_jp": "トンドゥチョン・チュンアン",
@@ -2828,12 +2827,11 @@
     ]
   },
   {
+    "map_name": "총신대입구\n(이수)",
     "name_ko": "총신대입구(이수)",
     "name_en": "Chongshin Univ.",
     "name_jp": "チョンシンデイック",
     "name_cn": "总神大学",
-
-
     "lines": [
       "4호선",
       "7호선"
