@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './../../assets/styles/page.css'
 import StationCard from '../layout/StationCard'
 import stations from './../../data/combinedStations'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import LineRoadMap from '../layout/LineRoadMap'
 
 const Station = () => {
