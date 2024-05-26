@@ -9,7 +9,8 @@ const Station = () => {
   const params = useParams()
   const [code, setCode] = useState(params.code)
   useEffect(() => {
-    window.history.pushState("", `/station/${code}`)
+    console.log(code)
+    window.history.pushState('', '', `/station/${code}`)
   }, [code])
   const stationIdx = stations.findIndex(v => v.codes.includes(code ?? ""))
   if (stationIdx === -1) {

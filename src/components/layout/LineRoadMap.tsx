@@ -14,6 +14,7 @@ import stations from "./../../data/combinedStations"
 const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: ICombinedStation, onClick?: (stationCode: string) => void}) => {
   const nowLineRoadMap = lineRoadMap.map[line]
   const nowLineRoadStations = lineRoadMap.stations[line]
+  const nowLineRoadposition = lineRoadMap.position[line]
   const Map = styled.div`
     display: grid;
     grid-template-columns: repeat(${nowLineRoadMap.count[0]}, ${nowLineRoadMap.size[0]}px);
@@ -71,23 +72,64 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                 </Block>
               )
             }
-            const Station = styled.div`
+            const StationCircle = styled.div`
               border: 3px solid ${lineColors[line]};
               border-radius: 50%;
-              width: 10px;
-              height: 10px;
+              width: 9px;
+              height: 9px;
               background: #ffffff;
               box-sizing: content-box;
-              cursor: pointer;
 
               &.transfer {
-                transform: scale(2);
+                transform: scale(1.5);
               }
               &.thisStation {
                 border: 3px solid #ff0000;
-                transform: scale(3);
+                transform: scale(2.5);
               }
             `
+            const Station: React.FC<{
+              name_ko?: string
+              position?: {
+                gap: [number, number]
+                align: 'left' | 'right'
+              } | null
+            } & React.HTMLAttributes<HTMLDivElement>> = (props) => {
+              const StationBox = styled.div`
+                position: relative;
+                cursor: pointer;
+              `
+              const StationName = styled.div`
+                position: absolute;
+                color: #222222;
+                left: 20px;
+                width: max-content;
+                top: 0;
+                z-index: 2;
+                font-size: 13px;
+                white-space: pre-line;
+                transform: translate(${props.position?.gap.map(v => `${v}px`).join(',')});
+
+                &.transfer {
+                  left: 23px;
+                  font-size: 15px;
+                  font-weight: bold;
+                }
+                &.thisStation {
+                  left: 31px;
+                  font-size: 15px;
+                }
+              `
+              return (
+                <StationBox onClick={props.onClick}>
+                  <StationCircle
+                    className={props.className}
+                    style={props.style}
+                  />
+                  <StationName className={props.className}>{props.name_ko}</StationName>
+                </StationBox>
+              )
+            }
             if (item.type === 'road') {
               const isvertical = item.direction.includes('v')
               const startX = item.pos[0][0]
@@ -106,11 +148,12 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                 flex-direction: ${direction[item.direction]};
                 width: 100%;
                 background: linear-gradient(90deg, #00000000 45%, ${lineColors[line]} 45%, ${lineColors[line]} 55%, #00000000 55%);
-                mask-image: url('${roadImg}');
+                /* mask-image: url('${roadImg}'); */
                 grid-column: ${isvertical ? startX : `${startX} / ${Math.abs(startX - endX)+startX+1}`}; // 수직이면 x축으로 길이 변화 없으니까 기점x = 종점x => 기점x로만 x 설정
                 grid-row: ${isvertical ? `${startY} / ${Math.abs(startY - endY)+startY+1}` : startY}; // 수직이면 y축으로 높이 변화 있으니까 계산함
                 color: #ffffff;
                 align-items: center;
+                position: relative;
               `
               return (
                 <Road>
@@ -119,19 +162,25 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                       const lines = stations.find(v => v.codes.includes(stationCode))?.lines.filter(v => v !== line)
                       const colors = lines?.map(v => lineColors[v])
                       const classNames = [nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
+                      const thisStation = stations.find(v => v.codes.includes(stationCode))
+                      const position = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
                       if (!lines || colors?.length === 0) return (
                         <Station
+                          name_ko={thisStation?.map_name ?? thisStation?.name_ko}
                           className={classNames.join(' ')}
                           onClick={() => onClick?.(stationCode)}
+                          position={position}
                         />
                       )
                       classNames.push('transfer')
                       return (
                         <Station
+                          name_ko={thisStation?.map_name ?? thisStation?.name_ko}
                           className={classNames.join(' ')}
                           onClick={() => onClick?.(stationCode)}
+                          position={position}
                           style={{background: `${colors?.length === 1 ? colors[0] : `linear-gradient(135deg, ${colors?.join(', ')})`}`}}
-                        ></Station>
+                        />
                       )
                     })
                   }
@@ -150,12 +199,16 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
             else if (item.type === 'branchr') {
               const stationCode = nowLineRoadStations[item.group-1][0]
               const classNames = ['transfer', nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
+              const thisStation = stations.find(v => v.codes.includes(stationCode))
+              const position = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
               return (
                 <OneBlock img={branchrImg} pos={item.pos} maskPos={['center', 'right']}>
                   <Station 
+                    name_ko={thisStation?.map_name ?? thisStation?.name_ko}
                     className={classNames.join(' ')}
                     onClick={() => onClick?.(stationCode)}
-                  ></Station>
+                    position={position}
+                  />
                 </OneBlock>
               )
             }
