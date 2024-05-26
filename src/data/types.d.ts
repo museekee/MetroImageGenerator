@@ -14,18 +14,19 @@ interface ICombinedStation {
 }
 
 type RoadMapType = 'lineCircle' | 'turnar' | 'turnbr' | 'turnal' | 'turnbl'
+type RoadMapBranchType = 'branchr' | 'branchl'
 type RoadMapDirection = 'h' | 'v' | 'rh' | 'rv' // horizontal, vertical, reverse horizontal, reverse vertical
 export type LineRoad = {
-    type: RoadMapType
-    pos: number[]
-} | {
     type: 'road'
     group: boolean
     pos: number[][]
     direction: RoadMapDirection
 } | {
-    type: 'branchr',
+    type: RoadMapBranchType,
     group: boolean
+    pos: number[]
+} | {
+    type: RoadMapType
     pos: number[]
 }
 interface ILineRoadMap {

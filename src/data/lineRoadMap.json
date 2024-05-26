@@ -78,7 +78,18 @@
       {
         "type": "road",
         "group": true,
-        "pos": [[4, 2], [4, 8]],
+        "pos": [[4, 8], [4, 8]],
+        "direction": "rv"
+      },
+      {
+        "type": "branchl",
+        "group": true,
+        "pos": [4, 7]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[4, 2], [4, 6]],
         "direction": "rv"
       },
       {
@@ -92,7 +103,18 @@
       {
         "type": "road",
         "group": true,
-        "pos": [[5, 2], [5, 16]],
+        "pos": [[5, 2], [5, 4]],
+        "direction": "v"
+      },
+      {
+        "type": "branchl",
+        "group": true,
+        "pos": [5, 5]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[5, 6], [5, 16]],
         "direction": "v"
       },
       {

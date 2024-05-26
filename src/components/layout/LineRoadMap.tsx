@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import lineRoadMap from "./../../data/lineRoadMap"
-import { ICombinedStation, Lines } from "../../data/types"
+import { ICombinedStation, Lines, RoadMapBranchType } from "../../data/types"
 import lineColors from "../../data/lineColors"
 import roadImg from "./../../assets/images/lineRoadMap/road.svg"
 import turnar from "./../../assets/images/lineRoadMap/turnar.svg"
@@ -9,6 +9,7 @@ import turnal from "./../../assets/images/lineRoadMap/turnal.svg"
 import turnbr from "./../../assets/images/lineRoadMap/turnbr.svg"
 import turnbl from "./../../assets/images/lineRoadMap/turnbl.svg"
 import branchrImg from "./../../assets/images/lineRoadMap/branchr.svg"
+import branchlImg from "./../../assets/images/lineRoadMap/branchl.svg"
 import stations from "./../../data/combinedStations"
 
 const Map = styled.div<{ count: number[], size: number[] }>`
@@ -37,7 +38,7 @@ type TOneBlock = {
   line: Lines
 }
 const OneBlock = styled.div<TOneBlock>`
-  display: flex;
+  display: grid;
   grid-column: ${props => props.pos[0]};
   grid-row: ${props => props.pos[1]};
   width: 100%;
@@ -45,6 +46,7 @@ const OneBlock = styled.div<TOneBlock>`
   position: relative;
   align-items: center;
   justify-content: center;
+  grid-auto-flow: column;
 
   &::before {
     content: "";
@@ -61,15 +63,19 @@ const OneBlock = styled.div<TOneBlock>`
 const StationCircle = styled.div<{ line: Lines }>`
   border: 3px solid ${props => lineColors[props.line]};
   border-radius: 50%;
-  width: 9px;
-  height: 9px;
+  width: 15px;
+  height: 15px;
   background: #ffffff;
-  box-sizing: content-box;
 
   &.transfer {
     transform: scale(1.5);
   }
+  &.center {
+    transform: scale(1.5) translate(-7.5px, 0px);
+  }
   &.thisStation {
+    position: relative;
+    z-index: 2;
     border: 3px solid #ff0000;
     transform: scale(2.5);
   }
@@ -77,6 +83,10 @@ const StationCircle = styled.div<{ line: Lines }>`
 const StationBox = styled.div`
   position: relative;
   cursor: pointer;
+
+  &.center {
+    transform: translate(-7.5px, 0px)
+  }
 `
 type TStationName = {
   position: {
@@ -90,9 +100,9 @@ const StationName = styled.div<TStationName>`
   left: 20px;
   width: max-content;
   top: 0;
-  z-index: 2;
   font-size: 13px;
   white-space: pre-line;
+  user-select: none;
   transform: translate(${props => props.position?.gap.map(v => `${v}px`).join(',')});
 
   &.transfer {
@@ -103,14 +113,16 @@ const StationName = styled.div<TStationName>`
   &.thisStation {
     left: 31px;
     font-size: 15px;
+    z-index: 2;
   }
 `
 const Station: React.FC<{
   name_ko?: string
   line: Lines
+  boxClassName?: string
 } & TStationName & React.HTMLAttributes<HTMLDivElement>> = (props) => {
   return (
-    <StationBox onClick={props.onClick}>
+    <StationBox className={props.boxClassName} onClick={props.onClick}>
       <StationCircle
         line={props.line}
         className={props.className}
@@ -142,13 +154,23 @@ const Road = styled.div<TRoad>`
   align-items: center;
   position: relative;
 `
-const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: ICombinedStation, onClick?: (stationCode: string) => void}) => {
+const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: ICombinedStation, onClick: (stationCode: string) => void}) => {
   const nowLineRoadMap = lineRoadMap.map[line]
   const nowLineRoadStations = lineRoadMap.stations[line]
   const nowLineRoadposition = lineRoadMap.position[line]
+  const turnImgs: Record<string, {img: string, pos: [string, string]}> = {
+    turnar: { img: turnar, pos: ['top', 'right'] },
+    turnal: { img: turnal, pos: ['bottom', 'left'] },
+    turnbr: { img: turnbr, pos: ['bottom', 'right'] },
+    turnbl: { img: turnbl, pos: ['top', 'left'] }
+  }
+  const branchImgs: Record<string, {img: string }> = {
+    branchr: { img: branchrImg },
+    branchl: { img: branchlImg },
+  }
   let groupIdx = -1
   return (
-    <Map size={nowLineRoadMap.size} count={nowLineRoadMap.count}>
+    <Map size={nowLineRoadMap.size} count={nowLineRoadMap.count} onSelect={() => false} onDragStart={() => false}>
       {
         nowLineRoadMap.map.map((item, idx) => {
           if (item.type === 'lineCircle') {
@@ -192,7 +214,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                           line={line}
                           name_ko={thisStation?.map_name ?? thisStation?.name_ko}
                           className={classNames.join(' ')}
-                          onClick={() => onClick?.(stationCode)}
+                          onClick={() => onClick(stationCode)}
                           position={position}
                         />
                       )
@@ -202,7 +224,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                           line={line}
                           name_ko={thisStation?.map_name ?? thisStation?.name_ko}
                           className={classNames.join(' ')}
-                          onClick={() => onClick?.(stationCode)}
+                          onClick={() => onClick(stationCode)}
                           position={position}
                           style={{background: `${colors?.length === 1 ? colors[0] : `linear-gradient(135deg, ${colors?.join(', ')})`}`}}
                         />
@@ -213,31 +235,43 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
               )
             }
             else if (item.type.startsWith('turn')) {
-              const turnImgs: Record<string, {img: string, pos: [string, string]}> = {
-                turnar: { img: turnar, pos: ['top', 'right'] },
-                turnal: { img: turnal, pos: ['bottom', 'left'] },
-                turnbr: { img: turnbr, pos: ['bottom', 'right'] },
-                turnbl: { img: turnbl, pos: ['top', 'left'] }
-              }
               return <OneBlock line={line} img={turnImgs[item.type].img} pos={item.pos} maskPos={turnImgs[item.type].pos} />
             }
-            else if (item.type === 'branchr') {
+            else if (item.type.startsWith('branch')) {
+              //@ts-ignore
               if (item.group)
                 groupIdx++
-              const stationCode = nowLineRoadStations[groupIdx][0]
-              const classNames = ['transfer', nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
-              const thisStation = stations.find(v => v.codes.includes(stationCode))
-              const position = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
-              console.log(groupIdx, stationCode)
               return (
-                <OneBlock line={line} img={branchrImg} pos={item.pos} maskPos={['center', 'right']}>
-                  <Station 
-                    line={line}
-                    name_ko={thisStation?.map_name ?? thisStation?.name_ko}
-                    className={classNames.join(' ')}
-                    onClick={() => onClick?.(stationCode)}
-                    position={position}
-                  />
+                <OneBlock
+                  line={line}
+                  img={branchImgs[item.type].img}
+                  pos={item.pos}
+                  maskPos={['center', 'right']}
+                  style={{
+                    justifyContent: nowLineRoadStations[groupIdx].length == 1 ? 'center' : 'unset'
+                  }}>
+                  {
+                    nowLineRoadStations[groupIdx].map((stationCode, idx) => {
+                      const classNames = [
+                        nowLineRoadStations[groupIdx].length-1 == idx ? 'transfer': '', 
+                        nowStation?.codes.includes(stationCode) ? "thisStation" : ''
+                      ]
+                      const thisStation = stations.find(v => v.codes.includes(stationCode))
+                      const position = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
+                      return (
+                        <Station
+                          boxClassName={[
+                            nowLineRoadStations[groupIdx].length !== 1 ? 'center': '', 'center'
+                          ][idx]}
+                          line={line}
+                          name_ko={thisStation?.map_name ?? thisStation?.name_ko}
+                          className={classNames.join(' ')}
+                          onClick={() => onClick(stationCode)}
+                          position={position}
+                        />
+                      )
+                    })
+                  }
                 </OneBlock>
               )
             }
@@ -248,5 +282,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
     </Map>
   )
 }
-
+LineRoadMap.defaultProps = {
+  onClick: () => {}
+}
 export default LineRoadMap
