@@ -10,7 +10,7 @@
       },
       {
         "type": "road",
-        "group": 1,
+        "group": true,
         "pos": [[1, 2], [1, 16]],
         "direction": "v"
       },
@@ -24,7 +24,7 @@
       },
       {
         "type": "road",
-        "group": 2,
+        "group": true,
         "pos": [[2, 2], [2, 16]],
         "direction": "rv"
       },
@@ -38,18 +38,18 @@
       },
       {
         "type": "road",
-        "group": 3,
+        "group": true,
         "pos": [[3, 2], [3, 8]],
         "direction": "v"
       },
       {
         "type": "branchr",
-        "group": 4,
+        "group": true,
         "pos": [3, 9]
       },
       {
         "type": "road",
-        "group": 5,
+        "group": true,
         "pos": [[3, 10], [3, 16]],
         "direction": "v"
       },
@@ -63,7 +63,7 @@
       },
       {
         "type": "road",
-        "group": 6,
+        "group": true,
         "pos": [[4, 11], [4, 16]],
         "direction": "rv"
       },
@@ -77,7 +77,7 @@
       },
       {
         "type": "road",
-        "group": 7,
+        "group": true,
         "pos": [[4, 2], [4, 8]],
         "direction": "rv"
       },
@@ -91,7 +91,7 @@
       },
       {
         "type": "road",
-        "group": 8,
+        "group": true,
         "pos": [[5, 2], [5, 16]],
         "direction": "v"
       },

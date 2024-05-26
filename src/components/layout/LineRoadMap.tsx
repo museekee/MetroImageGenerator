@@ -146,6 +146,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
   const nowLineRoadMap = lineRoadMap.map[line]
   const nowLineRoadStations = lineRoadMap.stations[line]
   const nowLineRoadposition = lineRoadMap.position[line]
+  let groupIdx = -1
   return (
     <Map size={nowLineRoadMap.size} count={nowLineRoadMap.count}>
       {
@@ -157,6 +158,8 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
           }
           else {
             if (item.type === 'road') {
+              if (item.group)
+                groupIdx++
               const isvertical = item.direction.includes('v')
               const startX = item.pos[0][0]
               const startY = item.pos[0][1]
@@ -178,7 +181,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                   direction={direction[item.direction]}
                   line={line}>
                   {
-                    nowLineRoadStations[item.group-1].map(stationCode => {
+                    nowLineRoadStations[groupIdx].map(stationCode => {
                       const lines = stations.find(v => v.codes.includes(stationCode))?.lines.filter(v => v !== line)
                       const colors = lines?.map(v => lineColors[v])
                       const classNames = [nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
@@ -219,10 +222,13 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
               return <OneBlock line={line} img={turnImgs[item.type].img} pos={item.pos} maskPos={turnImgs[item.type].pos} />
             }
             else if (item.type === 'branchr') {
-              const stationCode = nowLineRoadStations[item.group-1][0]
+              if (item.group)
+                groupIdx++
+              const stationCode = nowLineRoadStations[groupIdx][0]
               const classNames = ['transfer', nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
               const thisStation = stations.find(v => v.codes.includes(stationCode))
               const position = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
+              console.log(groupIdx, stationCode)
               return (
                 <OneBlock line={line} img={branchrImg} pos={item.pos} maskPos={['center', 'right']}>
                   <Station 

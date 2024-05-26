@@ -20,12 +20,12 @@ export type LineRoad = {
     pos: number[]
 } | {
     type: 'road'
-    group: number
+    group: boolean
     pos: number[][]
     direction: RoadMapDirection
 } | {
     type: 'branchr',
-    group: number
+    group: boolean
     pos: number[]
 }
 interface ILineRoadMap {
