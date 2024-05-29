@@ -455,5 +455,138 @@
         "pos": [4, 1]
       }
     ]
+  },
+  "7호선": {
+    "icon": "7",
+    "size": [100, 50],
+    "count": [4, 14],
+    "map": [
+      {
+        "type": "lineCircle",
+        "pos": [1, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[1, 2], [1, 13]],
+        "direction": "v"
+      },
+      {
+        "type": "turnar",
+        "pos": [1, 14]
+      },
+      {
+        "type": "turnbl",
+        "pos": [2, 14]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[2, 2], [2, 13]],
+        "direction": "rv"
+      },
+      {
+        "type": "turnbr",
+        "pos": [2, 1]
+      },
+      {
+        "type": "turnal",
+        "pos": [3, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[3, 2], [3, 13]],
+        "direction": "v"
+      },
+      {
+        "type": "turnar",
+        "pos": [3, 14]
+      },
+      {
+        "type": "turnbl",
+        "pos": [4, 14]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[4, 6], [4, 13]],
+        "direction": "rv"
+      },
+      {
+        "type": "lineCircle",
+        "pos": [4, 5]
+      }
+    ]
+  },
+  "8호선": {
+    "icon": "8",
+    "size": [100, 50],
+    "count": [1, 15],
+    "map": [
+      {
+        "type": "lineCircle",
+        "pos": [1, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[1, 2], [1, 14]],
+        "direction": "v"
+      },
+      {
+        "type": "lineCircle",
+        "pos": [1, 15]
+      }
+    ]
+  },
+  "9호선": {
+    "icon": "9",
+    "size": [100, 50],
+    "count": [3, 14],
+    "map": [
+      {
+        "type": "lineCircle",
+        "pos": [1, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[1, 2], [1, 13]],
+        "direction": "v"
+      },
+      {
+        "type": "turnar",
+        "pos": [1, 14]
+      },
+      {
+        "type": "turnbl",
+        "pos": [2, 14]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[2, 2], [2, 13]],
+        "direction": "rv"
+      },
+      {
+        "type": "turnbr",
+        "pos": [2, 1]
+      },
+      {
+        "type": "turnal",
+        "pos": [3, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[3, 2], [3, 13]],
+        "direction": "v"
+      },
+      {
+        "type": "lineCircle",
+        "pos": [3, 14]
+      }
+    ]
   }
 }
