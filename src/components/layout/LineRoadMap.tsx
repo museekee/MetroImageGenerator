@@ -10,6 +10,7 @@ import turnbr from "./../../assets/images/lineRoadMap/turnbr.svg"
 import turnbl from "./../../assets/images/lineRoadMap/turnbl.svg"
 import branchrImg from "./../../assets/images/lineRoadMap/branchr.svg"
 import branchlImg from "./../../assets/images/lineRoadMap/branchl.svg"
+import branchbImg from "./../../assets/images/lineRoadMap/branchb.svg"
 import stations from "./../../data/combinedStations"
 
 const Map = styled.div<{ count: number[], size: number[] }>`
@@ -148,7 +149,12 @@ const Road = styled.div<TRoad>`
   justify-content: space-evenly;
   flex-direction: ${props => props.direction};
   width: 100%;
-  background: linear-gradient(90deg, #00000000 45%, ${props => lineColors[props.line]} 45%, ${props => lineColors[props.line]} 55%, #00000000 55%);
+  background: 
+    ${
+      props => props.direction.includes('column') ?
+      `linear-gradient(90deg, #00000000 45%, ${lineColors[props.line]} 45%, ${lineColors[props.line]} 55%, #00000000 55%)` :
+      `linear-gradient(0deg, #00000000 20px, ${lineColors[props.line]} 20px, ${lineColors[props.line]} 30px, #00000000 30px)`};
+      
   /* mask-image: url('${roadImg}'); */
   grid-column: ${props => props.isvertical ? props.startX : `${props.startX} / ${Math.abs(props.startX - props.endX)+props.startX+1}`}; // 수직이면 x축으로 길이 변화 없으니까 기점x = 종점x => 기점x로만 x 설정
   grid-row: ${props => props.isvertical ? `${props.startY} / ${Math.abs(props.startY - props.endY)+props.startY+1}` : props.startY}; // 수직이면 y축으로 높이 변화 있으니까 계산함
@@ -159,7 +165,7 @@ const Road = styled.div<TRoad>`
 const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: ICombinedStation, onClick: (stationCode: string) => void}) => {
   const nowLineRoadMap = lineRoadMap.map[line]
   const nowLineRoadStations = lineRoadMap.stations[line]
-  const nowLineRoadposition = lineRoadMap.position[line]
+  const nowLineRoadposition = lineRoadMap.adSettings[line]
   const turnImgs: Record<string, {img: string, pos: [string, string]}> = {
     turnar: { img: turnar, pos: ['top', 'right'] },
     turnal: { img: turnal, pos: ['bottom', 'left'] },
@@ -169,6 +175,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
   const branchImgs: Record<string, {img: string }> = {
     branchr: { img: branchrImg },
     branchl: { img: branchlImg },
+    branchb: { img: branchbImg },
   }
   let groupIdx = -1
   return (
@@ -187,8 +194,6 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
           }
           else {
             if (item.type === 'road') {
-              if (item.group)
-                groupIdx++
               const isvertical = item.direction.includes('v')
               const startX = item.pos[0][0]
               const startY = item.pos[0][1]
@@ -200,6 +205,18 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                 h: 'row',
                 rh: 'row-reverse',
               }
+              if (item.group)
+                groupIdx++
+              else return (
+                <Road
+                  isvertical={isvertical}
+                  startX={startX}
+                  startY={startY}
+                  endX={endX}
+                  endY={endY}
+                  direction={direction[item.direction]}
+                  line={line} />
+              )
               return (
                 <Road
                   isvertical={isvertical}
@@ -215,24 +232,24 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                       const colors = lines?.map(v => lineColors[v])
                       const classNames = [nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
                       const thisStation = stations.find(v => v.codes.includes(stationCode))
-                      const position = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
+                      const adSettings = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
                       if (!lines || colors?.length === 0) return (
                         <Station
                           line={line}
-                          name_ko={thisStation?.map_name ?? thisStation?.name_ko}
+                          name_ko={adSettings?.name ?? thisStation?.name_ko}
                           className={classNames.join(' ')}
                           onClick={() => onClick(stationCode)}
-                          position={position}
+                          position={adSettings}
                         />
                       )
                       classNames.push('transfer')
                       return (
                         <Station
                           line={line}
-                          name_ko={thisStation?.map_name ?? thisStation?.name_ko}
+                          name_ko={adSettings?.name ?? thisStation?.name_ko}
                           className={classNames.join(' ')}
                           onClick={() => onClick(stationCode)}
-                          position={position}
+                          position={adSettings}
                           style={{background: `${colors?.length === 1 ? colors[0] : `linear-gradient(135deg, ${colors?.join(', ')})`}`}}
                         />
                       )
@@ -248,6 +265,13 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
               //@ts-ignore
               if (item.group)
                 groupIdx++
+              else return (
+                <OneBlock
+                  line={line}
+                  img={branchImgs[item.type].img}
+                  pos={item.pos}
+                  maskPos={['center', 'right']} />
+              )
               return (
                 <OneBlock
                   line={line}
@@ -258,23 +282,24 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                     justifyContent: nowLineRoadStations[groupIdx].length == 1 ? 'center' : 'unset'
                   }}>
                   {
+                    //@ts-ignore
                     nowLineRoadStations[groupIdx].map((stationCode, idx) => {
                       const classNames = [
                         nowLineRoadStations[groupIdx].length-1 == idx ? 'transfer': '', 
                         nowStation?.codes.includes(stationCode) ? "thisStation" : ''
                       ]
                       const thisStation = stations.find(v => v.codes.includes(stationCode))
-                      const position = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
+                      const adSettings = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
                       return (
                         <Station
                           boxClassName={[
                             nowLineRoadStations[groupIdx].length !== 1 ? 'center': '', 'center'
                           ][idx]}
                           line={line}
-                          name_ko={thisStation?.map_name ?? thisStation?.name_ko}
+                          name_ko={adSettings?.name ?? thisStation?.name_ko}
                           className={classNames.join(' ')}
                           onClick={() => onClick(stationCode)}
-                          position={position}
+                          position={adSettings}
                         />
                       )
                     })
