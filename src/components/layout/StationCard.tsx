@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import lineColors from './../../data/lineColors'
+import { getLineColor } from './../../data/lineDatas'
 import stationCodes_ from './../../data/sortedStationCodes.json'
 import stations from './../../data/combinedStations.json'
 import { ICombinedStation, Lines } from '../../data/types'
@@ -106,7 +106,7 @@ const BlankStation = styled.div`
   height: 200px;
 `
 const StationCard = ({ station, onClick }: { station: ICombinedStation, onClick?: (stationCode: string) => void }) => {
-  const colors = station.lines.map(v => lineColors[v])
+  const colors = station.lines.map(v => getLineColor(v))
   function nearStations(before: boolean) {
     return station.codes.map((v, i) => {
       const line = station.lines[i]
@@ -150,7 +150,7 @@ const StationCard = ({ station, onClick }: { station: ICombinedStation, onClick?
       <HeaderLines>
         {station.lines.map((line, idx) => 
           <LineBox style={{
-            backgroundColor: lineColors[line],
+            backgroundColor: getLineColor(line),
             borderTopLeftRadius: idx === 0 ? 190 : 0,
             borderTopRightRadius: idx === station.lines.length-1 ? 190 : 0
           }}>
@@ -189,13 +189,14 @@ const StationCircle = styled.div<TStationCircle>`
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: ${props => lineColors[props.$line]};
+  background-color: ${props => getLineColor(props.$line)};
   border: 10px solid #00000088;
   font-size: ${props => props.stationCode.length > 4 ? 60 : 75}px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   font-family: ${props => props.stationCode.length > 3 ? 'korailc' : 'korail'};
+  color: #ffffff;
 `
 
 export default StationCard

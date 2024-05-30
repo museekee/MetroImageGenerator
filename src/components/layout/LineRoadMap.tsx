@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import lineRoadMap from "./../../data/lineRoadMap"
 import { ICombinedStation, Lines, RoadMapBranchType } from "../../data/types"
-import lineColors from "../../data/lineColors"
+import { getLineColor, getLineIcon } from "../../data/lineDatas"
 import roadImg from "./../../assets/images/lineRoadMap/road.svg"
 import turnar from "./../../assets/images/lineRoadMap/turnar.svg"
 import turnal from "./../../assets/images/lineRoadMap/turnal.svg"
@@ -24,7 +24,7 @@ const LineCircle = styled.div<{ line: Lines, pos: number[] }>`
   border-radius: 50%;
   height: 105%;
   aspect-ratio: 1;
-  background-color: ${props => lineColors[props.line]};
+  background-color: ${props => getLineColor(props.line)};
   font-size: 30px;
   font-family: ${props => props.line.length > 3 ? 'korailc' : 'korail'};
   align-items: center;
@@ -56,7 +56,7 @@ const OneBlock = styled.div<TOneBlock>`
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: ${props => lineColors[props.line]};
+    background-color: ${props => getLineColor(props.line)};
     mask-image: url('${props => props.img}');
     z-index: -1;
     mask-repeat: no-repeat;
@@ -64,7 +64,7 @@ const OneBlock = styled.div<TOneBlock>`
   }
 `
 const StationCircle = styled.div<{ line: Lines }>`
-  border: 3px solid ${props => lineColors[props.line]};
+  border: 3px solid ${props => getLineColor(props.line)};
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -152,8 +152,8 @@ const Road = styled.div<TRoad>`
   background: 
     ${
       props => props.direction.includes('column') ?
-      `linear-gradient(90deg, #00000000 45%, ${lineColors[props.line]} 45%, ${lineColors[props.line]} 55%, #00000000 55%)` :
-      `linear-gradient(0deg, #00000000 20px, ${lineColors[props.line]} 20px, ${lineColors[props.line]} 30px, #00000000 30px)`};
+      `linear-gradient(90deg, #00000000 45%, ${getLineColor(props.line)} 45%, ${getLineColor(props.line)} 55%, #00000000 55%)` :
+      `linear-gradient(0deg, #00000000 20px, ${getLineColor(props.line)} 20px, ${getLineColor(props.line)} 30px, #00000000 30px)`};
       
   /* mask-image: url('${roadImg}'); */
   grid-column: ${props => props.isvertical ? props.startX : `${props.startX} / ${Math.abs(props.startX - props.endX)+props.startX+1}`}; // 수직이면 x축으로 길이 변화 없으니까 기점x = 종점x => 기점x로만 x 설정
@@ -185,11 +185,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
           console.log(item)
           if (item.type === 'lineCircle') {
             return (
-              <LineCircle
-                line={line}
-                pos={item.pos}>
-                {nowLineRoadMap.icon}
-              </LineCircle>
+              <LineCircle line={line} pos={item.pos}>{ getLineIcon(line) }</LineCircle>
             )
           }
           else {
@@ -229,7 +225,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                   {
                     nowLineRoadStations[groupIdx].map(stationCode => {
                       const lines = stations.find(v => v.codes.includes(stationCode))?.lines.filter(v => v !== line)
-                      const colors = lines?.map(v => lineColors[v])
+                      const colors = lines?.map(v => getLineColor(v))
                       const classNames = [nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
                       const thisStation = stations.find(v => v.codes.includes(stationCode))
                       const adSettings = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
