@@ -64,14 +64,15 @@ const OneBlock = styled.div<TOneBlock>`
   }
 `
 const StationCircle = styled.div<{ line: Lines }>`
-  border: 3px solid ${props => getLineColor(props.line)};
+  border: 2.5px solid ${props => getLineColor(props.line)};
   border-radius: 50%;
   width: 15px;
-  height: 15px;
+  aspect-ratio: 1;
   background: #ffffff;
 
   &.transfer {
-    transform: scale(1.5);
+    border-width: 4px;
+    width: 25px;
   }
   &.center {
     transform: scale(1.5) translate(-7.5px, 0px);
@@ -80,15 +81,45 @@ const StationCircle = styled.div<{ line: Lines }>`
     position: relative;
     z-index: 2;
     border: 3px solid #ff0000;
-    transform: scale(2.5);
+    border-width: 6px;
+    width: 35px;
   }
 `
 const StationBox = styled.div`
-  position: relative;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  gap: 5px;
 
-  &.center {
-    transform: translate(-7.5px, 0px)
+  &.right {
+    transform: translate(calc(50% + 5px), 0px); // StationBox 50%해서 거의 가운데로 옮기고 + 5px를 함으로써 Road에서도 가운데로 만듦(RoadWidth / 2)
+    translate: calc(-15px / 2 - 5px) 0px; // (-Circle width / 2) - (RoadWidth / 2)
+    flex-direction: row;
+
+    &.transfer {
+      translate: calc(-25px / 2 - 5px) 0px;
+    }
+    &.thisStation { 
+      translate: calc(-35px / 2 - 5px) 0px;
+    }
+  }
+  &.left {
+    transform: translate(calc(-50% + 5px), 0px); // StationBox 50%해서 거의 가운데로 옮기고 + 5px를 함으로써 Road에서도 가운데로 만듦(RoadWidth / 2)
+    translate: calc(15px / 2 - 5px) 0px; // (Circle width / 2) - (RoadWidth / 2)
+    flex-direction: row-reverse;
+
+    &.transfer {
+      translate: calc(25px / 2 - 5px) 0px;
+    }
+    &.thisStation { 
+      translate: calc(35px / 2 - 5px) 0px;
+    }
+  }
+  &.top {
+    flex-direction: column;
+  }
+  &.bottom {
+    flex-direction: column-reverse;
   }
 `
 type TStationName = {
@@ -98,23 +129,17 @@ type TStationName = {
   } | null
 }
 const StationName = styled.div<TStationName>`
-  position: absolute;
   color: #222222;
-  left: 20px;
   width: max-content;
-  top: 0;
   font-size: 13px;
   white-space: pre-line;
   user-select: none;
-  transform: translate(${props => props.position?.gap.map(v => `${v}px`).join(',')});
 
   &.transfer {
-    left: 23px;
     font-size: 15px;
     font-weight: bold;
   }
   &.thisStation {
-    left: 31px;
     font-size: 15px;
     z-index: 2;
   }
@@ -125,7 +150,7 @@ const Station: React.FC<{
   boxClassName?: string
 } & TStationName & React.HTMLAttributes<HTMLDivElement>> = (props) => {
   return (
-    <StationBox className={props.boxClassName} onClick={props.onClick}>
+    <StationBox className={props.className} onClick={props.onClick}>
       <StationCircle
         line={props.line}
         className={props.className}
@@ -148,13 +173,8 @@ const Road = styled.div<TRoad>`
   display: flex;
   justify-content: space-evenly;
   flex-direction: ${props => props.direction};
-  width: 100%;
-  background: 
-    ${
-      props => props.direction.includes('column') ?
-      `linear-gradient(90deg, #00000000 45%, ${getLineColor(props.line)} 45%, ${getLineColor(props.line)} 55%, #00000000 55%)` :
-      `linear-gradient(0deg, #00000000 20px, ${getLineColor(props.line)} 20px, ${getLineColor(props.line)} 30px, #00000000 30px)`};
-      
+  width: 10px;
+  background: ${props => getLineColor(props.line)};
   /* mask-image: url('${roadImg}'); */
   grid-column: ${props => props.isvertical ? props.startX : `${props.startX} / ${Math.abs(props.startX - props.endX)+props.startX+1}`}; // 수직이면 x축으로 길이 변화 없으니까 기점x = 종점x => 기점x로만 x 설정
   grid-row: ${props => props.isvertical ? `${props.startY} / ${Math.abs(props.startY - props.endY)+props.startY+1}` : props.startY}; // 수직이면 y축으로 높이 변화 있으니까 계산함
@@ -227,6 +247,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                       const lines = stations.find(v => v.codes.includes(stationCode))?.lines.filter(v => v !== line)
                       const colors = lines?.map(v => getLineColor(v))
                       const classNames = [nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
+                      classNames.push("right")
                       const thisStation = stations.find(v => v.codes.includes(stationCode))
                       const adSettings = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
                       if (!lines || colors?.length === 0) return (
@@ -286,6 +307,7 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                       ]
                       const thisStation = stations.find(v => v.codes.includes(stationCode))
                       const adSettings = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
+                      classNames.push("right")
                       return (
                         <Station
                           boxClassName={[
