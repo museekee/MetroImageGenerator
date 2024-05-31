@@ -11,7 +11,7 @@ import turnbl from "./../../assets/images/lineRoadMap/turnbl.svg"
 import branchrImg from "./../../assets/images/lineRoadMap/branchr.svg"
 import branchlImg from "./../../assets/images/lineRoadMap/branchl.svg"
 import branchbImg from "./../../assets/images/lineRoadMap/branchb.svg"
-import stations from "./../../data/combinedStations"
+import { findStationByStationCode } from "./../../data/combinedStations"
 
 const Map = styled.div<{ count: number[], size: number[] }>`
   display: grid;
@@ -123,10 +123,7 @@ const StationBox = styled.div`
   }
 `
 type TStationName = {
-  position: {
-    gap: [number, number],
-    align: 'left' | 'right'
-  } | null
+  gap?: [number, number]
 }
 const StationName = styled.div<TStationName>`
   color: #222222;
@@ -148,15 +145,23 @@ const Station: React.FC<{
   name_ko?: string
   line: Lines
   boxClassName?: string
-} & TStationName & React.HTMLAttributes<HTMLDivElement>> = (props) => {
+  gap?: [number, number],
+  align?: 'left' | 'right' | 'top' | 'bottom',
+  circleType?: 'normal' | 'transfer' | 'thisStation' | string
+} & React.HTMLAttributes<HTMLDivElement>> = (props) => {
+  const stationBoxClasses = []
+  stationBoxClasses.push(props.align)
+  stationBoxClasses.push(props.circleType ?? 'normal')
+  const stationCircleClassName = props.className?.split(' ') ?? []
+  stationCircleClassName.push(props.circleType ?? 'normal')
   return (
-    <StationBox className={props.className} onClick={props.onClick}>
+    <StationBox className={stationBoxClasses.join(' ')} onClick={props.onClick}>
       <StationCircle
         line={props.line}
-        className={props.className}
+        className={stationCircleClassName.join(' ')}
         style={props.style}
       />
-      <StationName position={props.position} className={props.className}>{props.name_ko}</StationName>
+      <StationName gap={props.gap} className={props.className}>{props.name_ko}</StationName>
     </StationBox>
   )
 }
@@ -175,7 +180,6 @@ const Road = styled.div<TRoad>`
   flex-direction: ${props => props.direction};
   width: 10px;
   background: ${props => getLineColor(props.line)};
-  /* mask-image: url('${roadImg}'); */
   grid-column: ${props => props.isvertical ? props.startX : `${props.startX} / ${Math.abs(props.startX - props.endX)+props.startX+1}`}; // 수직이면 x축으로 길이 변화 없으니까 기점x = 종점x => 기점x로만 x 설정
   grid-row: ${props => props.isvertical ? `${props.startY} / ${Math.abs(props.startY - props.endY)+props.startY+1}` : props.startY}; // 수직이면 y축으로 높이 변화 있으니까 계산함
   color: #ffffff;
@@ -185,7 +189,7 @@ const Road = styled.div<TRoad>`
 const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: ICombinedStation, onClick: (stationCode: string) => void}) => {
   const nowLineRoadMap = lineRoadMap.map[line]
   const nowLineRoadStations = lineRoadMap.stations[line]
-  const nowLineRoadposition = lineRoadMap.adSettings[line]
+  const nowLineAdSettings = lineRoadMap.adSettings[line]
   const turnImgs: Record<string, {img: string, pos: [string, string]}> = {
     turnar: { img: turnar, pos: ['top', 'right'] },
     turnal: { img: turnal, pos: ['bottom', 'left'] },
@@ -202,7 +206,6 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
     <Map size={nowLineRoadMap.size} count={nowLineRoadMap.count} onSelect={() => false} onDragStart={() => false}>
       {
         nowLineRoadMap.map.map((item, idx) => {
-          console.log(item)
           if (item.type === 'lineCircle') {
             return (
               <LineCircle line={line} pos={item.pos}>{ getLineIcon(line) }</LineCircle>
@@ -211,62 +214,49 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
           else {
             if (item.type === 'road') {
               const isvertical = item.direction.includes('v')
-              const startX = item.pos[0][0]
-              const startY = item.pos[0][1]
-              const endX = item.pos[1][0]
-              const endY = item.pos[1][1]
               const direction = {
                 v: 'column',
                 rv: 'column-reverse',
                 h: 'row',
                 rh: 'row-reverse',
               }
-              if (item.group)
+              const params = {
+                isvertical: isvertical,
+                startX: item.pos[0][0],
+                startY: item.pos[0][1],
+                endX: item.pos[1][0],
+                endY: item.pos[1][1],
+                direction: direction[item.direction],
+                line: line
+              }
+              if (item.group) // 자식 있음?
                 groupIdx++
-              else return (
-                <Road
-                  isvertical={isvertical}
-                  startX={startX}
-                  startY={startY}
-                  endX={endX}
-                  endY={endY}
-                  direction={direction[item.direction]}
-                  line={line} />
+              else return ( // 없음
+                <Road {...params} />
               )
-              return (
-                <Road
-                  isvertical={isvertical}
-                  startX={startX}
-                  startY={startY}
-                  endX={endX}
-                  endY={endY}
-                  direction={direction[item.direction]}
-                  line={line}>
+              return ( // 있음
+                <Road {...params}>
                   {
                     nowLineRoadStations[groupIdx].map(stationCode => {
-                      const lines = stations.find(v => v.codes.includes(stationCode))?.lines.filter(v => v !== line)
+                      const thisStation = findStationByStationCode(stationCode)
+                      const lines = thisStation?.lines.filter(v => v !== line) // 현제 노선 제외한 노선
                       const colors = lines?.map(v => getLineColor(v))
-                      const classNames = [nowStation?.codes.includes(stationCode) ? "thisStation" : ""]
-                      classNames.push("right")
-                      const thisStation = stations.find(v => v.codes.includes(stationCode))
-                      const adSettings = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
-                      if (!lines || colors?.length === 0) return (
-                        <Station
-                          line={line}
-                          name_ko={adSettings?.name ?? thisStation?.name_ko}
-                          className={classNames.join(' ')}
-                          onClick={() => onClick(stationCode)}
-                          position={adSettings}
-                        />
-                      )
-                      classNames.push('transfer')
+                      const adSettings = Object.keys(nowLineAdSettings).includes(stationCode) ? nowLineAdSettings[stationCode] : null
+                      const stationParams = {
+                        line: line,
+                        name_ko: adSettings?.name ?? thisStation?.name_ko,
+                        align: adSettings?.align ?? "right",
+                        onClick: () => onClick(stationCode),
+                        gap: adSettings?.gap,
+                        circleType: 'normal'
+                      }
+                      if (nowStation?.codes.includes(stationCode)) stationParams.circleType = "thisStation"
+                      if (lines?.length === 0) return <Station {...stationParams}/>
+                      else stationParams.circleType = 'transfer'
+                      if (nowStation?.codes.includes(stationCode)) stationParams.circleType = "thisStation"
                       return (
                         <Station
-                          line={line}
-                          name_ko={adSettings?.name ?? thisStation?.name_ko}
-                          className={classNames.join(' ')}
-                          onClick={() => onClick(stationCode)}
-                          position={adSettings}
+                          {...stationParams}
                           style={{background: `${colors?.length === 1 ? colors[0] : `linear-gradient(135deg, ${colors?.join(', ')})`}`}}
                         />
                       )
@@ -305,8 +295,8 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                         nowLineRoadStations[groupIdx].length-1 == idx ? 'transfer': '', 
                         nowStation?.codes.includes(stationCode) ? "thisStation" : ''
                       ]
-                      const thisStation = stations.find(v => v.codes.includes(stationCode))
-                      const adSettings = Object.keys(nowLineRoadposition).includes(stationCode) ? nowLineRoadposition[stationCode] : null
+                      const thisStation = findStationByStationCode(stationCode)
+                      const adSettings = Object.keys(nowLineAdSettings).includes(stationCode) ? nowLineAdSettings[stationCode] : null
                       classNames.push("right")
                       return (
                         <Station
@@ -317,7 +307,8 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                           name_ko={adSettings?.name ?? thisStation?.name_ko}
                           className={classNames.join(' ')}
                           onClick={() => onClick(stationCode)}
-                          position={adSettings}
+                          align={adSettings?.align}
+                          gap={adSettings?.gap}
                         />
                       )
                     })

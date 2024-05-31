@@ -1,6 +1,6 @@
 import combinedStations from "./combinedStations.json"
 import { ICombinedStation } from "./types"
 
-const typedCombinedStations: ICombinedStation[] = combinedStations as ICombinedStation[]
+export const stations: ICombinedStation[] = combinedStations as ICombinedStation[]
 
-export default typedCombinedStations
+export const findStationByStationCode = (code: string) => stations.find(v => v.codes.includes(code))

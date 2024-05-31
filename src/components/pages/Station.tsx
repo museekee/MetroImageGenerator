@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './../../assets/styles/page.css'
 import StationCard from '../layout/StationCard'
-import stations from './../../data/combinedStations'
+import { stations } from './../../data/combinedStations'
 import { useParams } from 'react-router-dom'
 import LineRoadMap from '../layout/LineRoadMap'
 
@@ -20,7 +20,7 @@ const Station = () => {
   return (
     <main>
       <StationCard station={stations[stationIdx]} onClick={setCode} />
-      <LineRoadMap line='1호선' nowStation={stations[stationIdx]} onClick={setCode} />
+      <LineRoadMap line='9호선' nowStation={stations[stationIdx]} onClick={setCode} />
     </main>
   )
 }
