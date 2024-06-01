@@ -37,6 +37,11 @@ interface ILineRoadMap {
 type LineRoadMapStations = Record<Lines, string[][]>
 type IlineRoadMapAdSettings = Record<Lines, Record<string, {
     align: 'left' | 'right'
-    gap: [number, number]
-    name?: string
+    text?: {
+        name?: string
+        gap?: [number, number]
+    }
+    box?: {
+        gap?: [number, number]
+    }
 }>>

@@ -11,7 +11,7 @@ import turnbl from "./../../assets/images/lineRoadMap/turnbl.svg"
 import branchrImg from "./../../assets/images/lineRoadMap/branchr.svg"
 import branchlImg from "./../../assets/images/lineRoadMap/branchl.svg"
 import branchbImg from "./../../assets/images/lineRoadMap/branchb.svg"
-import { findStationByStationCode } from "./../../data/combinedStations"
+import { findStationByStationCode, stations } from "./../../data/combinedStations"
 
 const Map = styled.div<{ count: number[], size: number[] }>`
   display: grid;
@@ -85,14 +85,14 @@ const StationCircle = styled.div<{ line: Lines }>`
     width: 35px;
   }
 `
-const StationBox = styled.div`
+const StationBox = styled.div<{ gap: [number, number] }>`
   display: flex;
   align-items: center;
   cursor: pointer;
   gap: 5px;
 
   &.right {
-    transform: translate(calc(50% + 5px), 0px); // StationBox 50%해서 거의 가운데로 옮기고 + 5px를 함으로써 Road에서도 가운데로 만듦(RoadWidth / 2)
+    transform: ${props => `translate(calc(50% + 5px + ${props.gap[0]}px), ${props.gap[1]}px)`}; // StationBox 50%해서 거의 가운데로 옮기고 + 5px를 함으로써 Road에서도 가운데로 만듦(RoadWidth / 2)
     translate: calc(-15px / 2 - 5px) 0px; // (-Circle width / 2) - (RoadWidth / 2)
     flex-direction: row;
 
@@ -104,8 +104,8 @@ const StationBox = styled.div`
     }
   }
   &.left {
-    transform: translate(calc(-50% + 5px), 0px); // StationBox 50%해서 거의 가운데로 옮기고 + 5px를 함으로써 Road에서도 가운데로 만듦(RoadWidth / 2)
-    translate: calc(15px / 2 - 5px) 0px; // (Circle width / 2) - (RoadWidth / 2)
+    transform: ${props => `translate(calc(-50% + 5px + ${props.gap[0]}px), ${props.gap[1]}px)`}; // StationBox 50%해서 거의 가운데로 옮기고 + 5px를 함으로써 Road에서도 가운데로 만듦(RoadWidth / 2)
+    translate: ${props => `calc(15px / 2 - 5px + ${props.gap[0]}px) ${props.gap[1]}px`}; // (Circle width / 2) - (RoadWidth / 2)
     flex-direction: row-reverse;
 
     &.transfer {
@@ -116,6 +116,12 @@ const StationBox = styled.div`
     }
   }
   &.top {
+    transform: translate(0px, calc(50% - (15px / 2)));
+    translate: ${props => `${props.gap[0]}px ${props.gap[1]}px`};
+
+    &.thisStation { 
+      transform: translate(0px, calc(50% - (35px / 2)));
+    }
     flex-direction: column;
   }
   &.bottom {
@@ -123,7 +129,7 @@ const StationBox = styled.div`
   }
 `
 type TStationName = {
-  gap?: [number, number]
+  gap: [number, number]
 }
 const StationName = styled.div<TStationName>`
   color: #222222;
@@ -131,6 +137,7 @@ const StationName = styled.div<TStationName>`
   font-size: 13px;
   white-space: pre-line;
   user-select: none;
+  translate: ${props => `${props.gap[0]}px ${props.gap[1]}px`};
 
   &.transfer {
     font-size: 15px;
@@ -142,12 +149,13 @@ const StationName = styled.div<TStationName>`
   }
 `
 const Station: React.FC<{
-  name_ko?: string
-  line: Lines
-  boxClassName?: string
-  gap?: [number, number],
-  align?: 'left' | 'right' | 'top' | 'bottom',
-  circleType?: 'normal' | 'transfer' | 'thisStation' | string
+  name_ko?: string // 역명
+  line: Lines // 노선명
+  boxClassName?: string // 박스 클래스
+  gapT?: [number, number], // 역명 gap
+  gapB?: [number, number], // 박스 gap
+  align?: 'left' | 'right' | 'top' | 'bottom', // 역명 왼오위아래
+  circleType?: 'normal' | 'transfer' | 'thisStation' | string // 원 크기 및 모양
 } & React.HTMLAttributes<HTMLDivElement>> = (props) => {
   const stationBoxClasses = []
   stationBoxClasses.push(props.align)
@@ -155,13 +163,13 @@ const Station: React.FC<{
   const stationCircleClassName = props.className?.split(' ') ?? []
   stationCircleClassName.push(props.circleType ?? 'normal')
   return (
-    <StationBox className={stationBoxClasses.join(' ')} onClick={props.onClick}>
+    <StationBox className={stationBoxClasses.join(' ')} gap={props.gapB ?? [0, 0]} onClick={props.onClick}>
       <StationCircle
         line={props.line}
         className={stationCircleClassName.join(' ')}
         style={props.style}
       />
-      <StationName gap={props.gap} className={props.className}>{props.name_ko}</StationName>
+      <StationName gap={props.gapT ?? [0, 0]} className={props.className}>{props.name_ko}</StationName>
     </StationBox>
   )
 }
@@ -244,10 +252,11 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                       const adSettings = Object.keys(nowLineAdSettings).includes(stationCode) ? nowLineAdSettings[stationCode] : null
                       const stationParams = {
                         line: line,
-                        name_ko: adSettings?.name ?? thisStation?.name_ko,
+                        name_ko: adSettings?.text?.name ?? thisStation?.name_ko,
                         align: adSettings?.align ?? "right",
                         onClick: () => onClick(stationCode),
-                        gap: adSettings?.gap,
+                        gapT: adSettings?.text?.gap,
+                        gapB: adSettings?.box?.gap,
                         circleType: 'normal'
                       }
                       if (nowStation?.codes.includes(stationCode)) stationParams.circleType = "thisStation"
@@ -291,24 +300,28 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                   {
                     //@ts-ignore
                     nowLineRoadStations[groupIdx].map((stationCode, idx) => {
-                      const classNames = [
-                        nowLineRoadStations[groupIdx].length-1 == idx ? 'transfer': '', 
-                        nowStation?.codes.includes(stationCode) ? "thisStation" : ''
-                      ]
-                      const thisStation = findStationByStationCode(stationCode)
                       const adSettings = Object.keys(nowLineAdSettings).includes(stationCode) ? nowLineAdSettings[stationCode] : null
-                      classNames.push("right")
+                      const thisStation = findStationByStationCode(stationCode)
+                      const params = {
+                        line: line,
+                        name_ko: adSettings?.text?.name ?? thisStation?.name_ko,
+                        align: adSettings?.align ?? "right",
+                        onClick: () => onClick(stationCode),
+                        gapT: adSettings?.text?.gap,
+                        gapB: adSettings?.box?.gap,
+                        circleType: 'transfer'
+                      }
+                      if (nowLineRoadStations[groupIdx].length-1 !== 0 && idx === 0) // 첫 번째는 지선이라 무조건 환승역
+                        params.circleType = 'normal'
+                      if (nowStation?.codes.includes(stationCode))
+                        params.circleType = 'thisStation'
+
                       return (
                         <Station
                           boxClassName={[
                             nowLineRoadStations[groupIdx].length !== 1 ? 'center': '', 'center'
                           ][idx]}
-                          line={line}
-                          name_ko={adSettings?.name ?? thisStation?.name_ko}
-                          className={classNames.join(' ')}
-                          onClick={() => onClick(stationCode)}
-                          align={adSettings?.align}
-                          gap={adSettings?.gap}
+                          {...params}
                         />
                       )
                     })
