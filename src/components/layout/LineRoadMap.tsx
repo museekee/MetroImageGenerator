@@ -18,6 +18,7 @@ const Map = styled.div<{ count: number[], size: number[] }>`
   grid-template-columns: ${props => `repeat(${props.count[0]}, ${props.size[0]}px)`};
   grid-template-rows:  ${props => `repeat(${props.count[1]}, ${props.size[1]}px)`};
   justify-items: center;
+  align-items: center;
 `
 const LineCircle = styled.div<{ line: Lines, pos: number[] }>`
   display: flex;
@@ -116,6 +117,10 @@ const StationBox = styled.div<{ gap: [number, number] }>`
     }
   }
   &.top {
+    flex-direction: column-reverse;
+    translate: ${props => `${props.gap[0]}px ${props.gap[1]}px`}
+  }
+  &.bottom {
     transform: translate(0px, calc(50% - (15px / 2)));
     translate: ${props => `${props.gap[0]}px ${props.gap[1]}px`};
 
@@ -123,9 +128,6 @@ const StationBox = styled.div<{ gap: [number, number] }>`
       transform: translate(0px, calc(50% - (35px / 2)));
     }
     flex-direction: column;
-  }
-  &.bottom {
-    flex-direction: column-reverse;
   }
 `
 type TStationName = {
@@ -186,7 +188,8 @@ const Road = styled.div<TRoad>`
   display: flex;
   justify-content: space-evenly;
   flex-direction: ${props => props.direction};
-  width: 10px;
+  width: ${props => props.isvertical ? "10px" : "100%"};
+  height: ${props => props.isvertical ? "100%" : "10px"};
   background: ${props => getLineColor(props.line)};
   grid-column: ${props => props.isvertical ? props.startX : `${props.startX} / ${Math.abs(props.startX - props.endX)+props.startX+1}`}; // 수직이면 x축으로 길이 변화 없으니까 기점x = 종점x => 기점x로만 x 설정
   grid-row: ${props => props.isvertical ? `${props.startY} / ${Math.abs(props.startY - props.endY)+props.startY+1}` : props.startY}; // 수직이면 y축으로 높이 변화 있으니까 계산함
