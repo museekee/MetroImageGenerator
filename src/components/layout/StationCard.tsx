@@ -38,6 +38,7 @@ const LineBox = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  cursor: pointer;
 `
 const StationNames = styled.div<{ name_ko: string }>`
   display: flex;
@@ -105,7 +106,15 @@ const NearStations = styled.div`
 const BlankStation = styled.div`
   height: 200px;
 `
-const StationCard = ({ station, onClick }: { station: ICombinedStation, onClick?: (stationCode: string) => void }) => {
+const StationCard = ({
+  station,
+  onStationClick,
+  onLineClick
+}: {
+  station: ICombinedStation,
+  onStationClick: (stationCode: string) => void,
+  onLineClick: (line: Lines) => void
+}) => {
   const colors = station.lines.map(v => getLineColor(v))
   function nearStations(before: boolean) {
     return station.codes.map((v, i) => {
@@ -125,7 +134,7 @@ const StationCard = ({ station, onClick }: { station: ICombinedStation, onClick?
                   const name_ko = stations.find(v => v.codes.includes(stationCode))!!.name_ko
                   const code = stations.find(v => v.codes.includes(stationCode))!!.codes[0]
                   return (
-                    <div className='lnk' onClick={() => onClick?.(code)}>
+                    <div className='lnk' onClick={() => onStationClick(code)}>
                       <StationCircle $line={line} stationCode={stationCode}>{stationCode}</StationCircle>
                       {/* 일부러 !!씀... 오류내서 Blank채우게 */}
                       <span style={{
@@ -153,7 +162,7 @@ const StationCard = ({ station, onClick }: { station: ICombinedStation, onClick?
             backgroundColor: getLineColor(line),
             borderTopLeftRadius: idx === 0 ? 190 : 0,
             borderTopRightRadius: idx === station.lines.length-1 ? 190 : 0
-          }}>
+          }} onClick={() => onLineClick(line)}>
             <StationCircle $line={line} stationCode={station.codes[idx]}>{station.codes[idx]}</StationCircle>
             <span style={{fontSize: 50}}>{line}</span>
           </LineBox>
@@ -180,7 +189,10 @@ const StationCard = ({ station, onClick }: { station: ICombinedStation, onClick?
     </Card>
   )
 }
-
+StationCard.defaultProps = {
+  onStationClick: () => {},
+  onLineClick: () => {}
+}
 type TStationCircle = {
   $line: Lines,
   stationCode: string
