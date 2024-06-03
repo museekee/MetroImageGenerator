@@ -95,10 +95,12 @@ const StationCircle = styled.div<{ line: Lines }>`
     width: 35px;
   }
 `
-const StationBox = styled.div<{ gap: [number, number] }>`
+const StationBox = styled.div<{ gap: [number, number], isDisabled?: boolean }>`
   display: flex;
   align-items: center;
-  cursor: pointer;
+  cursor: ${props => props.isDisabled ? 'unset' : 'pointer'};
+  /* filter: ${props => `brightness(${props.isDisabled ? 50 : 100}%) blur(${props.isDisabled ? 5 : 0}px)`}; */
+  opacity: ${props => props.isDisabled ? 0 : 1};
   gap: 5px;
 
   &.right {
@@ -176,9 +178,7 @@ const Station: React.FC<{
   return (
     <StationBox
       className={stationBoxClasses.join(' ')}
-      style={{
-        filter: `brightness(${props.isDisabled ? 50 : 100}%) blur(${props.isDisabled ? 5 : 0}px)`
-      }}
+      isDisabled={props.isDisabled}
       gap={props.gapB ?? [0, 0]}
       onClick={!props.isDisabled ? props.onClick : () => {}}
     >
