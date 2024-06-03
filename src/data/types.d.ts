@@ -33,6 +33,7 @@ interface ILineRoadMap {
     size: number[]
     count: number[]
     map: LineRoad[]
+    destinations: string[]
 }
 type LineRoadMapStations = Record<Lines, string[][]>
 type IlineRoadMapAdSettings = Record<Lines, Record<string, {

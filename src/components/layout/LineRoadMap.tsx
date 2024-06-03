@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import lineRoadMap from "./../../data/lineRoadMap"
 import { ICombinedStation, Lines } from "../../data/types"
@@ -11,7 +11,7 @@ import branchrImg from "./../../assets/images/lineRoadMap/branchr.svg"
 import branchlImg from "./../../assets/images/lineRoadMap/branchl.svg"
 import branchbImg from "./../../assets/images/lineRoadMap/branchb.svg"
 import { findStationByStationCode, stations } from "./../../data/combinedStations"
-
+// destination null이면 전역, null아니면 그 역들만. 기본적으로 line명으로 lineroadmapstations따라서 함.
 const Map = styled.div<{ count: number[], size: number[] }>`
   display: grid;
   grid-template-columns: ${props => `repeat(${props.count[0]}, ${props.size[0]}px)`};
@@ -19,26 +19,36 @@ const Map = styled.div<{ count: number[], size: number[] }>`
   justify-items: center;
   align-items: center;
 `
-const LineCircle = styled.div<{ line: Lines, pos: number[] }>`
+const roadColor = (line: Lines, destination: string | undefined) => !destination ? getLineColor(line) : lineRoadMap.destinations[destination].color ?? getLineColor(line)
+const lineCircleFontSize = (line: string, destination: string | undefined) => {
+  if (!destination) {
+    return line.split('\n').length-1 === 0 ? '30px' : '17.5px'
+  }
+  else return lineRoadMap.destinations[destination].icon.split('\n').length-1 === 0 ? '30px' : '17.5px'
+}
+const LineCircle = styled.div<{ line: Lines, pos: number[], destination?: string }>`
   display: flex;
   border-radius: 50%;
   height: 105%;
   aspect-ratio: 1;
-  background-color: ${props => getLineColor(props.line)};
-  font-size: 30px;
+  background-color: ${props => roadColor(props.line, props.destination)};
+  font-size: ${props => lineCircleFontSize(props.line, props.destination)};
   font-family: ${props => props.line.length > 3 ? 'korailc' : 'korail'};
   align-items: center;
   justify-content: center;
   color: #ffffff;
   grid-column: ${props => props.pos[0]};
   grid-row: ${props => props.pos[1]};
+  white-space: pre-line;
+  text-align: center;
 `
 type TOneBlock = {
   img: string,
   pos: number[],
   maskPos: string[],
   children?: JSX.Element[] | JSX.Element,
-  line: Lines
+  line: Lines,
+  destination?: string
 }
 const OneBlock = styled.div<TOneBlock>`
   display: grid;
@@ -56,7 +66,7 @@ const OneBlock = styled.div<TOneBlock>`
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: ${props => getLineColor(props.line)};
+    background-color: ${props => roadColor(props.line, props.destination)};
     mask-image: url('${props => props.img}');
     z-index: -1;
     mask-repeat: no-repeat;
@@ -152,11 +162,11 @@ const StationName = styled.div<TStationName>`
 const Station: React.FC<{
   name_ko?: string // 역명
   line: Lines // 노선명
-  boxClassName?: string // 박스 클래스
   gapT?: [number, number], // 역명 gap
   gapB?: [number, number], // 박스 gap
   align?: 'left' | 'right' | 'top' | 'bottom', // 역명 왼오위아래
   circleType?: 'normal' | 'transfer' | 'thisStation' | string // 원 크기 및 모양
+  isDisabled?: boolean
 } & React.HTMLAttributes<HTMLDivElement>> = (props) => {
   const stationBoxClasses = []
   stationBoxClasses.push(props.align)
@@ -164,13 +174,25 @@ const Station: React.FC<{
   const stationCircleClassName = props.className?.split(' ') ?? []
   stationCircleClassName.push(props.circleType ?? 'normal')
   return (
-    <StationBox className={stationBoxClasses.join(' ')} gap={props.gapB ?? [0, 0]} onClick={props.onClick}>
+    <StationBox
+      className={stationBoxClasses.join(' ')}
+      style={{
+        filter: `brightness(${props.isDisabled ? 50 : 100}%) blur(${props.isDisabled ? 5 : 0}px)`
+      }}
+      gap={props.gapB ?? [0, 0]}
+      onClick={!props.isDisabled ? props.onClick : () => {}}
+    >
       <StationCircle
         line={props.line}
         className={stationCircleClassName.join(' ')}
         style={props.style}
       />
-      <StationName gap={props.gapT ?? [0, 0]} className={props.className}>{props.name_ko}</StationName>
+      <StationName
+        gap={props.gapT ?? [0, 0]}
+        className={props.className}
+      >
+        {props.name_ko}
+      </StationName>
     </StationBox>
   )
 }
@@ -181,7 +203,8 @@ type TRoad = {
   endX: number,
   endY: number,
   direction: string,
-  line: Lines
+  line: Lines,
+  destination?: string
 }
 const Road = styled.div<TRoad>`
   display: flex;
@@ -189,7 +212,7 @@ const Road = styled.div<TRoad>`
   flex-direction: ${props => props.direction};
   width: ${props => props.isvertical ? "10px" : "100%"};
   height: ${props => props.isvertical ? "100%" : "10px"};
-  background: ${props => getLineColor(props.line)};
+  background: ${props => roadColor(props.line, props.destination)};
   grid-column: ${props => props.isvertical ? props.startX : `${props.startX} / ${Math.abs(props.startX - props.endX)+props.startX+1}`}; // 수직이면 x축으로 길이 변화 없으니까 기점x = 종점x => 기점x로만 x 설정
   grid-row: ${props => props.isvertical ? `${props.startY} / ${Math.abs(props.startY - props.endY)+props.startY+1}` : props.startY}; // 수직이면 y축으로 높이 변화 있으니까 계산함
   color: #ffffff;
@@ -200,6 +223,12 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
   const nowLineRoadMap = lineRoadMap.map[line]
   const nowLineRoadStations = lineRoadMap.stations[line]
   const nowLineAdSettings = lineRoadMap.adSettings[line]
+  const [destination, setDestination] = useState(nowLineRoadMap.destinations[0])
+  useEffect(() => {
+    if (!nowLineRoadMap.destinations.includes(destination))
+      setDestination(nowLineRoadMap.destinations[0])
+  }, [line])
+  console.log(destination)
   const turnImgs: Record<string, {img: string, pos: [string, string]}> = {
     turnar: { img: turnar, pos: ['top', 'right'] },
     turnal: { img: turnal, pos: ['bottom', 'left'] },
@@ -211,6 +240,12 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
     branchl: { img: branchlImg },
     branchb: { img: branchbImg },
   }
+  const ifStationDisabled = (stationCode: string) => {
+    if (lineRoadMap.destinations[destination].codes.length === 0)
+      return false
+    if (!lineRoadMap.destinations[destination].codes.includes(stationCode))
+      return true
+  }
   let groupIdx = -1
   return (
     <Map size={nowLineRoadMap.size} count={nowLineRoadMap.count} onSelect={() => false} onDragStart={() => false}>
@@ -218,7 +253,12 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
         nowLineRoadMap.map.map((item, idx) => {
           if (item.type === 'lineCircle') {
             return (
-              <LineCircle line={line} pos={item.pos}>{ getLineIcon(line) }</LineCircle>
+              <LineCircle
+                line={line}
+                pos={item.pos}
+                destination={destination}>
+                { lineRoadMap.destinations[destination].icon }
+              </LineCircle>
             )
           }
           else {
@@ -237,7 +277,8 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                 endX: item.pos[1][0],
                 endY: item.pos[1][1],
                 direction: direction[item.direction],
-                line: line
+                line: line,
+                destination: destination
               }
               if (item.group) // 자식 있음?
                 groupIdx++
@@ -259,7 +300,8 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                         onClick: () => onClick(stationCode),
                         gapT: adSettings?.text?.gap,
                         gapB: adSettings?.box?.gap,
-                        circleType: 'normal'
+                        circleType: 'normal',
+                        isDisabled: ifStationDisabled(stationCode)
                       }
                       if (nowStation?.codes.includes(stationCode)) stationParams.circleType = "thisStation"
                       if (lines?.length === 0) return <Station {...stationParams}/>
@@ -268,7 +310,9 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                       return (
                         <Station
                           {...stationParams}
-                          style={{background: `${colors?.length === 1 ? colors[0] : `linear-gradient(135deg, ${colors?.join(', ')})`}`}}
+                          style={{
+                            background: `${colors?.length === 1 ? colors[0] : `linear-gradient(135deg, ${colors?.join(', ')})`}`
+                          }}
                         />
                       )
                     })
@@ -277,7 +321,15 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
               )
             }
             else if (item.type.startsWith('turn')) {
-              return <OneBlock line={line} img={turnImgs[item.type].img} pos={item.pos} maskPos={turnImgs[item.type].pos} />
+              return (
+                <OneBlock
+                  line={line}
+                  img={turnImgs[item.type].img}
+                  pos={item.pos}
+                  maskPos={turnImgs[item.type].pos}
+                  destination={destination}
+                />
+              )
             }
             else if (item.type.startsWith('branch')) {
               //@ts-ignore
@@ -298,7 +350,8 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                   maskPos={['center', 'right']}
                   style={{
                     justifyContent: nowLineRoadStations[groupIdx].length == 1 ? 'center' : 'unset'
-                  }}>
+                  }}
+                  destination={destination}>
                   {
                     //@ts-ignore
                     nowLineRoadStations[groupIdx].map((stationCode, idx) => {
@@ -311,18 +364,16 @@ const LineRoadMap = ({ line, nowStation, onClick }: {line: Lines, nowStation?: I
                         onClick: () => onClick(stationCode),
                         gapT: adSettings?.text?.gap,
                         gapB: adSettings?.box?.gap,
-                        circleType: 'transfer'
+                        circleType: 'normal',
+                        isDisabled: ifStationDisabled(stationCode)
                       }
-                      if (nowLineRoadStations[groupIdx].length-1 !== 0 && idx === 0) // 첫 번째는 지선이라 무조건 환승역
-                        params.circleType = 'normal'
+                      if (nowLineRoadStations[groupIdx].length-1 !== 0 && idx === 1) // 첫 번째는 지선이라 무조건 환승역
+                        params.circleType = 'transfer'
                       if (nowStation?.codes.includes(stationCode))
                         params.circleType = 'thisStation'
 
                       return (
                         <Station
-                          boxClassName={[
-                            nowLineRoadStations[groupIdx].length !== 1 ? 'center': '', 'center'
-                          ][idx]}
                           {...params}
                         />
                       )

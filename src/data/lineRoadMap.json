@@ -134,6 +134,16 @@
         "type": "lineCircle",
         "pos": [5, 17]
       }
+    ],
+    "destinations": [
+      "1호선",
+      "경부선 A급행",
+      "경부선 B급행 상행",
+      "경부선 B급행 하행",
+      "경인선 급행",
+      "경인선 특급",
+      "경원선 급행",
+      "광명셔틀"
     ]
   },
   "2호선": {
@@ -218,6 +228,12 @@
         "type": "turnal",
         "pos": [3, 1]
       }
+    ],
+    "destinations": [
+      "2호선",
+      "을지로순환선",
+      "성수지선",
+      "신정지선"
     ]
   },
   "3호선": {
@@ -266,6 +282,9 @@
         "type": "lineCircle",
         "pos": [3, 13]
       }
+    ],
+    "destinations": [
+      "3호선"
     ]
   },
   "4호선": {
@@ -314,6 +333,9 @@
         "type": "lineCircle",
         "pos": [3, 14]
       }
+    ],
+    "destinations": [
+      "4호선"
     ]
   },
   "5호선": {
@@ -387,6 +409,9 @@
         "type": "lineCircle",
         "pos": [4, 1]
       }
+    ],
+    "destinations": [
+      "5호선"
     ]
   },
   "6호선": {
@@ -462,6 +487,9 @@
         "type": "lineCircle",
         "pos": [4, 1]
       }
+    ],
+    "destinations": [
+      "6호선"
     ]
   },
   "7호선": {
@@ -524,6 +552,9 @@
         "type": "lineCircle",
         "pos": [4, 5]
       }
+    ],
+    "destinations": [
+      "7호선"
     ]
   },
   "8호선": {
@@ -544,6 +575,9 @@
         "type": "lineCircle",
         "pos": [1, 15]
       }
+    ],
+    "destinations": [
+      "8호선"
     ]
   },
   "9호선": {
@@ -592,6 +626,9 @@
         "type": "lineCircle",
         "pos": [3, 14]
       }
+    ],
+    "destinations": [
+      "9호선"
     ]
   }
 }
