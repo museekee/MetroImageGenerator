@@ -634,5 +634,79 @@
       "9호선",
       "9호선 급행"
     ]
+  },
+  "인천1호선": {
+    "size": [100, 50],
+    "count": [2, 13],
+    "map": [
+      {
+        "type": "lineCircle",
+        "pos": [1, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[1, 2], [1, 12]],
+        "direction": "v"
+      },
+      {
+        "type": "turnar",
+        "pos": [1, 13]
+      },
+      {
+        "type": "turnbl",
+        "pos": [2, 13]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[2, 2], [2, 12]],
+        "direction": "rv"
+      },
+      {
+        "type": "lineCircle",
+        "pos": [2, 1]
+      }
+    ],
+    "destinations": [
+      "인천1호선"
+    ]
+  },
+  "인천2호선": {
+    "size": [100, 50],
+    "count": [2, 13],
+    "map": [
+      {
+        "type": "lineCircle",
+        "pos": [1, 1]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[1, 2], [1, 12]],
+        "direction": "v"
+      },
+      {
+        "type": "turnar",
+        "pos": [1, 13]
+      },
+      {
+        "type": "turnbl",
+        "pos": [2, 13]
+      },
+      {
+        "type": "road",
+        "group": true,
+        "pos": [[2, 2], [2, 12]],
+        "direction": "rv"
+      },
+      {
+        "type": "lineCircle",
+        "pos": [2, 1]
+      }
+    ],
+    "destinations": [
+      "인천2호선"
+    ]
   }
 }

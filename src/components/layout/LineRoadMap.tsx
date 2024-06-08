@@ -22,9 +22,17 @@ const Map = styled.div<{ count: number[], size: number[] }>`
 const roadColor = (line: Lines, destination: string | undefined) => !destination ? getLineColor(line) : lineRoadMap.destinations[destination].color ?? getLineColor(line)
 const lineCircleFontSize = (line: string, destination: string | undefined) => {
   if (!destination) {
-    return line.split('\n').length-1 === 0 ? '30px' : '17.5px'
+    return line.length < 2 ? '30px' : '17.5px'
   }
-  else return lineRoadMap.destinations[destination].icon.split('\n').length-1 === 0 ? '30px' : '17.5px'
+  else return lineRoadMap.destinations[destination].icon.length < 2 ? '30px' : '17.5px'
+}
+const lineCircleFontFamily = (line: string, destination: string | undefined) => {
+  if (!destination) {
+    return line.length < 4 ? 'korail' : 'korailc'
+  }
+  else {
+    return lineRoadMap.destinations[destination].icon.length < 4 ? 'korail' : 'korailc'
+  }
 }
 const LineCircle = styled.div<{ line: Lines, pos: number[], destination?: string }>`
   display: flex;
@@ -33,7 +41,7 @@ const LineCircle = styled.div<{ line: Lines, pos: number[], destination?: string
   aspect-ratio: 1;
   background-color: ${props => roadColor(props.line, props.destination)};
   font-size: ${props => lineCircleFontSize(props.line, props.destination)};
-  font-family: ${props => props.line.length > 3 ? 'korailc' : 'korail'};
+  font-family: ${props => lineCircleFontFamily(props.line, props.destination)};
   align-items: center;
   justify-content: center;
   color: #ffffff;
